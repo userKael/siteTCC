@@ -17,7 +17,7 @@ button{
     border-radius: 15px;
     transition: all 0.5s ease 0s;
     margin-left: 20px;
-    margin-right: 100px;
+    margin-right: 150px;
     margin-top: 3px;
     
 }
@@ -45,7 +45,7 @@ button:hover{
     cursor: pointer;
     margin-top: -3px;
     margin-bottom: auto;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-right: auto;
     /* margin: auto auto auto 100px; */
    /* background-color: #06386B; */
@@ -54,7 +54,12 @@ button:hover{
     width: auto;
 }
 #div_intro{
-    margin-top: 70px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 90px;
+    margin-left: 200px;
+    margin-right: 300px;
+}
+#div_intro h1{
+    color: #06386B;
+    margin-bottom: 30px;
+    
 }
