@@ -11,10 +11,10 @@ li, a {
 
 button{
     padding: 9px 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(149, 238, 138);
     border: none;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: all 0.5s ease 0s;
     margin-left: 20px;
     margin-right: 100px;
@@ -23,7 +23,7 @@ button{
 }
 
 button:hover{
-    background-color: rgba(59, 83, 89, 0.6);
+    background-color: green;
 
 }
 .nav-links{
