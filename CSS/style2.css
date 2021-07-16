@@ -9,8 +9,8 @@
     
 }
 body{
-    background-color: rgba(218, 218, 218, 0.344);
-}
+        background-color: rgba(218, 218, 218, 0.344);
+    }
 
 .button-nav{
     padding: 9px 20px;
@@ -20,7 +20,7 @@ body{
     border-radius: 15px;
     transition: all 0.5s ease 0s;
     margin-left: 20px;
-    margin-right: 150px;
+    margin-right: 100px;
     margin-top: 3px;
     
 }
@@ -47,9 +47,9 @@ body{
 }
 .logo{
     cursor: pointer;
-    margin-top: -3px;
+    margin-top: 0px;
     margin-bottom: auto;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-right: auto;
     max-width: 220px;
     max-height: 90px;
