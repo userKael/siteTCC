@@ -51,8 +51,6 @@ body{
     margin-bottom: auto;
     margin-left: 150px;
     margin-right: auto;
-    /* margin: auto auto auto 100px; */
-   /* background-color: #06386B; */
     max-width: 220px;
     max-height: 90px;
     width: auto;
@@ -65,8 +63,6 @@ body{
 #div_intro h1{
     color: #06386B;
     margin-bottom: 30px;
-    margin-top: 150px;
-    
 }
 .shadow-sm p{
     font-size: 20px;
