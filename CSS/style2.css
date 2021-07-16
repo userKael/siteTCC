@@ -40,6 +40,7 @@ body{
 }
 .nav-links li a{
     transition: all 0.5 s ease 0s;
+    color: #06386B;
 }
 .nav-links li a:hover{
     color: #d0d3d3;
