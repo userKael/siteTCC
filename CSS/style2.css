@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-li, a {
+.li-links, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -8,8 +8,11 @@ li, a {
     text-decoration: none;
     
 }
+body{
+    background-color: rgba(218, 218, 218, 0.344);
+}
 
-button{
+.button-nav{
     padding: 9px 20px;
     background-color: rgb(149, 238, 138);
     border: none;
@@ -22,13 +25,13 @@ button{
     
 }
 
-button:hover{
+.button-nav:hover{
     background-color: green;
 
 }
 .nav-links{
     list-style: none;
-    margin-top: 12px;
+    margin-top: 6px;
 }   
 .nav-links li{
     display: inline-block;
@@ -54,12 +57,16 @@ button:hover{
     width: auto;
 }
 #div_intro{
-    margin-top: 90px;
+    margin-top: 110px;
     margin-left: 200px;
     margin-right: 300px;
 }
 #div_intro h1{
     color: #06386B;
     margin-bottom: 30px;
+    margin-top: 150px;
     
+}
+.shadow-sm p{
+    font-size: 20px;
 }
