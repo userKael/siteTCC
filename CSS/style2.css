@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 .li-links, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color:#06386B;
+    color: #06386B;
     text-decoration: none;
-    
 }
-body{
-        background-color: rgba(218, 218, 218, 0.344);
-    }
 
-.button-nav{
+body {
+    background-color: rgba(218, 218, 218, 0.344);
+}
+
+.button-nav {
     padding: 9px 20px;
     background-color: rgb(149, 238, 138);
     border: none;
@@ -22,30 +21,32 @@ body{
     margin-left: 20px;
     margin-right: 100px;
     margin-top: 3px;
-    
 }
 
-.button-nav:hover{
+.button-nav:hover {
     background-color: green;
-
 }
-.nav-links{
+
+.nav-links {
     list-style: none;
     margin-top: 6px;
-}   
-.nav-links li{
-    display: inline-block;
-    padding:  0 20px;
-   
 }
-.nav-links li a{
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
     transition: all 0.5 s ease 0s;
     color: #06386B;
 }
-.nav-links li a:hover{
+
+.nav-links li a:hover {
     color: #38b319c7;
 }
-.logo{
+
+.logo {
     cursor: pointer;
     margin-top: 0px;
     margin-bottom: auto;
@@ -55,15 +56,18 @@ body{
     max-height: 90px;
     width: auto;
 }
-#div_intro{
+
+#div_intro {
     margin-top: 110px;
     margin-left: 200px;
     margin-right: 300px;
 }
-#div_intro h1{
+
+#div_intro h1 {
     color: #06386B;
     margin-bottom: 30px;
 }
-.shadow-sm p{
+
+.shadow-sm p {
     font-size: 20px;
 }
