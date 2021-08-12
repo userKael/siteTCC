@@ -48,10 +48,7 @@ body {
 
 .logo {
     cursor: pointer;
-    margin-top: 0px;
-    margin-bottom: auto;
-    margin-left: 100px;
-    margin-right: auto;
+    margin: 0px auto auto 100px ;
     max-width: 220px;
     max-height: 90px;
     width: auto;
