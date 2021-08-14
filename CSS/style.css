@@ -1,59 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+#corpo {
+    background-color: rgba(218, 218, 218, 0.659);
+}
 
+#logo {
+    width: 230px;
+    padding: 10px;
+}
 
+#cabecalho {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
+.navbar {
+    border-radius: 20px!important;
+}
 
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 40px;
+    padding-top: 5px;
+}
 
+#color-a,
+#color-b,
+#color-c {
+    color: #06386b;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#color-a:hover,
+#color-b:hover,
+#color-c:hover {
+    color: rgb(149, 238, 138);
+}
 
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
