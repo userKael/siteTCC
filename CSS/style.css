@@ -14,10 +14,15 @@
         margin-top: 10px;
         margin-left: 25px;
         margin-right: 25px;
+        width: 96%;
     }
     
     #navbar {
         border-radius: 20px!important;
+    }
+    
+    #drop-down-responsive {
+        display: none;
     }
     
     .nav-item {

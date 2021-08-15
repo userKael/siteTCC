@@ -1,0 +1,15 @@
+@media (max-width:991px) {
+    #ul-nav {
+        display: none;
+    }
+    #drop-down-responsive {
+        display: block;
+    }
+    .dropdown-item {
+        color: #06386b;
+    }
+    #bt-perfil {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+}
