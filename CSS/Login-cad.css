@@ -1,0 +1,64 @@
+.gradiente {
+    background: linear-gradient(125deg, #06396b, rgb(39, 155, 10), #06396b, #06396b);
+    background-size: 300% 2530%;
+    animation: colors 15s ease infinite;
+    margin: 0px;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.div-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-login-bot {
+    border-radius: 2.3rem!important;
+    width: 400px;
+    height: 460px;
+}
+
+.logo-position {
+    padding: 20px 0px 55px 30px;
+}
+
+img {
+    width: 80%;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+#input-label {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#txt-cad {
+    padding-top: 20px;
+}
+
+#bt-position {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#bt-entrar {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #06396b;
+    border-radius: 2.3rem!important;
+}
