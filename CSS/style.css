@@ -104,3 +104,33 @@
     #sprints {
         padding-left: 35%;
     }
+    /* login */
+    
+    .logo-position {
+        padding-bottom: 50px;
+    }
+    
+    #logo-login {
+        width: 70%;
+    }
+    
+    #input-label {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #txt-cad {
+        padding-top: 20px;
+    }
+    
+    #bt-position {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    #bt-entrar {
+        padding-left: 70px;
+        padding-right: 70px;
+        background-color: #06396b;
+        border-radius: 2.3rem!important;
+    }

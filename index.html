@@ -83,23 +83,46 @@
         </div>
         <form action="#" method="get">
             <div class="text-center">
-                <button type="button" id="bt-inicio" class="btn btn-primary">Iniciar Teste</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" id="bt-inicio" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar teste</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="div-login">
+                            <div class="logo-position">
+                                <img src="./IMGs/logo.png" alt="logo" id="logo-login">
+                            </div>
+                            <div id="input-label">
+                                <form action="#" method="post">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="Email@exemple.com">
+                                        <label for="floatingInput">Email</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                                        <label for="floatingPassword">Senha</label>
+                                    </div>
+                                    <p class="text-center" id="txt-cad">
+                                        Ei! É novo aqui? <a href="./cadastro.html"> Cadastre-se</a>
+                                    </p>
+                                    <div class="text-center" id="bt-position">
+                                        <button type="button" id="bt-entrar" class="btn btn-primary">ENTRAR</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
     </div>
 
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            ...
-        </div>
-    </div>
 
 
 
