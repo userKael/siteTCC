@@ -19,7 +19,7 @@ try{
         $senha = null;
         $nome = null;
 
-        $retorno = "cadastro feito";
+        $retorno = "Cadastro Realizado com Sucesso!";
     }
     else
     {
