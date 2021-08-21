@@ -13,13 +13,13 @@ function cadastrar() {
         })
         .done(function(msg) {
 
-            alert(msg);
+            $("#resposta").html(msg);
 
         })
 
     .fail(function() {
 
-        alert("Falha na Inclusao");
+        $("#resposta").html("Falha ao se cadastar");
 
     })
     return false;
