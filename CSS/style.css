@@ -165,8 +165,12 @@ h1 {
     padding-right: 5%;
 }
 
-#dados_usuario h5,
-p {
+#dados_usuario h5 {
+    color: rgb(91, 192, 77);
+    margin-bottom: 0;
+}
+
+#dados_usuario p {
     color: rgb(91, 192, 77);
     margin-bottom: 0;
 }
