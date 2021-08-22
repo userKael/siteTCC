@@ -7,8 +7,15 @@ function cadastrar() {
 
         })
         .done(function(msg) {
+            if (msg == "Cadastro Realizado com Sucesso!") {
+                $("#resposta").html(msg);
+                $("#nome").val("");
+                $("#email").val("");
+                $("#senha").val("");
 
-            $("#resposta").html(msg);
+            } else {
+                $("#resposta").html(msg);
+            }
 
         })
 
