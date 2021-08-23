@@ -5,6 +5,12 @@ function cadastrar() {
             url: './PHP/action_cad_user.php',
             data: dados,
 
+            beforeSend: function() {
+
+                $("#bt-cadastar").html("Por favor, aguarde...");
+
+            }
+
         })
         .done(function(msg) {
             if (msg == "Cadastro Realizado com Sucesso!") {
@@ -13,8 +19,14 @@ function cadastrar() {
                 $("#email").val("");
                 $("#senha").val("");
 
+                $("#bt-cadastar").html("CADASTRAR");
+
+
+
             } else {
                 $("#resposta").html(msg);
+
+                $("#bt-cadastar").html("CADASTRAR");
             }
 
         })
