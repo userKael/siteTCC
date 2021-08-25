@@ -31,11 +31,19 @@
                             <a class="nav-link" aria-current="page" href="#" id="color-c">DICAS SOBRE EXERCÍCIOS</a>
                         </li>
                         <li class="nav-item">
-                            <button type="submit" class="btn btn-outline-success rounded-circle"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <div class="dropdown">
+                                <button type="submit" class="btn btn-outline-success rounded-circle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                     <path fill-rule="evenodd"
                                         d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                                 </svg></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="./perfil_do_usuario.html">PERFIL</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">ENTRAR</a></li>
+                                    <li><a class="dropdown-item" href="#">SAIR</a></li> -->
+                                </ul>
+                            </div>
+
 
                         </li>
 
@@ -43,9 +51,7 @@
                 </div>
                 <li class="nav-item dropdown" id="drop-down-responsive">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                          </svg>
+                      Menu
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="./index.html">TESTE</a></li>
@@ -54,11 +60,17 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><button type="submit" class="btn btn-outline-success rounded-circle" id="bt-perfil"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <li>
+                            <a href="./perfil_do_usuario.html" class="nav-link">
+                                <button type="submit" class="btn btn-outline-success rounded-circle" id="bt-perfil"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                 <path fill-rule="evenodd"
                                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            </svg></button>PERFIL</li>
+                            </svg></button>PERFIL
+
+                            </a>
+
+                        </li>
                     </ul>
                 </li>
             </div>
@@ -213,19 +225,16 @@
     </div>
 
     <div id="titulo" style="margin-top: 30px;">
-        <h1 class="text-center">Dicionário de dados + Estrutura física das tabelas</h1>
+        <h1 class="text-center">Dicionário de dados</h1>
     </div>
 
     <div id="rascunhos">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner border border-success border-3 rounded-3">
                 <div class="carousel-item active">
-                    <img src="./IMGs/Dicionario_dados.png" class="d-block w-100" alt="...">
+                    <img src="./IMGs/dicionario_dados.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="./IMGs/estrutura_fisica_banco.png" class="d-block w-100" alt="...">
-                </div>
-                >
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -239,6 +248,7 @@
     </div>
     <div id="rascunhos">
         <div class="mb-3">
+            <h1 class="text-center">Estrutura do banco</h1>
             <label for="exampleFormControlTextarea1" class="form-label"></label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
             create database guder_saude;
@@ -255,7 +265,7 @@
             id int not null primary key auto_increment,
             peso decimal(3,2) not null,		
             altura decimal(2,2) not null,		
-            idade int(3) not null, 		
+            data_nascimento date not null, 		
             biotipo	enum('endomorfo', 'mesomorfo', 'ectomorfo') not null,		
             sexo enum ('feminino', 'masculino'), 		
             data_teste	date not null, 		
@@ -284,10 +294,12 @@
             Semana 19/08->25/08 v02
         </h3>
         <h6>
+            Tela do perfil do usuário feita;<br> Back-end do cadastro realizado;<br>Campo 'idade' da tabela 'dados_teste', alterado para 'data_nascimento'<br>Campo 'altura' da tabela 'dados_teste', teve o tipo mudado para 'decimal(2,2)'
 
         </h6>
 
     </div>
+
 
     <footer id="rodape">
         <nav class="navbar navbar-light bg-light">

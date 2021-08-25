@@ -50,6 +50,8 @@
 h1 {
     font-family: 'Roboto', sans-serif;
     color: #06386b;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #div-txt-intro {
