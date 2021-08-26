@@ -29,7 +29,7 @@
 #div-login-bot {
     border-radius: 2.3rem!important;
     width: 400px;
-    height: 460px;
+    height: 480px;
 }
 
 .logo-position {
@@ -52,11 +52,11 @@ img {
 }
 
 #bt-position {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
-#bt-entrar {
+#bt-cadastar {
     padding-left: 70px;
     padding-right: 70px;
     background-color: #06396b;
