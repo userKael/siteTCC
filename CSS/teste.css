@@ -32,3 +32,58 @@
     margin-left: 15%;
     margin-right: 15%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div-perguntas-imc.col{
+    width: 415px;
+    height: 490px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 20px 40px 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.div-per.form-floating.mb-3{
+    margin-top: 20px;
+}
+
+.input-perguntas.form-control{
+    width: 260px;
+    background-color: rgba(220, 218, 218, 0.9);
+}
+
+.select-perguntas.form-select{
+    width: 260px;
+    background-color: rgba(220, 218, 218, 0.9);
+}
+
+.div-btn{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#btn-prox{
+    padding-right: 35px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #06386b;
+    color: white;
+}
+
