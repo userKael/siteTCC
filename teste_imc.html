@@ -58,54 +58,52 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-4">
             <div class="div-perguntas-imc col">
+                <form action="./teste_biotipo.html" method="post">
+                    <div class="div-per form-floating mb-3">
+                        <input type="date" class="input-perguntas form-control" id="nascimento" placeholder="name@example.com" name="data_nascimento">
+                        <label for="floatingInput">Data de nascimento</label>
+                    </div>
 
-                <div class="div-per form-floating mb-3">
-                    <input type="date" class="input-perguntas form-control" id="nascimento" placeholder="name@example.com">
-                    <label for="floatingInput">Data de nascimento</label>
-                </div>
+                    <div class="div-per form-floating mb-3">
+                        <input type="text" class="input-perguntas form-control" id="altura" placeholder="1.40" name="altura">
+                        <label for="floatingInput">Altura:</label>
+                    </div>
 
-                <div class="div-per form-floating mb-3">
-                    <input type="email" class="input-perguntas form-control" id="altura" placeholder="name@example.com">
-                    <label for="floatingInput">Altura:</label>
-                </div>
+                    <div class="div-per form-floating mb-3">
+                        <input type="text" class="input-perguntas form-control" id="peso" placeholder="70" name="peso">
+                        <label for="floatingInput">Peso:</label>
+                    </div>
 
-                <div class="div-per form-floating mb-3">
-                    <input type="email" class="input-perguntas form-control" id="peso" placeholder="name@example.com">
-                    <label for="floatingInput">Peso:</label>
-                </div>
+                    <div class="div-per form-floating mb-3">
+                        <select class="select-perguntas form-select" id="sexo" aria-label="Floating label select example" name="sexo">
+                           
+                            <option value="femi" name="feminino">Feminino</option>
+                            <option value="masc" name="masculino">Masculino</option>
+                        </select>
+                        <label for="floatingSelect">Sexo</label>
+                    </div>
 
-                <div class="div-per form-floating mb-3">
-                    <select class="select-perguntas form-select" id="sexo" aria-label="Floating label select example">
-                       
-                        <option value="femi" name="feminino">Feminino</option>
-                        <option value="masc" name="masculino">Masculino</option>
-                    </select>
-                    <label for="floatingSelect">Sexo</label>
-                </div>
+                    <div class="div-per form-floating mb-3">
+                        <select class="select-perguntas form-select" id="rotinas" aria-label="Floating label select example" name="rotina_exercicios">
+                      
+                            <option value="reco" name="reco">Recorrente</option>
+                            <option value="mode" name="mode">Moderada</option>
+                            <option value="sede" name="sede">Sedentaria</option>
+                        </select>
+                        <label for="floatingSelect">Rotinas de exercícios</label>
+                    </div>
 
-                <div class="div-per form-floating mb-3">
-                    <select class="select-perguntas form-select" id="rotinas" aria-label="Floating label select example">
-                  
-                        <option value="reco" name="reco">Recorrente</option>
-                        <option value="mode" name="mode">Moderada</option>
-                        <option value="sede" name="sede">Sedentaria</option>
-                    </select>
-                    <label for="floatingSelect">Rotinas de exercícios</label>
-                </div>
+                    <div class="div-btn">
+                        <button type="submit" class="btn-proximo" id="btn-prox">Próximo</button>
+                    </div>
 
-                <div class="div-btn">
-                    <a href="./teste_biotipo.html"> <button type="submit" class="btn-proximo" id="btn-prox">Próximo</button></a>
-                </div>
+                </form>
 
             </div>
 
             <div id="div-img-imc" class="col">
                 <img src="./IMGs/Imagem_imc.jpg" alt="" width="190%">
             </div>
-
-
-
-
 
         </div>
     </div>
