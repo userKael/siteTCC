@@ -2,9 +2,16 @@
 
 include './conexaobd.php';
 
-if(isset($_POST["email"])){$email=$_POST["email"];}
-if(isset($_POST["senha"])){$senha=$_POST["senha"];}
-if(isset($_POST["nome"])){$nome=$_POST["nome"];}
+if(isset($_POST["email"])){
+    $email= addslashes( $_POST["email"]);
+    
+}
+if(isset($_POST["senha"])){
+    $senha=addslashes($_POST["senha"]);
+}
+if(isset($_POST["nome"])){
+    $nome=addslashes($_POST["nome"]);
+}
 
 try{
     $comando=$con->prepare("insert into cadastro values (?,?,?)");

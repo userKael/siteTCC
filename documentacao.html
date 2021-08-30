@@ -251,28 +251,28 @@
             <h1 class="text-center">Estrutura do banco</h1>
             <label for="exampleFormControlTextarea1" class="form-label"></label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
-            create database guder_saude;
-            use guder_saude;
-
-
-            create table cadastro(
-            email varchar(30) not null primary key,
-            senha varchar(15) not null,
-            nome varchar(40) not null
-            );
-
-            create table dados_teste(
-            id int not null primary key auto_increment,
-            peso decimal(3,2) not null,		
-            altura decimal(2,2) not null,		
-            data_nascimento date not null, 		
-            biotipo	enum('endomorfo', 'mesomorfo', 'ectomorfo') not null,		
-            sexo enum ('feminino', 'masculino'), 		
-            data_teste	date not null, 		
-            imc	enum  ('abaixo','ideal','sobre peso','obsidade'),		
-            contato_cadastro varchar(30) not null,	
-            foreign key (contato_cadastro) references cadastro(email)
-            );
+                create database guder_saude;
+                use guder_saude;
+                drop database guder_saude;
+                
+                create table cadastro(
+                email varchar(30) not null primary key,
+                senha varchar(15) not null,
+                nome varchar(40) not null
+                );
+                
+                create table dados_teste(
+                id int not null primary key auto_increment,
+                peso decimal(3,1) not null,		
+                altura decimal(3,2) not null,		
+                data_nascimento date not null, 		
+                biotipo	enum('endomorfo', 'mesomorfo', 'ectomorfo') not null,		
+                sexo enum ('feminino', 'masculino'), 		
+                data_teste	date not null, 		
+                imc	enum  ('abaixo','ideal','sobre peso','obsidade'),		
+                contato_cadastro varchar(30) not null,	
+                foreign key (contato_cadastro) references cadastro(email)
+                );
 
             </textarea>
         </div>
@@ -295,6 +295,13 @@
         </h3>
         <h6>
             Tela do perfil do usuário feita;<br> Back-end do cadastro realizado;<br>Campo 'idade' da tabela 'dados_teste', alterado para 'data_nascimento'<br>Campo 'altura' da tabela 'dados_teste', teve o tipo mudado para 'decimal(2,2)'
+
+        </h6>
+        <h3>
+            Semana 16/08->02/09 v03
+        </h3>
+        <h6>
+            Tela de teste do Biotipo feita; <br> Tela teste de imc feita <br> Back-end de login com session feita <br> Texto introdutivo temporario feito; <br> 3 perguntas do questionario incrementada;
 
         </h6>
 

@@ -1,8 +1,11 @@
 <?php 
 
+session_start();
+
 $banco = 'guder_saude';
 $usuario = 'root';
 $senha = '';
+global $con;
 
 try{
     $con =  new PDO("mysql:host=localhost; dbname=$banco", "$usuario", "$senha");
@@ -13,8 +16,3 @@ catch(PDOException $erro){
     echo"Erro na conexão: ". $erro->getMessage();
 
 }
-
-
-
-
-?>
