@@ -58,7 +58,7 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-4">
             <div class="div-perguntas-imc col">
-                <form action="./teste_biotipo.html" method="post">
+                <form action="./PHP/imc.php" method="post">
                     <div class="div-per form-floating mb-3">
                         <input type="date" class="input-perguntas form-control" id="nascimento" placeholder="name@example.com" name="data_nascimento">
                         <label for="floatingInput">Data de nascimento</label>
@@ -77,8 +77,8 @@
                     <div class="div-per form-floating mb-3">
                         <select class="select-perguntas form-select" id="sexo" aria-label="Floating label select example" name="sexo">
                            
-                            <option value="femi" name="feminino">Feminino</option>
-                            <option value="masc" name="masculino">Masculino</option>
+                            <option value="f" name="feminino">Feminino</option>
+                            <option value="m" name="masculino">Masculino</option>
                         </select>
                         <label for="floatingSelect">Sexo</label>
                     </div>
