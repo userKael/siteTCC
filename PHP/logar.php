@@ -11,14 +11,13 @@ if(isset($_POST["email"]) && !empty($_POST["email"])
     $senha= addslashes( $_POST["senha"]);
 
     if($user->login($email, $senha) == true){
-        header("Location: ../teste_imc.html");
+        $retorno = "logado";
 
     }else{
-        echo "<script>alert('Cadastro Inexistente');";
-        echo "location.href='../index.html'</script>";
+       $retorno = "Cadastro Inexistente";
     }
 
 }else{
-    header("Location: ../index.html");
+    $retorno = "Digite todos os campos";
 }
-
+echo $retorno;

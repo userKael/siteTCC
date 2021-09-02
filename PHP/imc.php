@@ -31,8 +31,8 @@ $idade = $cad->idade($data_nascimento);
 
 
 
-// if($cad->teste($data_nascimento,$altura, $peso,$sexo, $email) == true){
+if($cad->teste($data_nascimento,$altura, $peso,$sexo, $email) == true){
     
-// }else{
-//     echo "<script>alert('Ops deu algo de errado :( ');";
-// }
+}else{
+    echo "<script>alert('Ops deu algo de errado :( ');";
+}
