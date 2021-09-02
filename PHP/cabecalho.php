@@ -23,7 +23,7 @@
                                     </svg></button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="./perfil_do_usuario.php">PERFIL</a></li>
-                                    <li><a class="dropdown-item" href="./login.html">ENTRAR</a></li>
+                                    <li><a class="dropdown-item" href="./login.php">ENTRAR</a></li>
                                     <!-- <li><a class="dropdown-item" href="#">SAIR</a></li> -->
                                 </ul>
                             </div>
