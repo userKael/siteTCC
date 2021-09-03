@@ -61,7 +61,7 @@ function login2() {
 
             if (msg == "logado") {
 
-                location.href = "./teste_imc.html";
+                location.href = "./teste_imc.php";
 
             } else {
                 $("#resposta-login").html(msg);

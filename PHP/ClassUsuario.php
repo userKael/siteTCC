@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 class Usuario
 {
@@ -24,6 +25,7 @@ class Usuario
             return false;
         }
     }
+    
 
     public function teste($data_nascimento, $altura, $peso, $sexo, $email)
     {
@@ -50,6 +52,7 @@ class Usuario
             return $retorno;
         }
     }
+
 
     public function idade($data_nascimento)
     {

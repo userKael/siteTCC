@@ -41,7 +41,7 @@
         <div class="text-center">
 
             <?php
-            if (!isset($_SESSION['documento'])) {
+            if (!isset($_SESSION['email'])) {
 
             ?>
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" id="bt-inicio" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar teste</button>
@@ -50,7 +50,7 @@
             } else {
 
             ?>
-                <a href="./teste_imc.html"><button class="btn btn-primary" type="button" id="bt-inicio">Iniciar teste</button></a>
+                <a href="./teste_imc.php"><button class="btn btn-primary" type="button" id="bt-inicio">Iniciar teste</button></a>
 
             <?php
 

@@ -1,6 +1,6 @@
 <?php 
 
-session_start();
+
 
 $banco = 'guder_saude';
 $usuario = 'root';
