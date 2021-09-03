@@ -101,7 +101,7 @@
         <nav class="navbar bottom navbar-light bg-light">
             <div class="container-fluid">
                 <p style="padding-top: 10px;">© 2021 Guder Saúde - Todos os direitos reservados</p>
-                <a class="nav-link" href="./documentacao.html">Documentação</a>
+                <a class="nav-link" href="./documentacao.php">Documentação</a>
             </div>
         </nav>
     </footer>
