@@ -23,7 +23,14 @@
                                 </svg></button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="./perfil_do_usuario.php">PERFIL</a></li>
-                                <li><a class="dropdown-item" href="./login.php">ENTRAR</a></li>
+                                <?php
+                                if (!isset($_SESSION['email'])) {
+                                ?>
+                                    <li><a class="dropdown-item" href="./login.php">ENTRAR</a></li>
+
+                                <?php
+                                }else{
+                                ?>
                                 <li>
                                     <form action="./PHP/deslogar.php" method="post">
                                         <a class="dropdown-item">
@@ -35,6 +42,9 @@
                                     </form>
 
                                 </li>
+                                <?php 
+                                }
+                                ?>
                             </ul>
                         </div>
 
