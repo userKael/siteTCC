@@ -1,3 +1,5 @@
+<?php session_start()?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -235,12 +237,17 @@
 
         </h6>
         <h3>
-            Semana 16/08->02/09 v03
+            Semana 26/08->02/09 v03
         </h3>
         <h6>
             Tela de teste do Biotipo feita; <br> Tela teste de imc feita; <br> Back-end de login com session feita; <br> Texto introdutivo temporario feito; <br> 3 perguntas do questionario incrementada; <br> Inicio do sistema de teste, com os dados de
             IMC já indo para o banco de dados; <br> Houve nescidade de modificar o banco de dados, dividindo a tabela 'dados_teste', em duas tabelas 'teste' e 'result_teste' ;
-
+        </h6>
+        <h3>
+            Semana 03/08->09/09 v03
+        </h3>
+        <h6>
+            
         </h6>
 
     </div>
@@ -250,7 +257,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <p style="padding-top: 10px;">© 2021 Guder Saúde - Todos os direitos reservados</p>
-                <a class="nav-link" href="./index.html">Voltar</a>
+                <a class="nav-link" href="./index.php">Voltar</a>
             </div>
         </nav>
     </footer>
