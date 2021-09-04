@@ -179,3 +179,23 @@ h1 {
 #historico_usuario h5 {
     color: #06386b;
 }
+
+input[type='file'] {
+    display: none;
+}
+
+#img-foto {
+    border: 3px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#img-foto:hover {
+    background-color: #76818c;
+    border: 3px solid #111;
+}
+
+#bt-foto {
+    margin-top: 10px;
+}

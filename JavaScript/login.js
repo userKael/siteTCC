@@ -73,7 +73,7 @@ function login2() {
     .fail(function() {
 
 
-        $("##resposta-login").html("Erro desconhecido");
+        $("#resposta-login").html("Erro desconhecido");
 
     })
     return false;
