@@ -1,13 +1,13 @@
-<?php session_start()?>
+<?php session_start() ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include './PHP/head.php'?>
+<?php include './PHP/head.php' ?>
 <title>GUDER SAUDE - DOCUMENTAÇÃO</title>
 
 <body id="corpo">
-   <?php include './PHP/cabecalho.php'?>
+    <?php include './PHP/cabecalho.php' ?>
 
     <div id="integrantes">
         <div class="container">
@@ -144,12 +144,12 @@
 
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
@@ -167,12 +167,12 @@
 
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
@@ -208,10 +208,14 @@
                 contato_cadastro varchar(30) not null,	
                 foreign key (contato_cadastro) references cadastro(email)
                 );
+
+                create table img_perfil(
+                id int not null primary key auto_increment,
+                imagem varchar(40) not null,
+                contato_cadastro varchar(30) not null unique,	
+                foreign key (contato_cadastro) references cadastro(email)
+                );
                 
-                insert into cadastro values ('kael@kael','123','kael');
-                insert into teste values ('1','80','1.70','2003/11/08','m',curdate(),'kael@kael'); 
-                insert into result_teste values ('1','ideal','ectomorfo', 'kael@kael');
 
             </textarea>
         </div>
@@ -247,7 +251,8 @@
             Semana 03/08->09/09 v03
         </h3>
         <h6>
-            
+            Criação da tabela 'img_perfil' no banco de dados, para armazenamento da foto de perfil <br>Sistema crud na para a foto de perfil realizado <br>
+
         </h6>
 
     </div>
