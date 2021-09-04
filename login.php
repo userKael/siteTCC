@@ -10,7 +10,7 @@
     <div class="div-login">
         <div class="shadow p-3 mb-5 bg-light  border border-primary rounded-3" id="div-login-bot">
             <div class="logo-position">
-                <img src="./IMGs/logo.png" alt="logo">
+                <img src="./IMGs/logo.png" alt="logo" class="logo-cad ">
             </div>
             <div id="input-label">
                 <form action="" method="post" id="logar">
