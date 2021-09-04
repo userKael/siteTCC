@@ -6,10 +6,7 @@ if (!isset($_SESSION['email'])) {
 } else {
 
 
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -99,9 +96,9 @@ if (!isset($_SESSION['email'])) {
                     <div class="div-per form-floating mb-3">
                         <select class="select-perguntas form-select" id="rotinas" aria-label="Floating label select example" name="rotina_exercicios">
                       
-                            <option value="reco" name="reco">Recorrente</option>
                             <option value="mode" name="mode">Moderada</option>
                             <option value="sede" name="sede">Sedentaria</option>
+                            <option value="reco" name="int">Intensa</option>
                         </select>
                         <label for="floatingSelect">Rotinas de exercícios</label>
                     </div>

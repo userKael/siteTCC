@@ -4,7 +4,6 @@ session_start();
 class Usuario
 {
 
-
     public function login($email, $senha)
     {
 
@@ -27,7 +26,7 @@ class Usuario
     }
     
 
-    public function teste($data_nascimento, $altura, $peso, $sexo, $email)
+    public function bd_teste($data_nascimento, $altura, $peso, $sexo, $email)
     {
 
         global $con;
@@ -65,4 +64,6 @@ class Usuario
         
         return $idade;
     }
+
+
 }
