@@ -251,7 +251,7 @@
             Semana 03/08->09/09 v03
         </h3>
         <h6>
-            Criação da tabela 'img_perfil' no banco de dados, para armazenamento da foto de perfil <br>Sistema crud na para a foto de perfil realizado <br>
+            Criação da tabela 'img_perfil' no banco de dados, para armazenamento da foto de perfil <br>Sistema crud na para a foto de perfil realizado <br> Estilização da tela de somatotipos feita<br>
 
         </h6>
 

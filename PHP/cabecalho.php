@@ -10,7 +10,7 @@
                         <a class="nav-link" aria-current="page" href="./index.php" id="color-a">TESTE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" id="color-b">CADA BIOTIPO</a>
+                        <a class="nav-link" aria-current="page" href="./cada_somatotipo.php" id="color-b">CADA SOMATOTIPO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#" id="color-c">DICAS SOBRE EXERCÍCIOS</a>
@@ -67,7 +67,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="./index.php">TESTE</a></li>
-                    <li><a class="dropdown-item" href="#">CADA BIOTIPO</a></li>
+                    <li><a class="dropdown-item" href="./cada_somatotipo.php">CADA SOMATOTIPO</a></li>
                     <li><a class="dropdown-item" href="#">DICAS SOBRE EXERCÍCIO</a></li>
                     <li>
                         <hr class="dropdown-divider">
