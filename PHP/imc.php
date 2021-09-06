@@ -42,7 +42,15 @@ if (
             }elseif($idade>=14 && $idade<=15){
 
                 echo $imc->im2($result,$sexo);
-                   
+
+            }elseif($idade>=16 && $idade<= 64){
+
+                echo $imc->im3($result,$rotina_exer);
+
+            }elseif($idade>65){
+
+                echo $imc->im4($result,$rotina_exer);
+
             }
 
         } 

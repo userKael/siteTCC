@@ -112,7 +112,7 @@ if (!isset($_SESSION['email'])) {
 
                                 <option value="mode" name="mode">Moderada</option>
                                 <option value="sede" name="sede">Sedentaria</option>
-                                <option value="reco" name="int">Intensa</option>
+                                <option value="inte" name="int">Intensa</option>
                             </select>
                             <label for="floatingSelect">Rotinas de exercícios</label>
                         </div>
