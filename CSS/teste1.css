@@ -41,6 +41,14 @@
     background-color: #ccc;
 }
 
+.card {
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #ccc;
+}
+
 .div-perguntas-imc.col {
     width: 415px;
     height: 510px;

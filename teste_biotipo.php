@@ -68,7 +68,7 @@ if (!isset($_SESSION['email'])) {
         <div class="container" style="margin-top: 90px;">
             <div class="row row-cols-3" style="--bs-gutter-x: 7.5rem;">
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" onclick="pergunta('div-card1','flexRadioDefault1')" id="div-card1">
                         <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Opção 1.</p>
@@ -81,11 +81,11 @@ if (!isset($_SESSION['email'])) {
 
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" onclick="pergunta('div-card2','flexRadioDefault2')" id="div-card2">
                         <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Opção 2.</p>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="meso">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="meso">
                             <label class="form-check-label" for="flexRadioDefault1">
                             
                           </label>
@@ -94,11 +94,11 @@ if (!isset($_SESSION['email'])) {
 
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" onclick="pergunta('div-card3','flexRadioDefault3')"  id="div-card3">
                         <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Opção3.</p>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="endo">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="endo">
                             <label class="form-check-label" for="flexRadioDefault1">
                         </label>
 
