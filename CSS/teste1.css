@@ -33,9 +33,17 @@
     margin-right: 15%;
 }
 
+.p-pointer {
+    cursor: pointer;
+}
+
+.p-pointer:hover {
+    background-color: #ccc;
+}
+
 .div-perguntas-imc.col {
     width: 415px;
-    height: 490px;
+    height: 510px;
     margin-top: 50px;
     margin-bottom: 100px;
     padding: 20px 40px 20px 20px;
@@ -76,4 +84,9 @@
     margin: auto;
     margin-right: 25%;
     margin-bottom: 13%;
+}
+
+#Resposta-imc {
+    color: red;
+    margin-top: 10px;
 }

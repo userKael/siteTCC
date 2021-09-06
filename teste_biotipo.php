@@ -1,17 +1,28 @@
+<?php 
+session_start();
+
+if (!isset($_SESSION['email'])) {
+    header("location: index.php");
+} else {
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/teste.css">
-    <link rel="stylesheet" href="./CSS/estilo.css">
-    <link rel="stylesheet" href="./CSS/responsive.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <title>Document</title>
+<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/estilo.css">
+        <link rel="stylesheet" href="./CSS/teste1.css">
+        <link rel="stylesheet" href="./CSS/responsive.css">
+        <script src="./JavaScript/scriptmain.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+         
 </head>
+<title>GUDER SAÚDE - TESTE SOMATOTIPO</title>
 
 <body id="corpo">
     <div class="shadow-none p-3 mb-5 bg-light rounded" id="progresso-div">
@@ -110,16 +121,16 @@
                         <br>
                         <ul class='list-group mt-4 mb-4'>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta1" value="1"> Que preciso "Engordar"</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li1','input1')" id="li1">
+                                <label class="p-pointer"><input type="radio" name="pergunta1" value="1" class="p-pointer" id="input1"> Que preciso "Engordar"</label>
                             </li>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta1" value="2">  Que preciso "Emagrecer"</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li2','input2')" id="li2">
+                                <label class="p-pointer"><input type="radio" name="pergunta1" value="2" class="p-pointer" id="input2">  Que preciso "Emagrecer"</label>
                             </li>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta1" value="3">  Que eu estava bem</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li3','input3')"  id="li3">
+                                <label class="p-pointer"><input type="radio" name="pergunta1" value="3" class="p-pointer" id="input3">  Que eu estava bem</label>
                             </li>
                         </ul>
                     </li>
@@ -130,16 +141,16 @@
                         <br>
                         <ul class='list-group mt-4 mb-4'>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta2" value="1" > Lento</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li4','input4')" id="li4">
+                                <label class="p-pointer"><input type="radio" name="pergunta2" value="1" class="p-pointer" id="input4"> Lento</label>
                             </li>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta2" value="2" > Normal</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li5','input5')" id="li5">
+                                <label class="p-pointer"><input type="radio" name="pergunta2" value="2" class="p-pointer" id="input5"> Normal</label>
                             </li>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta2" value="3" > Rápido</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li6','input6')"  id="li6">
+                                <label class="p-pointer"><input type="radio" name="pergunta2" value="3" class="p-pointer" id="input6"> Rapido</label>
                             </li>
                         </ul>
                     </li>
@@ -150,21 +161,21 @@
                         <br>
                         <ul class='list-group mt-4 mb-4'>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta3" value="1" > Armazenar gordura</label>
+                          
+                           <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li7','input7')" id="li7">
+                                <label class="p-pointer"><input type="radio" name="pergunta3" value="1" class="p-pointer" id="input7"> Armazenar gordura      </label>
                             </li>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta3" value="2" > Sempre ficar magro</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li8','input8')"  id="li8">
+                                <label class="p-pointer"><input type="radio" name="pergunta3" value="3" class="p-pointer" id="input8"> Sempre ficar magro     </label>
                             </li>
 
-                            <li class="answer list-group-item list-group-item">
-                                <label><input type="radio" name="pergunta3" value="3" > Ficar magro e musculoso</label>
+                            <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li9','input9')"  id="li9">
+                                <label class="p-pointer"><input type="radio" name="pergunta3" value="3" class="p-pointer" id="input9"> Ficar magro e musculoso</label>
                             </li>
                         </ul>
                     </li>
                 </ul>
-
 
                 <div class="div-btn">
                     <button type="submit" class="btn-proximo" id="btn-prox">Finalizar</button>
@@ -172,13 +183,14 @@
 
             </div>
         </div>
-
-
     </form>
 
-
-
-
 </body>
-
 </html>
+
+
+
+
+
+<?php 
+}

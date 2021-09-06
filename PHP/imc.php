@@ -1,5 +1,7 @@
 <?php
 
+
+
 if (
     isset($_POST["data_nascimento"]) && !empty($_POST["data_nascimento"])
     && isset($_POST["altura"]) && !empty($_POST["altura"])
@@ -23,51 +25,70 @@ if (
     $rotina_exer = addslashes(filter_input(INPUT_POST, 'rotina_exercicios'));
     $idade = $cad->idade($data_nascimento);
 
-    if ($peso < 299)
+    if($altura <= 2.40)
     {
-        if ($idade < 12) 
+        if ($peso < 299)
         {
-            echo "<script>alert('Desculpe, A idade minima é de 12 Anos :(');";
-            echo "location.href='../teste_imc.php'</script>";
-
-        } 
-        elseif ($cad->bd_teste($data_nascimento, $altura, $peso, $sexo, $email) == true) 
-        {
-            $result = $peso / ($altura * $altura);
-
-            if($idade>=12 && $idade<=13)
+            if ($idade < 12) 
             {
-               echo $imc->imc1($result,$sexo);
-
-            }elseif($idade>=14 && $idade<=15){
-
-                echo $imc->im2($result,$sexo);
-
-            }elseif($idade>=16 && $idade<= 64){
-
-                echo $imc->im3($result,$rotina_exer);
-
-            }elseif($idade>65){
-
-                echo $imc->im4($result,$rotina_exer);
-
+                echo "A idade mínima para o teste é de 12 anos!";
+                // echo "<script>alert('Desculpe, A idade minima é de 12 Anos :(');";
+                // echo "location.href='../teste_imc.php'</script>";
+    
+            } 
+            elseif ($cad->bd_teste($data_nascimento, $altura, $peso, $sexo, $email) == true) 
+            {
+                $result = $peso / ($altura * $altura);
+    
+                if($idade>=12 && $idade<=13)
+                {
+                    $_SESSION['imc'] = $imc->imc1($result,$sexo);
+                    echo "feito";
+    
+                }
+                elseif($idade>=14 && $idade<=15)
+                {
+                    $_SESSION['imc'] = $imc->im2($result,$sexo);
+                    echo "feito";
+    
+                }
+                elseif($idade>=16 && $idade<= 64)
+                {
+                    $_SESSION['imc'] =  $imc->im3($result,$rotina_exer);
+                    echo "feito";
+    
+                }
+                elseif($idade>65)
+                {
+                    $_SESSION['imc'] = $imc->im4($result,$rotina_exer);
+                    echo "feito";
+    
+                }
+    
+            } 
+            else 
+            {
+                echo "Deu algo de errado";
+                // echo "<script>alert('Ops deu algo de errado :( ');";
+                // echo "location.href='../teste_imc.php'</script>";
             }
-
-        } 
+        }
         else 
         {
-            echo "<script>alert('Ops deu algo de errado :( ');";
-            echo "location.href='../teste_imc.php'</script>";
+            echo "O peso deve ser menor que 300kg";
+            // echo "<script>alert('O peso deve ser menor que 300 :( ');";
+            // echo "location.href='../teste_imc.php'</script>";
         }
-    }
-    else 
+
+    }else
     {
-        echo "<script>alert('O peso deve ser menor que 300 :( ');";
-        echo "location.href='../teste_imc.php'</script>";
+        echo "Altura máxima é de 2.40m";
     }
+  
 } 
 else 
 {
-    echo "<script>alert('Digite todos os campos');";
-    echo "location.href='../teste_imc.php'</script>";
+    echo "Preencha todos os campos!";
+    // echo "<script>alert('Digite todos os campos');";
+    // echo "location.href='../teste_imc.php'</script>";
 }

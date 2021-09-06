@@ -17,8 +17,9 @@ if (!isset($_SESSION['email'])) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./CSS/estilo.css">
-        <link rel="stylesheet" href="./CSS/teste.css">
+        <link rel="stylesheet" href="./CSS/teste1.css">
         <link rel="stylesheet" href="./CSS/responsive.css">
+        <script src="./JavaScript/scriptmain.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
@@ -82,7 +83,7 @@ if (!isset($_SESSION['email'])) {
         <div class="container">
             <div class="row row-cols-1 row-cols-md-4">
                 <div class="div-perguntas-imc col">
-                    <form action="./PHP/imc.php" method="post">
+                    <form action="./PHP/imc.php" method="post" id="form-imc">
                         <div class="div-per form-floating mb-3">
                             <input type="date" class="input-perguntas form-control" id="nascimento" placeholder="name@example.com" name="data_nascimento">
                             <label for="floatingInput">Data de nascimento</label>
@@ -90,12 +91,13 @@ if (!isset($_SESSION['email'])) {
 
                         <div class="div-per form-floating mb-3">
                             <input type="text" class="input-perguntas form-control" id="altura" placeholder="1.40" name="altura">
-                            <label for="floatingInput">Altura:</label>
+                            <label for="floatingInput">Altura em M:</label>
                         </div>
 
                         <div class="div-per form-floating mb-3">
                             <input type="text" class="input-perguntas form-control" id="peso" placeholder="70" name="peso">
-                            <label for="floatingInput">Peso:</label>
+                            <label for="floatingInput">Peso em Kg:</label>
+
                         </div>
 
                         <div class="div-per form-floating mb-3">
@@ -118,7 +120,11 @@ if (!isset($_SESSION['email'])) {
                         </div>
 
                         <div class="div-btn">
-                            <button type="submit" class="btn-proximo" id="btn-prox">Próximo</button>
+                            <button type="button" class="btn-proximo" id="btn-prox" onclick="teste_imc()">Próximo</button>
+
+                            <p id="Resposta-imc">
+
+                            </p>
                         </div>
 
                     </form>
