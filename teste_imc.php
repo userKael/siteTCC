@@ -17,7 +17,7 @@ if (!isset($_SESSION['email'])) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./CSS/estilo.css">
-        <link rel="stylesheet" href="./CSS/teste1.css">
+        <link rel="stylesheet" href="./CSS/teste.css">
         <link rel="stylesheet" href="./CSS/responsive.css">
         <script src="./JavaScript/scriptmain.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -53,6 +53,15 @@ if (!isset($_SESSION['email'])) {
                     <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
                 </div>
             </header>
+        </div>
+        <div class="titulo-somatotipo">
+            <a href="./index.php">
+                <button type="button" class="btn btn-outline-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z" />
+                    </svg>
+                </button>
+            </a>
         </div>
 
         <div class="titulo-somatotipo">
@@ -134,6 +143,8 @@ if (!isset($_SESSION['email'])) {
                 <div id="div-img-imc" class="col">
                     <img src="./IMGs/Imagem_imc.jpg" alt="" width="190%">
                 </div>
+
+
 
             </div>
         </div>
