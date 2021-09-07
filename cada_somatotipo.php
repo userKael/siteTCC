@@ -3,9 +3,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include './PHP/head.php' ?>
-<link rel="stylesheet" href="./CSS/cada_biotipo.css">
-<title>GUDER SAUDE - TESTE</title>
+
+<head>
+    <?php include './PHP/head.php' ?>
+    <link rel="stylesheet" href="./CSS/cada_biotip.css">
+    <title>GUDER SAUDE - TESTE</title>
+</head>
 
 <body id="corpo">
     <?php include './PHP/cabecalho.php' ?>

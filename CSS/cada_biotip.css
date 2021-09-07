@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
-
-body{
+body {
     font-family: "Roboto", sans-serif;
 }
 
-h1{
+h1 {
     font-family: 'Roboto', sans-serif;
     color: #06386b;
     padding-top: 130px;
     padding-bottom: 15px;
     font-size: 60px;
-
 }
 
-.content{
+.content {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -23,8 +21,6 @@ h1{
     position: relative;
     left: 10%;
     top: 10px;
-    
-    
 }
 
 .card {
@@ -33,65 +29,52 @@ h1{
     height: 40vh;
     margin: 20px;
     border: 3px solid blue;
-   
-    
 }
-
 
 .titulobiotipo {
     padding: 40px;
     padding-top: 20px;
-  
 }
 
 .partebaixo {
     padding: 10px;
-   
 }
 
 .titulobiotipo {
     color: #424286;
-    
 }
 
 .partebaixo {
     color: #424286;
-    
 }
 
-h1{
+h1 {
     justify-content: center;
     padding: 20px;
     align-items: center;
     display: flex;
-    color:#424286 ;
-
+    color: #424286;
 }
 
-
-.titulo h4{
+.titulo h4 {
     color: #424286;
     justify-content: center;
     display: flex;
     padding: 20px;
-
 }
 
-.subtitulo p{
-    color:#424286;
+.subtitulo p {
+    color: #424286;
     justify-content: center;
     display: flex;
     font-size: 20px;
     padding: 20px;
-    margin-top:10px;
+    margin-top: 10px;
     margin-right: 250px;
     margin-left: 300px;
-    
-
-
 }
 
-.content2{
+.content2 {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -103,7 +86,7 @@ h1{
     top: 10px;
 }
 
-.card2{
+.card2 {
     background: white;
     border-radius: 15px;
     height: 40vh;
@@ -111,15 +94,6 @@ h1{
     border: 3px solid #198754;
 }
 
-
 h2.title2 {
     color: #198754;
 }
-
-
-
-
-
-
-
-

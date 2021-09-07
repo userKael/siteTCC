@@ -1,10 +1,13 @@
-<?php session_start();?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include './PHP/head.php'?>
-<title> Guder Saúde - Login</title>
+<head>
+    <?php include './PHP/head.php' ?>
+    <title> Guder Saúde - Login</title>
+</head>
+
 
 <body class="gradiente">
     <div class="div-login">

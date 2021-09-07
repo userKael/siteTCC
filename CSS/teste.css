@@ -37,11 +37,15 @@
     cursor: pointer;
 }
 
+.l {
+    width: 100%;
+}
+
 .p-pointer:hover {
     background-color: #ccc;
 }
 
-.card {
+.col .card {
     cursor: pointer;
     overflow: hidden;
     -moz-transition: all 0.3s;
@@ -49,8 +53,13 @@
     transition: all 0.3;
 }
 
-.card:hover {
-    background-color: #ccc;
+.form-check-input {
+    margin-left: 50%;
+    border-radius: -50px;
+}
+
+.col .card:hover {
+    /* background-color: #ccc; */
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

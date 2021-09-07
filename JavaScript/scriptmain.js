@@ -79,12 +79,16 @@ function teste_imc() {
 
 function pergunta(id, id2) {
 
+    var i = 0;
+
     let li = document.getElementById(id);
     let input = document.getElementById(id2);
 
     li.addEventListener('click', () => {
         input.click();
     });
+
+
 
 
 }

@@ -3,8 +3,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include './PHP/head.php' ?>
-<title>GUDER SAUDE - DOCUMENTAÇÃO</title>
+<head>
+    <?php include './PHP/head.php' ?>
+    <title>GUDER SAUDE - DOCUMENTAÇÃO</title>
+</head>
+
 
 <body id="corpo">
     <?php include './PHP/cabecalho.php' ?>
