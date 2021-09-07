@@ -8,7 +8,6 @@
     <title>GUDER SAUDE - DOCUMENTAÇÃO</title>
 </head>
 
-
 <body id="corpo">
     <?php include './PHP/cabecalho.php' ?>
 
@@ -143,8 +142,6 @@
 
                     </div>
                 </div>
-
-
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -259,8 +256,6 @@
         </h6>
 
     </div>
-
-
     <footer id="rodape">
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
@@ -271,5 +266,4 @@
     </footer>
 
 </body>
-
 </html>

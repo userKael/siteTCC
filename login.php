@@ -8,7 +8,6 @@
     <title> Guder Saúde - Login</title>
 </head>
 
-
 <body class="gradiente">
     <div class="div-login">
         <div class="shadow p-3 mb-5 bg-light  border border-primary rounded-3" id="div-login-bot">
@@ -42,8 +41,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>

@@ -2,8 +2,6 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
-
 <head>
     <?php include './PHP/head.php' ?>
     <link rel="stylesheet" href="./CSS/cada_biotip.css">
@@ -81,15 +79,5 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>

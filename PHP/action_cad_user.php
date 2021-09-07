@@ -2,7 +2,6 @@
 
 include './conexaobd.php';
 
-
 if(isset($_POST["email"]) && !empty($_POST["email"]) 
 && isset($_POST["senha"]) && !empty($_POST["senha"])
 && isset($_POST["nome"])  && !empty($_POST["nome"])){
@@ -35,15 +34,11 @@ if(isset($_POST["email"]) && !empty($_POST["email"])
     catch(PDOException $erro)
     {
         $retorno = "Erro " .$erro->getMessage();
-    }
-  
-    
+    }  
 }else{
     
     $retorno = "Digite todos os campos";
 
 }
-
-
 echo $retorno;
 ?>

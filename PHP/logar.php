@@ -14,10 +14,10 @@ if(isset($_POST["email"]) && !empty($_POST["email"])
         $retorno = "logado";
 
     }else{
-       $retorno = "Cadastro Inexistente";
+       $retorno = "Email ou senha incorretos!";
     }
 
 }else{
-    $retorno = "Digite todos os campos";
+    $retorno = "Digite todos os campos!";
 }
 echo $retorno;

@@ -1,13 +1,9 @@
 <?php session_start();
 
-
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
 } else {
-
-
 ?>
-
     <!DOCTYPE html>
     <html lang="pt-br">
 
@@ -37,7 +33,6 @@ if (!isset($_SESSION['email'])) {
             });
         </script>
         <title>GUDER SAUDE - TESTE</title>
-
     </head>
 
     <body id="corpo">
@@ -87,7 +82,6 @@ if (!isset($_SESSION['email'])) {
                 </div>
             </div>
         </div>
-
 
         <div class="container">
             <div class="row row-cols-1 row-cols-md-4">
@@ -143,14 +137,9 @@ if (!isset($_SESSION['email'])) {
                 <div id="div-img-imc" class="col">
                     <img src="./IMGs/Imagem_imc.jpg" alt="" width="190%">
                 </div>
-
-
-
             </div>
         </div>
-
     </body>
-
     </html>
 <?php
 }

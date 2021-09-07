@@ -5,7 +5,6 @@ if (!isset($_SESSION['email'])) {
     header("location: index.php");
 } else {
 ?>
-
     <!DOCTYPE html>
     <html lang="pt-br">
 
@@ -14,7 +13,6 @@ if (!isset($_SESSION['email'])) {
         <title>GUDER SAÚDE - TESTE SOMATOTIPO</title>
 
     </head>
-
 
     <body id="corpo">
         <div class="shadow-none p-3 mb-5 bg-light rounded" id="progresso-div">
@@ -35,7 +33,6 @@ if (!isset($_SESSION['email'])) {
             </h1>
             <hr>
         </div>
-
         <div class="container">
             <div class="row">
                 <div class="col " id="div-txt-ex">
@@ -178,9 +175,6 @@ if (!isset($_SESSION['email'])) {
         </form>
 
     </body>
-
     </html>
-
-
 <?php
 }

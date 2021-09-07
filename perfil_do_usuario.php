@@ -14,14 +14,10 @@ if (!isset($_SESSION['email'])) {
 
     <!DOCTYPE html>
     <html lang="pt-br">
-    
-
     <head>
         <?php include './PHP/head.php' ?>
         <title>GUDER SAUDE - PERFIL</title>
     </head>
-
-
 
     <body id="corpo">
 

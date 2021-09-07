@@ -52,7 +52,6 @@ class Usuario
         }
     }
 
-
     public function idade($data_nascimento)
     {
         list($ano, $mes, $dia) = explode('-', $data_nascimento);

@@ -1,11 +1,10 @@
 <?php session_start(); ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <?php include './PHP/head.php' ?>
+<?php include './PHP/head.php'?>
     <title>GUDER SAUDE - TESTE</title>
 </head>
 
@@ -48,41 +47,40 @@
             }
             ?>
 
-
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
 
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div class="div-login">
-                        <div class="logo-position">
-                            <img src="./IMGs/logo.png" alt="logo" id="logo-login">
-                        </div>
-                        <div id="input-label">
-                            <form action="" method="POST" id="logar">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="email" placeholder="Email@exemple.com" name="email">
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha">
-                                    <label for="senha">Senha</label>
-                                </div>
-                                <p class="text-center" id="txt-cad">
-                                    Ei! É novo aqui? <a href="./cadastro.html"> Cadastre-se</a>
-                                </p>
 
-                                <div class="text-center" id="bt-position">
-                                    <button type="button" id="bt-entrar" class="btn btn-primary" onclick="login2()">ENTRAR</button>
-                                    <p style="color: red; margin-top: 20px;" id="resposta-login" class="text-center">
-
-                                    </p>
-                                </div>
-
-                            </form>
-                        </div>
+                    <div class="logo-position">
+                        <img src="./IMGs/logo.png" alt="logo" id="logo-login">
                     </div>
+                    <div id="input-label">
+                        <form action="" method="POST" id="logar">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email@exemple.com" name="email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha">
+                                <label for="senha">Senha</label>
+                            </div>
+                            <p class="text-center" id="txt-cad">
+                                Ei! É novo aqui? <a href="./cadastro.html"> Cadastre-se</a>
+                            </p>
+
+                            <div class="text-center" id="bt-position">
+                                <button type="button" id="bt-entrar" class="btn btn-primary" onclick="login2()">ENTRAR</button>
+                                <p style="color: red; margin-top: 20px;" id="resposta-login" class="text-center">
+
+                                </p>
+                            </div>
+
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -96,7 +94,6 @@
             </div>
         </nav>
     </footer>
-
 
 </body>
 
