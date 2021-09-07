@@ -87,58 +87,65 @@
                     </div>
                 </div>
                 <div class="carousel-item ">
+                    <img src="./IMGs/login.png" class="d-block w-100" alt="LOGIN ">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black;">3- LOGIN2 </h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
                     <img src="./IMGs/Cadastro.png" class="d-block w-100" alt="CADASTRO">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">3- CADASTRO </h5>
+                        <h5 style="color: black;">4- CADASTRO </h5>
 
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Dicas_exercicio.png" class="d-block w-100" alt="DICAS DE EXERCÍCIO">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">4- DICAS DE EXERCÍCIO </h5>
+                        <h5 style="color: black;">5- DICAS DE EXERCÍCIO </h5>
 
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Cada_biotipo.png" class="d-block w-100" alt="SOBRE CADA BIOTIPO">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">5- SOBRE CADA BIOTIPO </h5>
+                        <h5 style="color: black;">6- SOBRE CADA BIOTIPO </h5>
 
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Perfil_usuario.png" class="d-block w-100" alt=".PERFIL DO USUARIO.">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">6- PERFIL DO USUARIO </h5>
+                        <h5 style="color: black;">7- PERFIL DO USUARIO </h5>
 
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Sobre_nos.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">7- SOBRE NÓS </h5>
+                        <h5 style="color: black;">8- SOBRE NÓS </h5>
 
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/teste_biotipo.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">8- Teste-Somatotipo </h5>
+                        <h5 style="color: black;">9- Teste-Somatotipo </h5>
 
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Teste_imc.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">9- Teste-IMC </h5>
+                        <h5 style="color: black;">10- Teste-IMC </h5>
 
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/teste_resultado.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">10- Resultado-Teste</h5>
+                        <h5 style="color: black;">12- Resultado-Teste</h5>
 
                     </div>
                 </div>
