@@ -14,16 +14,21 @@
 
 
     <div id="titulo">
-        <h1 class="text-center">Você Realmente se Conhece?</h1>
+        <h1 class="text-center">Você realmente se conhece?</h1>
         <div id="div-txt-intro">
             <div class="shadow p-3 mb-5 bg-light border-2 border border-success" style="border-radius: 1.5rem;">
                 <h5 id="txt-intro">
-                    Texto introdutivo sobre a proposta do site///
+                    Texto introdutivo sobre a proposta do site
                 </h5>
                 <p id="txt-intro">
-                    Sabe quando você para e pensa "Cara, porque eu engordo quando como uma bala, e meu primo Zezinho come um bolo inteiro e não muda" <br> é, o Zezinho pode ter um somatotipo atual de um ectomorfo, e você um azarado endomorfo, mas... O
+                    <!-- Sabe quando você para e pensa "Cara, porque eu engordo quando como uma bala, e meu primo Zezinho come um bolo inteiro e não muda" <br> é, o Zezinho pode ter um somatotipo atual de um ectomorfo, e você um azarado endomorfo, mas... O
                     que isso tem a ver com a minha bala? Para sua resposta, que tal de iniciar nosso teste, é rápido e muito fácil, ao seu término poderemos responder sua pergunta, e claro a do Zezinho também :)<br> Além de saber a resposta, você saberá
-                    um pouco mais sobre seu corpo, pois mais conhecimento sempre é bom ;)
+                    um pouco mais sobre seu corpo, pois mais conhecimento sempre é bom ;) -->
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium fuga velit mollitia magnam nemo veniam debitis ut eius obcaecati, animi atque nisi voluptatum incidunt impedit reiciendis? Harum eius commodi aliquid!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores explicabo corporis, hic assumenda saepe porro. Molestiae non iusto eius! Laborum rerum eius similique accusamus voluptas dolorum sint deleniti culpa!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam saepe earum voluptas laudantium, sint omnis nam magni eligendi beatae minus at nemo, commodi illum? Magni id placeat labore hic natus!
+
                 </p>
             </div>
         </div>

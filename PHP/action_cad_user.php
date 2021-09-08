@@ -8,9 +8,9 @@ if (
     && isset($_POST["nome"])  && !empty($_POST["nome"])
 ) {
 
-    $email = addslashes($_POST["email"]);
-    $senha = addslashes($_POST["senha"]);
-    $nome = addslashes($_POST["nome"]);
+    $email = addslashes(filter_input(INPUT_POST, 'email'));
+    $senha = addslashes(filter_input(INPUT_POST, 'senha'));
+    $nome = addslashes(filter_input(INPUT_POST, 'nome'));
 
     $comando = $con->prepare("SELECT * FROM img_perfil WHERE contato_cadastro = ?");
     $comando->bindParam(1, $email);
@@ -42,11 +42,9 @@ if (
     {
         $retorno = "Email já cadastrado";
     }
-
 } 
 else 
 {
-
     $retorno = "Digite todos os campos";
 }
 echo $retorno;
