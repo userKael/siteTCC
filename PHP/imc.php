@@ -69,15 +69,11 @@ if (
             else 
             {
                 echo "Deu algo de errado";
-                // echo "<script>alert('Ops deu algo de errado :( ');";
-                // echo "location.href='../teste_imc.php'</script>";
             }
         }
         else 
         {
             echo "O peso deve ser menor que 300kg";
-            // echo "<script>alert('O peso deve ser menor que 300 :( ');";
-            // echo "location.href='../teste_imc.php'</script>";
         }
 
     }else
@@ -89,6 +85,4 @@ if (
 else 
 {
     echo "Preencha todos os campos!";
-    // echo "<script>alert('Digite todos os campos');";
-    // echo "location.href='../teste_imc.php'</script>";
 }
