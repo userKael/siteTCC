@@ -1,7 +1,5 @@
 <?php
 
-
-
 if (
     isset($_POST["data_nascimento"]) && !empty($_POST["data_nascimento"])
     && isset($_POST["altura"]) && !empty($_POST["altura"])
@@ -32,9 +30,6 @@ if (
             if ($idade < 12) 
             {
                 echo "A idade mínima para o teste é de 12 anos!";
-                // echo "<script>alert('Desculpe, A idade minima é de 12 Anos :(');";
-                // echo "location.href='../teste_imc.php'</script>";
-    
             } 
             elseif ($cad->bd_teste($data_nascimento, $altura, $peso, $sexo, $email) == true) 
             {
