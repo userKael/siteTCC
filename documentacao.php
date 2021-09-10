@@ -188,42 +188,43 @@
             <h1 class="text-center">Estrutura do banco</h1>
             <label for="exampleFormControlTextarea1" class="form-label"></label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
-                create database guder_saude;
-                use guder_saude;
-                
-                create table cadastro(
-                email varchar(30) not null primary key,
-                senha varchar(15) not null,
-                nome varchar(40) not null
-                );
-                
-                create table teste(
-                id int not null primary key auto_increment,
-                peso decimal(3,1) not null,		
-                altura decimal(3,2) not null,		
-                data_nascimento date not null, 		
-                sexo enum ('f', 'm') not null, 		
-                data_teste	date not null, 			
-                contato_cadastro varchar(30) not null,	
-                foreign key (contato_cadastro) references cadastro(email)
-                );
-                
-                create table result_teste(
-                id int not null primary key auto_increment,
-                imc	enum  ('abaixo','ideal','sobre peso','obsidade I', 'obsidade II', 'obesidade III') not null,	
-                biotipo	enum('endomorfo', 'mesomorfo', 'ectomorfo') not null,
-                contato_cadastro varchar(30) not null,	
-                foreign key (contato_cadastro) references cadastro(email)
-                );
+            create database guder_saude;
+            use guder_saude;
 
-                create table img_perfil(
-                id int not null primary key auto_increment,
-                imagem varchar(40) not null,
-                contato_cadastro varchar(30) not null unique,	
-                foreign key (contato_cadastro) references cadastro(email)
-                );
-                
+            create table cadastro(
+            email varchar(30) not null primary key,
+            senha varchar(15) not null,
+            nome varchar(40) not null
+            );
 
+            create table teste(
+            id int not null primary key auto_increment,
+            peso decimal(3,1) not null,		
+            altura decimal(3,2) not null,		
+            data_nascimento date not null, 		
+            sexo enum ('f', 'm') not null, 		
+            data_teste	date not null, 			
+            contato_cadastro varchar(30) not null,	
+            foreign key (contato_cadastro) references cadastro(email) on update cascade
+            );
+
+            create table result_teste(
+            id int not null primary key auto_increment,
+            imc	enum  ('abaixo','ideal','sobre peso','obsidade I', 'obsidade II', 'obesidade III') not null,	
+            biotipo	enum('endomorfo', 'mesomorfo', 'ectomorfo') not null,
+            contato_cadastro varchar(30) not null,	
+            foreign key (contato_cadastro) references cadastro(email) on update cascade
+            );
+
+
+            create table img_perfil(
+            id int not null primary key auto_increment,
+            imagem varchar(40) not null,
+            contato_cadastro varchar(30) not null unique,	
+            foreign key (contato_cadastro) references cadastro(email) on update cascade
+            );
+
+                
             </textarea>
         </div>
     </div>
@@ -255,11 +256,17 @@
             IMC já indo para o banco de dados; <br> Houve nescidade de modificar o banco de dados, dividindo a tabela 'dados_teste', em duas tabelas 'teste' e 'result_teste' ;
         </h6>
         <h3>
-            Semana 03/08->09/09 v03
+            Semana 03/09->09/09 v04
         </h3>
         <h6>
             Criação da tabela 'img_perfil' no banco de dados, para armazenamento da foto de perfil <br>Sistema crud na para a foto de perfil realizado <br> Estilização da tela de somatotipos feita<br>
 
+        </h6>
+        <h3>
+            Semana 10/09->16/09 v05
+        </h3>
+        <h6>
+            Inclusão nos campos com chave estrangeira 'on update cascade';<br> Crud de imagens agora feita com Jquery; <br> Dados do usario agora podem ser alterados;
         </h6>
 
     </div>
@@ -273,4 +280,5 @@
     </footer>
 
 </body>
+
 </html>

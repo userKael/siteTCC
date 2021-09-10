@@ -17,6 +17,7 @@ class Usuario
         if ($comando->rowCount() > 0) {
             $dado = $comando->fetch();
             $_SESSION['email'] = $dado['email'];
+            $_SESSION['senha'] = $dado['senha'];
             $_SESSION['nome'] = $dado['nome'];
 
             return true;

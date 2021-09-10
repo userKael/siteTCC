@@ -149,6 +149,7 @@ h1 {
     height: 80vh;
     text-align: justify;
     margin-left: 9%;
+    overflow: auto;
 }
 
 #historico_usuario {
@@ -156,6 +157,7 @@ h1 {
     width: 60vw;
     height: 80vh;
     float: right;
+    overflow: auto;
 }
 
 #div_historico {
@@ -198,4 +200,16 @@ input[type='file'] {
 
 #bt-foto {
     margin-top: 10px;
+}
+
+.dados {
+    padding-top: 15px;
+}
+
+#bt-alterar {
+    margin-left: 20%;
+}
+
+.bt-crud {
+    margin-top: 10%;
 }
