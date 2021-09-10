@@ -7,7 +7,7 @@ function arquivo_file() {
         arquivo.click();
     });
 
-    arquivo.addEventListener('change', (event) => {
+    arquivo.addEventListener('change', () => {
 
         let reader = new FileReader();
 
