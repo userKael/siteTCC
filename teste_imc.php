@@ -2,17 +2,19 @@
 
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
+    
 } else {
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
+       
 
     <head>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./CSS/estilo1.css">
+        <link rel="stylesheet" href="./CSS/estilo.css">
         <link rel="stylesheet" href="./CSS/teste.css">
         <link rel="stylesheet" href="./CSS/responsive.css">
         <script src="./JavaScript/scriptmain.js"></script>
@@ -36,7 +38,9 @@ if (!isset($_SESSION['email'])) {
     </head>
 
     <body id="corpo">
+  
 
+  
         <div class="shadow-none p-3 mb-5 bg-light rounded" id="progresso-div">
             <header id="progresso-header">
                 <div class="position-relative m-4">
@@ -65,6 +69,7 @@ if (!isset($_SESSION['email'])) {
             </h1>
             <hr>
         </div>
+      
 
         <div class="container">
             <div class="row">

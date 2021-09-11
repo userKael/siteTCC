@@ -245,7 +245,7 @@
             Semana 19/08->25/08 v02
         </h3>
         <h6>
-            Tela do perfil do usuário feita;<br> Back-end do cadastro realizado;<br>Campo 'idade' da tabela 'dados_teste', alterado para 'data_nascimento'<br>Campo 'altura' da tabela 'dados_teste', teve o tipo mudado para 'decimal(2,2)'
+            Tela do perfil do usuário feita;<br> Back-end do cadastro realizado;<br>Campo 'idade' da tabela 'dados_teste', alterado para 'data_nascimento';<br>Campo 'altura' da tabela 'dados_teste', teve o tipo mudado para 'decimal(2,2)';
 
         </h6>
         <h3>
@@ -253,20 +253,20 @@
         </h3>
         <h6>
             Tela de teste do Biotipo feita; <br> Tela teste de imc feita; <br> Back-end de login com session feita; <br> Texto introdutivo temporario feito; <br> 3 perguntas do questionario incrementada; <br> Inicio do sistema de teste, com os dados de
-            IMC já indo para o banco de dados; <br> Houve nescidade de modificar o banco de dados, dividindo a tabela 'dados_teste', em duas tabelas 'teste' e 'result_teste' ;
+            IMC já indo para o banco de dados; <br> Houve nescidade de modificar o banco de dados, dividindo a tabela 'dados_teste', em duas tabelas 'teste' e 'result_teste';
         </h6>
         <h3>
             Semana 03/09->09/09 v04
         </h3>
         <h6>
-            Criação da tabela 'img_perfil' no banco de dados, para armazenamento da foto de perfil <br>Sistema crud na para a foto de perfil realizado <br> Estilização da tela de somatotipos feita<br>
+            Criação da tabela 'img_perfil' no banco de dados, para armazenamento da foto de perfil; <br>Sistema crud na para a foto de perfil realizado; <br> Estilização da tela de somatotipos feita;<br>
 
         </h6>
         <h3>
             Semana 10/09->16/09 v05
         </h3>
         <h6>
-            Inclusão nos campos com chave estrangeira 'on update cascade';<br> Crud de imagens agora feita com Jquery; <br> Dados do usario agora podem ser alterados;
+            Inclusão nos campos com chave estrangeira 'on update cascade';<br> Crud de imagens agora feita com Jquery; <br> Dados do usario agora podem ser alterados e excluidos;<br>
         </h6>
 
     </div>

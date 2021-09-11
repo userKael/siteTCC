@@ -105,7 +105,9 @@ h1 {
 }
 
 #sprints {
+    text-justify: auto;
     padding-left: 35%;
+    padding-right: 30%;
 }
 
 

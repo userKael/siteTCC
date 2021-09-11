@@ -1,6 +1,7 @@
 <?php
 
 include './conexaobd.php';
+session_start();
 
 if (
     isset($_POST["email"]) && !empty($_POST["email"])
@@ -12,7 +13,7 @@ if (
     $senha = addslashes(filter_input(INPUT_POST, 'senha'));
     $nome = addslashes(filter_input(INPUT_POST, 'nome'));
 
-    $comando = $con->prepare("SELECT * FROM img_perfil WHERE contato_cadastro = ?");
+    $comando = $con->prepare("SELECT * FROM cadastro WHERE email= ?");
     $comando->bindParam(1, $email);
     $comando->execute();
 
@@ -29,8 +30,9 @@ if (
                 $email = null;
                 $senha = null;
                 $nome = null;
-
+                
                 $retorno = "Cadastro Realizado com Sucesso!";
+
             } else {
                 $retorno = "falha ao cadastrar";
             }
