@@ -3,7 +3,7 @@
 
 <head>
 <?php include './PHP/head.php'?>
-<link rel="stylesheet" href="./CSS/result.css">
+<link rel="stylesheet" href="./CSS/result1.css">
 </head>
 
 <body id="corpo">
@@ -35,16 +35,16 @@
         <hr>
     </div>
 
-    <div class="container">
+    <div class="container" id="div-container">
         <div class="row row-cols-2 border border-primary" id="div-result">
 
-            <div class="col" id="coluna1">
+            <div class="col" id="div-col-1">
                 <h3>IMC:</h3>
                 <h3>Somatotipo:</h3>
                 <hr style=" margin-top: 25px; margin-bottom: 30px;">
             </div>
 
-            <div class="col" id="div-col-2">
+            <div class="col" id="div-col-2" style="background-color: gray;">
 
             </div>
 
