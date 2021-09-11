@@ -60,8 +60,8 @@ if (!isset($_SESSION['email'])) {
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card1','flexRadioDefault1')" id="div-card1">
                             <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">Opção 1.</p>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="ecto">
+                                <p class="card-text text-center">ecto 1.</p>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="1">
                                 <label class="form-check-label" for="flexRadioDefault1">
 
                                 </label>
@@ -73,8 +73,8 @@ if (!isset($_SESSION['email'])) {
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card2','flexRadioDefault2')" id="div-card2">
                             <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">Opção 2.</p>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="meso">
+                                <p class="card-text text-center">meso 2.</p>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
                                 <label class="form-check-label" for="flexRadioDefault1">
 
                                 </label>
@@ -86,8 +86,8 @@ if (!isset($_SESSION['email'])) {
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card3','flexRadioDefault3')" id="div-card3">
                             <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">Opção3.</p>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="endo">
+                                <p class="card-text text-center">endo 3.</p>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="3">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                 </label>
 
@@ -115,11 +115,11 @@ if (!isset($_SESSION['email'])) {
                                 </li>
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li2','input2')" id="li2">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta1" value="2" class="p-pointer" id="input2"> Que preciso "Emagrecer"</label>
+                                    <label class="p-pointer l"><input type="radio" name="pergunta1" value="3" class="p-pointer" id="input2"> Que preciso "Emagrecer"</label>
                                 </li>
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li3','input3')" id="li3">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta1" value="3" class="p-pointer" id="input3"> Que eu estava bem</label>
+                                    <label class="p-pointer l"><input type="radio" name="pergunta1" value="2" class="p-pointer" id="input3"> Que eu estava bem</label>
                                 </li>
                             </ul>
                         </li>
@@ -131,7 +131,7 @@ if (!isset($_SESSION['email'])) {
                             <ul class='list-group mt-4 mb-4'>
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li4','input4')" id="li4">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta2" value="1" class="p-pointer" id="input4"> Lento</label>
+                                    <label class="p-pointer l"><input type="radio" name="pergunta2" value="3" class="p-pointer" id="input4"> Lento</label>
                                 </li>
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li5','input5')" id="li5">
@@ -139,7 +139,7 @@ if (!isset($_SESSION['email'])) {
                                 </li>
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li6','input6')" id="li6">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta2" value="3" class="p-pointer" id="input6"> Rapido</label>
+                                    <label class="p-pointer l"><input type="radio" name="pergunta2" value="1" class="p-pointer" id="input6"> Rapido</label>
                                 </li>
                             </ul>
                         </li>
@@ -152,15 +152,15 @@ if (!isset($_SESSION['email'])) {
 
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li7','input7')" id="li7">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta3" value="1" class="p-pointer" id="input7"> Armazenar gordura </label>
+                                    <label class="p-pointer l"><input type="radio" name="pergunta3" value="3" class="p-pointer" id="input7"> Armazenar gordura </label>
                                 </li>
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li8','input8')" id="li8">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta3" value="3" class="p-pointer" id="input8"> Sempre ficar magro </label>
+                                    <label class="p-pointer l"><input type="radio" name="pergunta3" value="1" class="p-pointer" id="input8"> Sempre ficar magro </label>
                                 </li>
 
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li9','input9')" id="li9">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta3" value="3" class="p-pointer" id="input9"> Ficar magro e musculoso</label>
+                                    <label class="p-pointer l"><input type="radio" name="pergunta3" value="2" class="p-pointer" id="input9"> Ficar magro e musculoso</label>
                                 </li>
                             </ul>
                         </li>
