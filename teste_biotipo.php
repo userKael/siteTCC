@@ -53,7 +53,7 @@ if (!isset($_SESSION['email'])) {
             </div>
         </div>
 
-        <form action="" method="post">
+        <form action="./PHP/somatotipo.php" method="post">
             <div class="container" style="margin-top: 90px;">
                 <div class="row row-cols-3" style="--bs-gutter-x: 7.5rem;">
                     <div class="col">
@@ -61,7 +61,7 @@ if (!isset($_SESSION['email'])) {
                             <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">ecto 1.</p>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="2">
                                 <label class="form-check-label" for="flexRadioDefault1">
 
                                 </label>
@@ -74,7 +74,7 @@ if (!isset($_SESSION['email'])) {
                             <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">meso 2.</p>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="3">
                                 <label class="form-check-label" for="flexRadioDefault1">
 
                                 </label>
@@ -87,7 +87,7 @@ if (!isset($_SESSION['email'])) {
                             <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">endo 3.</p>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="4">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                 </label>
 
@@ -165,6 +165,27 @@ if (!isset($_SESSION['email'])) {
                             </ul>
                         </li>
                     </ul>
+                    <!-- <ul class="q-items list-group mt-4 mb-4 ?>">
+                        <li class="q-field list-group-item">
+                            <strong>4. Meus ombros são: </strong>
+                            <br>
+                            <ul class='list-group mt-4 mb-4'>
+
+
+                                <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li10','input10')" id="li10">
+                                    <label class="p-pointer l"><input type="radio" name="pergunta4" value="3" class="p-pointer" id="input10"> Mais estreitos que meus quadris </label>
+                                </li>
+
+                                <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li11','input11')" id="li11">
+                                    <label class="p-pointer l"><input type="radio" name="pergunta4" value="2" class="p-pointer" id="input11"> Do mesmo tamanho que meus quadris </label>
+                                </li>
+
+                                <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li12','input12')" id="li12">
+                                    <label class="p-pointer l"><input type="radio" name="pergunta4" value="1" class="p-pointer" id="input12"> Mais largos que meus quadris</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul> -->
 
                     <div class="div-btn">
                         <button type="submit" class="btn-proximo" id="btn-prox">Finalizar</button>
