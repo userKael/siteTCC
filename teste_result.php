@@ -34,6 +34,7 @@
             <div class="col" id="div-col-1">
                 <h3 class="H3-col-1">IMC:</h3>
                 <h3 class="H3-col-1">Somatotipo:</h3>
+                <hr style=" margin-top: 25px; margin-bottom: 30px;">
             </div>
 
             <div class="col" id="div-col-2">
