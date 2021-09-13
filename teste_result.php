@@ -3,7 +3,7 @@
 
 <head>
     <?php include './PHP/head.php' ?>
-    <link rel="stylesheet" href="./CSS/result.css">
+    <link rel="stylesheet" href="./CSS/result1.css">
 </head>
 
 <body id="corpo">
@@ -34,21 +34,24 @@
             <div class="col" id="div-col-1">
                 <h3 class="H3-col-1">IMC:</h3>
                 <h3 class="H3-col-1">Somatotipo:</h3>
-                <hr style=" margin-top: 25px; margin-bottom: 30px;">
             </div>
 
-            <div class="col" id="div-col-2" style="background-color: gray;">
-
+            <div class="col" id="div-col-2">
+                <div id="div-img-bio" style="background-color: gray;">
+                    <h5 id="img-bio">Imagem</h5>
+                </div>
             </div>
 
             <div class="col" id="div-col-3">
                 <div class="border border-dark" id="relaciona-result">
-                   <h5 style="margin: 10px;">Relacionando resultados</h5>
+                    <h5 style="margin: 10px;">Relacionando resultados</h5>
                 </div>
             </div>
 
             <div class="col" id="div-col-4">
-
+                  <div class="border border-dark" id="recomenda-result">
+                    <h4 style="margin: 10px;">Recomendações</h4>
+                  </div>
             </div>
 
         </div>
