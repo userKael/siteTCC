@@ -53,7 +53,7 @@ if (!isset($_SESSION['email'])) {
             </div>
         </div>
 
-        <form action="./PHP/somatotipo.php" method="post">
+        <form action="" method="post" id="form-somatotipo">
             <div class="container" style="margin-top: 90px;">
                 <div class="row row-cols-3" style="--bs-gutter-x: 7.5rem;">
                     <div class="col">
@@ -99,7 +99,7 @@ if (!isset($_SESSION['email'])) {
                 </div>
             </div>
             <div id="div-perguntas">
-                <div class="shadow p-3 mb-5 bg-light rounded">
+                <div class="shadow p-3 mb-5 bg-light rounded" style="height: 54rem;">
                     <h4 class="text-center">
                         Questionario
                     </h4>
@@ -187,15 +187,23 @@ if (!isset($_SESSION['email'])) {
                         </li>
                     </ul> -->
 
-                    <div class="div-btn">
-                        <button type="submit" class="btn-proximo" id="btn-prox">Finalizar</button>
-                    </div>
 
+                    <div class="div-btn">
+                        <button type="button" class="btn-proximo" id="btn-prox" onclick="teste_somatotipo()">Finalizar</button>
+
+                    </div>
+                    <div style="padding-top: 10px; color: red">
+                        <h5 class="text-center " id="resposta-soma">
+                          
+                        </h5>
+
+                    </div>
                 </div>
             </div>
         </form>
 
     </body>
+
     </html>
 <?php
 }

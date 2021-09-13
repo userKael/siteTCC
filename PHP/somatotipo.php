@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (
     isset($_POST["flexRadioDefault"]) && !empty($_POST["flexRadioDefault"])
     && isset($_POST["pergunta1"]) && !empty($_POST["pergunta1"])
@@ -7,12 +8,8 @@ if (
 ) {
 
     include './conexaobd.php';
-    include './ClassUsuario.php';
-    include './ClassIMC.php';
 
     $email = $_SESSION['email'];
-    $cad = new Usuario();
-    $imc = new cla_imc();
 
     $pulso = addslashes(filter_input(INPUT_POST, 'flexRadioDefault'));
     $p1 = addslashes(filter_input(INPUT_POST, 'pergunta1'));
@@ -23,18 +20,18 @@ if (
 
     if($result >= 5 && $result <=7){
 
-        echo "ectomorfo <br>";
-        echo $result;
+        $_SESSION['somatotipo'] =  "ectomorfo";
+        echo "feito";
     
     }elseif($result >=8 && $result <=10){
     
-        echo "mesomorfo <br>";
-        echo $result;
+        $_SESSION['somatotipo']  =  "mesomorfo";
+        echo "feito";
     
     }elseif ($result >=11 && $result <=13){
     
-        echo "endomorfo <br>";
-        echo $result;
+        $_SESSION['somatotipo']  =  "endomorfo";
+        echo "feito";
     
     }
  
