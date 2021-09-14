@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,14 +34,36 @@
         <div class="row row-cols-2 border border-primary" id="div-result">
 
             <div class="col" id="div-col-1">
-                <h3 class="H3-col-1">IMC:</h3>
-                <h3 class="H3-col-1">Somatotipo:</h3>
+                <h3 class="H3-col-1">IMC: <?php echo $_SESSION['imc'] ?></h3>
+                <h3 class="H3-col-1">Somatotipo: <?php echo $_SESSION['somatotipo'] ?></h3>
                 <hr style=" margin-top: 25px; margin-bottom: 30px;">
             </div>
 
             <div class="col" id="div-col-2">
-                <div id="div-img-bio" style="background-color: gray;">
-                    <h5 id="img-bio">Imagem</h5>
+                <div id="div-img-bio">
+                    <?php
+                    if ($_SESSION['somatotipo'] == "Ectomorfo") {
+
+
+                    ?>
+                        <img src="./IMGs/ectomorfo.jpg" id="img-bio">
+
+                    <?php
+                    } elseif ($_SESSION['somatotipo'] == "Mesomorfo") {
+
+                    ?>
+                        <img src="./IMGs/mesomorfo.jpg" id="img-bio">
+
+                    <?php
+                    } else {
+
+
+                    ?>
+                        <img src="./IMGs/endomorfo.jpg" id="img-bio">
+                    <?php
+                    }
+                    ?>
+
                 </div>
             </div>
 
@@ -50,15 +74,15 @@
             </div>
 
             <div class="col" id="div-col-4">
-                  <div class="border border-dark" id="recomenda-result">
+                <div class="border border-dark" id="recomenda-result">
                     <h4 style="margin: 10px;">Recomendações</h4>
-                  </div>
+                </div>
             </div>
 
         </div>
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="btn-volt-pg">
-            <button class="btn btn-primary" type="button">Voltar para Home</button>
+            <a href="./index.php"> <button class="btn btn-primary" type="button">Voltar para Home</button></a>
         </div>
 
     </div>

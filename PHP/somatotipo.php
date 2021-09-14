@@ -20,17 +20,17 @@ if (
 
     if($result >= 5 && $result <=7){
 
-        $_SESSION['somatotipo'] =  "ectomorfo";
+        $_SESSION['somatotipo'] =  "Ectomorfo";
         echo "feito";
     
     }elseif($result >=8 && $result <=10){
     
-        $_SESSION['somatotipo']  =  "mesomorfo";
+        $_SESSION['somatotipo']  =  "Mesomorfo";
         echo "feito";
     
     }elseif ($result >=11 && $result <=13){
     
-        $_SESSION['somatotipo']  =  "endomorfo";
+        $_SESSION['somatotipo']  =  "Endomorfo";
         echo "feito";
     
     }
