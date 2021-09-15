@@ -5,7 +5,7 @@
 
 <head>
     <?php include './PHP/head.php' ?>
-    <link rel="stylesheet" href="./CSS/result1.css">
+    <link rel="stylesheet" href="./CSS/result.css">
 </head>
 
 <body id="corpo">
@@ -34,8 +34,8 @@
         <div class="row row-cols-2 border border-primary" id="div-result">
 
             <div class="col" id="div-col-1">
-                <h3 class="H3-col-1">IMC: <?php echo $_SESSION['imc'] ?></h3>
-                <h3 class="H3-col-1">Somatotipo: <?php echo $_SESSION['somatotipo'] ?></h3>
+                <h3 class="H3-col-1">IMC: <strong > <?php echo $_SESSION['imc'] ?></strong></h3>
+                <h3 class="H3-col-1">Somatotipo: <strong > <?php echo $_SESSION['somatotipo'] ?></strong></h3>
                 <hr style=" margin-top: 25px; margin-bottom: 30px;">
             </div>
 
@@ -43,7 +43,6 @@
                 <div id="div-img-bio">
                     <?php
                     if ($_SESSION['somatotipo'] == "Ectomorfo") {
-
 
                     ?>
                         <img src="./IMGs/ectomorfo.jpg" id="img-bio">
@@ -56,8 +55,6 @@
 
                     <?php
                     } else {
-
-
                     ?>
                         <img src="./IMGs/endomorfo.jpg" id="img-bio">
                     <?php

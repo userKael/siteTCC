@@ -200,28 +200,17 @@ if (!isset($_SESSION['email'])) {
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
                                         <form action="" method="post" id="form-deleta">
-                        
+
                                             <button type="button" class="btn btn-primary" onclick="apaga_dados()">Sim</button>
 
                                         </form>
-
-
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </form>
-
-
-
-
             </div>
-
         </div>
     </body>
 

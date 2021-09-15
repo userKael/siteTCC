@@ -8,40 +8,40 @@ class cla_imc
         if($sexo == 'f'){
             if($imc < 15.3){
 
-                $retorno = "Está abaixo do peso ideal";
+                $retorno = "Está abaixo do peso ideal.";
 
             }
             elseif($imc >=15.3 && $imc <=23){
 
-                $retorno = "Está no peso ideal";
+                $retorno = "Está no peso ideal.";
 
             }elseif($imc>= 23.1 && $imc <= 27.7){
 
-                $retorno = "Está com sobrepeso";
+                $retorno = "Está com sobrepeso.";
 
             }elseif($imc>27.8){
 
-                $retorno = "Está no estágio da obesidade";
+                $retorno = "Está no estágio da obesidade.";
             }
         }
         elseif($sexo == "m")
         {
             if($imc < 14.8){
 
-                $retorno = "Está abaixo do peso ideal";
+                $retorno = "Está abaixo do peso ideal.";
 
             }
             elseif($imc >=14.9 && $imc <=21.9){
 
-                $retorno = "Está no peso ideal";
+                $retorno = "Está no peso ideal.";
 
             }elseif($imc >= 22 && $imc <= 25.9){
 
-                $retorno = "Está com sobrepeso";
+                $retorno = "Está com sobrepeso.";
 
             }elseif($imc>25.9){
 
-                $retorno = "Está no estágio da obesidade";
+                $retorno = "Está no estágio da obesidade.";
             }
 
 
@@ -58,40 +58,40 @@ class cla_imc
         if($sexo == 'f'){
             if($imc < 19.3){
 
-                $retorno = "Está abaixo do peso ideal";
+                $retorno = "Está abaixo do peso ideal.";
 
             }
             elseif($imc >=19.3 && $imc <=24.2){
 
-                $retorno = "Está no peso ideal";
+                $retorno = "Está no peso ideal.";
 
             }elseif($imc >= 24.3 && $imc <= 28.7){
 
-                $retorno = "Está com sobrepeso";
+                $retorno = "Está com sobrepeso.";
 
             }elseif($imc>28.8){
 
-                $retorno = "Está no estágio da obesidade";
+                $retorno = "Está no estágio da obesidade.";
             }
         }
         elseif($sexo == "m")
         {
             if($imc < 19.2){
 
-                $retorno = "Está abaixo do peso ideal";
+                $retorno = "Está abaixo do peso ideal.";
 
             }
             elseif($imc >=19.3 && $imc <=23.7){
 
-                $retorno = "Está no peso ideal";
+                $retorno = "Está no peso ideal.";
 
             }elseif($imc >= 23.8 && $imc <= 27.7){
 
-                $retorno = "Está com sobrepeso";
+                $retorno = "Está com sobrepeso.";
 
             }elseif($imc>27.8){
 
-                $retorno = "Está no estágio da obesidade";
+                $retorno = "Está no estágio da obesidade.";
             }
 
         }
@@ -108,35 +108,35 @@ class cla_imc
 
             if($imc <= 18.5){
                 
-                $retorno = "Está abaixo do peso";
+                $retorno = "Está abaixo do peso.";
             }
             elseif($imc >= 18.6 && $imc<= 24.9){
                 
-                $retorno = "Está no peso ideal";
+                $retorno = "Está no peso ideal.";
     
             }elseif($imc >= 25 && $imc <= 29.9){
                 
-                $retorno = "Está acima do peso ideal";
+                $retorno = "Está acima do peso ideal.";
     
             }elseif($imc >=30){
                
-                $retorno = "Está no estagio de obesidade";
+                $retorno = "Está no estagio de obesidade.";
             }
 
        }
         elseif($rotexer == "inte"){
 
             if($imc < 18.5){
-                $retorno = "Está abaixo do peso";
+                $retorno = "Está abaixo do peso.";
             }
             elseif($imc >= 18.5 && $imc <= 24.9){
-                $retorno = "Está no peso ideal, continue praticando exercicio regularmente";
+                $retorno = "Está no peso ideal, continue praticando exercícios.";
     
             }elseif($imc >= 25 && $imc <= 29.9){
-                $retorno = "Está acima do peso ideal, mas pode ser por causa dos musculos";
+                $retorno = "Está acima do peso ideal, porém pode ser por causa dos músculos.";
     
             }elseif($imc >=30){
-                $retorno = "Segundo o IMC está no estagio de obesidade, porém pela pratica constante de exercicios deve ser por causa dos musculos";
+                $retorno = "Está no estagio de obesidade, porém pode ser por causa dos músculos.";
             }
 
         }
@@ -153,15 +153,15 @@ class cla_imc
 
             if($imc <= 22){
                 
-                $retorno = "Está abaixo do peso";
+                $retorno = "Está abaixo do peso.";
             }
             elseif($imc >22 && $imc< 27){
                 
-                $retorno = "Está no peso ideal";
+                $retorno = "Está no peso ideal.";
     
             }elseif($imc >= 27){
                 
-                $retorno = "Está acima do peso ideal";
+                $retorno = "Está acima do peso ideal.";
     
             }
 
@@ -170,23 +170,21 @@ class cla_imc
 
             if($imc <= 22){
                 
-                $retorno = "Está abaixo do peso";
+                $retorno = "Está abaixo do peso.";
             }
             elseif($imc >22 && $imc< 27){
                 
-                $retorno = "Está no peso ideal, continue praticando exercicios";
+                $retorno = "Está no peso ideal, continue praticando exercicios.";
     
             }elseif($imc >= 27){
                 
-                $retorno = "Está acima do peso ideal, mas pode ser por causa dos musculos";
+                $retorno = "Está acima do peso ideal, porém pode ser por causa dos músculos.";
     
             }
 
         }
 
         return $retorno;
-
-
     }
 
 }

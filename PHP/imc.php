@@ -37,25 +37,25 @@ if (
     
                 if($idade>=12 && $idade<=13)
                 {
-                    $_SESSION['imc'] = $imc->imc1($result,$sexo) ." ". substr($result, 0, 4)  . " kgm²" ;
+                    $_SESSION['imc'] = substr($result, 0, 4)  . " kgm². <br>" ." ". $imc->imc1($result,$sexo);
                     echo "feito";
     
                 }
                 elseif($idade>=14 && $idade<=15)
                 {
-                    $_SESSION['imc'] = $imc->im2($result,$sexo) ." ".substr($result, 0, 4) . " kgm²";
+                    $_SESSION['imc'] = substr($result, 0, 4)  . " kgm². <br>" ." ". $imc->im2($result,$sexo);
                     echo "feito";
     
                 }
                 elseif($idade>=16 && $idade<= 64)
                 {
-                    $_SESSION['imc'] =  $imc->im3($result,$rotina_exer)." ". substr($result, 0, 4) . " kgm²";
+                    $_SESSION['imc'] = substr($result, 0, 4)  . " kgm². <br>" ." ". $imc->im3($result,$rotina_exer);
                     echo "feito";
     
                 }
                 elseif($idade>65)
                 {
-                    $_SESSION['imc'] = $imc->im4($result,$rotina_exer) ." ".substr($result, 0, 4)  . " kgm²";
+                    $_SESSION['imc'] = substr($result, 0, 4)  . " kgm². <br>" ." ". $imc->im4($result,$rotina_exer);
                     echo "feito";
     
                 }

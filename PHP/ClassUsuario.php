@@ -53,6 +53,30 @@ class Usuario
         }
     }
 
+
+    public function bd_result($somatotipo, $email, $imc){
+        global $con;
+        try {
+            $comando = $con->prepare("INSERT INTO result_teste VALUES (null,?,?,?)");
+
+            $comando->bindParam(1,$imc);
+            $comando->bindParam(2,$somatotipo);
+            $comando->bindParam(3,$email);
+            $comando->execute();
+
+            if ($comando->rowCount() > 0) {
+
+                return true;
+            } else {
+                return false;
+            }
+        } catch (PDOException $erro) {
+            $retorno = "Erro " . $erro->getMessage();
+            return $retorno;
+        }
+
+    }
+
     public function idade($data_nascimento)
     {
         list($ano, $mes, $dia) = explode('-', $data_nascimento);
