@@ -111,8 +111,8 @@ if (!isset($_SESSION['email'])) {
                         <div class="div-per form-floating mb-3">
                             <select class="select-perguntas form-select" id="sexo" aria-label="Floating label select example" name="sexo">
 
-                                <option value="f" name="feminino">Feminino</option>
-                                <option value="m" name="masculino">Masculino</option>
+                                <option value="Feminino" name="feminino">Feminino</option>
+                                <option value="Masculino" name="masculino">Masculino</option>
                             </select>
                             <label for="floatingSelect">Sexo</label>
                         </div>

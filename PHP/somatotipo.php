@@ -10,6 +10,8 @@ if (
     include './conexaobd.php';
     include './ClassUsuario.php';
 
+    $cad = new Usuario();
+
     $email = $_SESSION['email'];
 
     $pulso = addslashes(filter_input(INPUT_POST, 'flexRadioDefault'));
@@ -19,23 +21,47 @@ if (
 
     $result =  $p1 + $p2 + $p3 +  $pulso;
 
-    if($result >= 5 && $result <=7){
+    if ($result >= 5 && $result <= 7) 
+    {
 
         $_SESSION['somatotipo'] =  "Ectomorfo";
-        echo "feito";
-    
-    }elseif($result >=8 && $result <=10){
-    
+
+        if ($cad->bd_result('Ectomorfo', $email, $_SESSION['imc_bd']) == true) 
+        {
+            echo "feito";
+        } 
+        else 
+        {
+            echo "Ops... Algo deu de errado";
+        }
+    } 
+    elseif ($result >= 8 && $result <= 10) 
+    {
         $_SESSION['somatotipo']  =  "Mesomorfo";
-        echo "feito";
-    
-    }elseif ($result >=11 && $result <=13){
-    
+
+        if ($cad->bd_result('Mesomorfo', $email, $_SESSION['imc_bd']) == true) 
+        {
+            echo "feito";
+        } 
+        else 
+        {
+            echo "Ops... Algo deu de errado";
+        }
+    } 
+    elseif ($result >= 11 && $result <= 13) 
+    {
+
         $_SESSION['somatotipo']  =  "Endomorfo";
-        echo "feito";
-    
+
+        if ($cad->bd_result('Endomorfo', $email, $_SESSION['imc_bd']) == true) 
+        {
+            echo "feito";
+        } 
+        else 
+        {
+            echo "Ops... Algo deu de errado";
+        }
     }
- 
 } 
 else 
 {

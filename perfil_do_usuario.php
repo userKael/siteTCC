@@ -37,7 +37,31 @@ if (!isset($_SESSION['email'])) {
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body alert-primary">
-                                Aqui ficara os Resultados e dados do 1º teste
+                                <table class="table table-bordered border-primary">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">IMC</th>
+                                            <th scope="col">SOMATÓTIPO</th>
+                                            <th scope="col">ALTURA</th>
+                                            <th scope="col">IDADE</th>
+                                            <th scope="col">KG</th>
+                                            <th scope="col">SEXO</th>
+                                            <th scope="col">DATA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><?php echo$_SESSION['imc_bd']?></td>
+                                            <td>Ectomorfo</td>
+                                            <td>1.89</td>
+                                            <td>13</td>
+                                            <td>80.0</td>
+                                            <td>Feminino</td>
+                                            <td>20/11/2021</td>
+                                           
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

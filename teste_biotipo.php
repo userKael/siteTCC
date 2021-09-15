@@ -165,29 +165,7 @@ if (!isset($_SESSION['email'])) {
                             </ul>
                         </li>
                     </ul>
-                    <!-- <ul class="q-items list-group mt-4 mb-4 ?>">
-                        <li class="q-field list-group-item">
-                            <strong>4. Meus ombros são: </strong>
-                            <br>
-                            <ul class='list-group mt-4 mb-4'>
-
-
-                                <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li10','input10')" id="li10">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta4" value="3" class="p-pointer" id="input10"> Mais estreitos que meus quadris </label>
-                                </li>
-
-                                <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li11','input11')" id="li11">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta4" value="2" class="p-pointer" id="input11"> Do mesmo tamanho que meus quadris </label>
-                                </li>
-
-                                <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li12','input12')" id="li12">
-                                    <label class="p-pointer l"><input type="radio" name="pergunta4" value="1" class="p-pointer" id="input12"> Mais largos que meus quadris</label>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul> -->
-
-
+          
                     <div class="div-btn">
                         <button type="button" class="btn-proximo" id="btn-prox" onclick="teste_somatotipo()">Finalizar</button>
 
