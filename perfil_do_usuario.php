@@ -6,10 +6,8 @@ if (!isset($_SESSION['email'])) {
     include './PHP/conexaobd.php';
     include_once './PHP/historico_user.php';
     include_once './PHP/ClassUsuario.php';
-
     $cad = new Usuario();
-
-
+    
 ?>
 
     <!DOCTYPE html>
@@ -38,10 +36,8 @@ if (!isset($_SESSION['email'])) {
                                 <?php
 
                                 for ($i = 0; $i < $testes; $i++) {
-
                                     $dado2 = $teste->fetch(PDO::FETCH_ASSOC);
                                     $dado = $result->fetch(PDO::FETCH_ASSOC);
-
                                     $idade = $cad->idade($dado2['data_nascimento']);
 
                                 ?>
@@ -84,9 +80,6 @@ if (!isset($_SESSION['email'])) {
                         ?>
                         </div>
                     </div>
-
-
-
                 <?php
                 } else {
                 ?> <div style="margin-top: inherit;">
