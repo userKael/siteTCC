@@ -190,6 +190,7 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
             create database guder_saude;
             use guder_saude;
+            drop database guder_saude;
 
             create table cadastro(
             email varchar(30) not null primary key,
@@ -199,30 +200,37 @@
 
             create table teste(
             id int not null primary key auto_increment,
-            peso decimal(3,1) not null,		
+            peso decimal(4,1) not null,		
             altura decimal(3,2) not null,		
             data_nascimento date not null, 		
-            sexo enum ('f', 'm') not null, 		
+            sexo enum ('Feminino', 'Masculino') not null, 		
             data_teste	date not null, 			
             contato_cadastro varchar(30) not null,	
-            foreign key (contato_cadastro) references cadastro(email) on update cascade
+            foreign key (contato_cadastro) references cadastro(email) 
+            on update cascade 
+            on delete cascade
             );
 
             create table result_teste(
             id int not null primary key auto_increment,
-            imc	enum  ('abaixo','ideal','sobre peso','obsidade I', 'obsidade II', 'obesidade III') not null,	
-            biotipo	enum('endomorfo', 'mesomorfo', 'ectomorfo') not null,
+            imc	varchar (100) not null,	
+            somatotipo enum('Endomorfo', 'Mesomorfo', 'Ectomorfo') not null,
             contato_cadastro varchar(30) not null,	
-            foreign key (contato_cadastro) references cadastro(email) on update cascade
+            foreign key (contato_cadastro) references cadastro(email) 
+            on update cascade
+            on delete cascade
             );
-
+        
 
             create table img_perfil(
             id int not null primary key auto_increment,
             imagem varchar(40) not null,
             contato_cadastro varchar(30) not null unique,	
-            foreign key (contato_cadastro) references cadastro(email) on update cascade
+            foreign key (contato_cadastro) references cadastro(email) 
+            on update cascade
+            on delete cascade
             );
+
 
                 
             </textarea>
@@ -266,7 +274,7 @@
             Semana 10/09->16/09 v05
         </h3>
         <h6>
-            Inclusão nos campos com chave estrangeira 'on update cascade';<br> Crud de imagens agora feita com Jquery; <br> Dados do usario agora podem ser alterados e excluidos;<br>
+            Inclusão nos campos com chave estrangeira 'on update cascade';<br> Crud de imagens agora feita com Jquery; <br> Dados do usuario agora podem ser alterados e excluidos;<br> Calculo do teste e tela de resultados, todos já funcionando;<br> Histórico de testes feito;
         </h6>
 
     </div>

@@ -7,7 +7,7 @@ if (!isset($_SESSION['email'])) {
     include_once './PHP/historico_user.php';
     include_once './PHP/ClassUsuario.php';
     $cad = new Usuario();
-    
+
 ?>
 
     <!DOCTYPE html>
@@ -79,6 +79,12 @@ if (!isset($_SESSION['email'])) {
 
                         ?>
                         </div>
+                        <form action="./teste_imc.php">
+                            <div class="vstack gap-2 col-md-5 mx-auto">
+                                <p></p>
+                                <button type="submit" class="btn btn-outline-success">Realizar novo teste</button>
+                            </div>
+                        </form>
                     </div>
                 <?php
                 } else {
