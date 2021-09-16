@@ -29,9 +29,9 @@ if (
     {
         if ($peso < 299)
         {
-            if ($idade < 12 && $idade > 119) 
+            if ($idade < 12 or $idade > 120 ) 
             {
-                echo "A idade mínima para o teste é de 12 anos!";
+                echo "A idade mínima é de 12 anos e máxima de 119!";
             } 
             elseif ($cad->bd_teste($data_nascimento, $altura, $peso, $sexo, $email) == true) 
             {
