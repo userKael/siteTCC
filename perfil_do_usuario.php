@@ -52,12 +52,12 @@ if (!isset($_SESSION['email'])) {
                                         <thead>
                                             <tr>
                                                 <th scope="col">IMC</th>
-                                                <th scope="col">SOMATÓTIPO</th>
-                                                <th scope="col">ALTURA</th>
-                                                <th scope="col">IDADE</th>
-                                                <th scope="col">KG</th>
-                                                <th scope="col">SEXO</th>
-                                                <th scope="col">DATA</th>
+                                                <th scope="col">Somatótipo</th>
+                                                <th scope="col">Altura</th>
+                                                <th scope="col">Idade</th>
+                                                <th scope="col">Kg</th>
+                                                <th scope="col">Sexo</th>
+                                                <th scope="col">Data</th>
                                             </tr>
                                         </thead>
                                         <tbody>

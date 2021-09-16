@@ -29,7 +29,7 @@ if (
     {
         if ($peso < 299)
         {
-            if ($idade < 12) 
+            if ($idade < 12 && $idade > 119) 
             {
                 echo "A idade mínima para o teste é de 12 anos!";
             } 
