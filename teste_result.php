@@ -34,7 +34,7 @@
         <div class="row row-cols-2 border border-primary" id="div-result">
 
             <div class="col" id="div-col-1">
-                <h3 class="H3-col-1">IMC: <strong > <?php echo $_SESSION['imc'] ?></strong></h3>
+                <h3 class="H3-col-1">IMC: <strong > <?php echo $_SESSION['imc_bd'] ?></strong></h3>
                 <h3 class="H3-col-1">Somatotipo: <strong > <?php echo $_SESSION['somatotipo'] ?></strong></h3>
                 <hr style=" margin-top: 25px; margin-bottom: 30px;">
             </div>

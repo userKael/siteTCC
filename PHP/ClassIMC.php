@@ -5,7 +5,7 @@ class cla_imc
 
         $retorno="";
 
-        if($sexo == 'f'){
+        if($sexo == 'Feminino'){
             if($imc < 15.3){
 
                 $retorno = "Está abaixo do peso ideal.";
@@ -24,7 +24,7 @@ class cla_imc
                 $retorno = "Está no estágio da obesidade.";
             }
         }
-        elseif($sexo == "m")
+        elseif($sexo == "Masculino")
         {
             if($imc < 14.8){
 
@@ -55,7 +55,7 @@ class cla_imc
 
         $retorno="";
 
-        if($sexo == 'f'){
+        if($sexo == 'Feminino'){
             if($imc < 19.3){
 
                 $retorno = "Está abaixo do peso ideal.";
@@ -74,7 +74,7 @@ class cla_imc
                 $retorno = "Está no estágio da obesidade.";
             }
         }
-        elseif($sexo == "m")
+        elseif($sexo == "Masculino")
         {
             if($imc < 19.2){
 

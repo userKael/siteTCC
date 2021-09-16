@@ -4,12 +4,12 @@ if (!isset($_SESSION['email'])) {
     header("location: index.php");
 } else {
     include './PHP/conexaobd.php';
+    include_once './PHP/historico_user.php';
+    include_once './PHP/ClassUsuario.php';
 
-    $email = $_SESSION['email'];
+    $cad = new Usuario();
 
-    $comando = $con->prepare("SELECT * FROM img_perfil WHERE contato_cadastro = ?");
-    $comando->bindParam(1, $email);
-    $comando->execute();
+  
 ?>
 
     <!DOCTYPE html>
@@ -28,69 +28,60 @@ if (!isset($_SESSION['email'])) {
             <div class="shadow p-3 mb-5 bg-light rounded border border-1 border-primary" id="historico_usuario">
                 <h5>Histórico</h5>
                 <hr>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                1º Teste
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body alert-primary">
-                                <table class="table table-bordered border-primary">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">IMC</th>
-                                            <th scope="col">SOMATÓTIPO</th>
-                                            <th scope="col">ALTURA</th>
-                                            <th scope="col">IDADE</th>
-                                            <th scope="col">KG</th>
-                                            <th scope="col">SEXO</th>
-                                            <th scope="col">DATA</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><?php echo$_SESSION['imc_bd']?></td>
-                                            <td>Ectomorfo</td>
-                                            <td>1.89</td>
-                                            <td>13</td>
-                                            <td>80.0</td>
-                                            <td>Feminino</td>
-                                            <td>20/11/2021</td>
-                                           
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                2º Teste
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body alert-primary">
-                                Aqui ficara os Resultados e dados do 2º teste
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                3º Teste
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body alert-primary">
-                                Aqui ficara os Resultados e dados do 3º teste
+                <?php
+
+                for ($i = 0; $i < $testes; $i++) {
+
+                    $dado2 = $teste->fetch(PDO::FETCH_ASSOC);
+                    $dado = $result->fetch(PDO::FETCH_ASSOC);
+
+                    $idade = $cad->idade($dado2['data_nascimento']);
+
+                ?>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne<?php echo $i + 1 ?>" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <?php echo $i + 1 ?>º Teste
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne<?php echo $i + 1 ?>" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body alert-primary">
+                                    <table class="table table-bordered border-primary">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">IMC</th>
+                                                <th scope="col">SOMATÓTIPO</th>
+                                                <th scope="col">ALTURA</th>
+                                                <th scope="col">IDADE</th>
+                                                <th scope="col">KG</th>
+                                                <th scope="col">SEXO</th>
+                                                <th scope="col">DATA</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><?php echo $dado['imc'] ?></td>
+                                                <td><?php echo $dado['somatotipo'] ?></td>
+                                                <td><?php echo $dado2['altura'] ?></td>
+                                                <td><?php echo $idade?></td>
+                                                <td><?php echo $dado2['peso'] ?></td>
+                                                <td><?php echo $dado2['sexo'] ?></td>
+                                                <td><?php echo $dado2['data_teste'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                <?php
+                }
+
+                ?>
+
             </div>
 
         </div>

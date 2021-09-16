@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if (
     isset($_POST["flexRadioDefault"]) && !empty($_POST["flexRadioDefault"])
     && isset($_POST["pergunta1"]) && !empty($_POST["pergunta1"])

@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if (
     isset($_POST["data_nascimento"]) && !empty($_POST["data_nascimento"])
     && isset($_POST["altura"]) && !empty($_POST["altura"])
