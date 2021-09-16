@@ -29,59 +29,82 @@ if (!isset($_SESSION['email'])) {
                 <h5>Histórico</h5>
                 <hr>
 
+                <?php if ($testes > 0) {
 
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <?php
+                ?>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <?php
 
-                            for ($i = 0; $i < $testes; $i++) {
+                                for ($i = 0; $i < $testes; $i++) {
 
-                                $dado2 = $teste->fetch(PDO::FETCH_ASSOC);
-                                $dado = $result->fetch(PDO::FETCH_ASSOC);
+                                    $dado2 = $teste->fetch(PDO::FETCH_ASSOC);
+                                    $dado = $result->fetch(PDO::FETCH_ASSOC);
 
-                                $idade = $cad->idade($dado2['data_nascimento']);
+                                    $idade = $cad->idade($dado2['data_nascimento']);
 
-                            ?>
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne<?php echo $i + 1 ?>" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <?php echo $i + 1 ?>º Teste
-                                </button>
-                        </h2>
-                        <div id="flush-collapseOne<?php echo $i + 1 ?>" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body alert-primary">
-                                <table class="table table-bordered border-primary">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">IMC</th>
-                                            <th scope="col">Somatótipo</th>
-                                            <th scope="col">Altura</th>
-                                            <th scope="col">Idade</th>
-                                            <th scope="col">Kg</th>
-                                            <th scope="col">Sexo</th>
-                                            <th scope="col">Data</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><?php echo $dado['imc'] ?></td>
-                                            <td><?php echo $dado['somatotipo'] ?></td>
-                                            <td><?php echo $dado2['altura'] ?></td>
-                                            <td><?php echo $idade ?></td>
-                                            <td><?php echo $dado2['peso'] ?></td>
-                                            <td><?php echo $dado2['sexo'] ?></td>
-                                            <td><?php echo $dado2['data_teste'] ?></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                ?>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne<?php echo $i + 1 ?>" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <?php echo $i + 1 ?>º Teste
+                                    </button>
+                            </h2>
+                            <div id="flush-collapseOne<?php echo $i + 1 ?>" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body alert-primary">
+                                    <table class="table table-bordered border-primary">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">IMC</th>
+                                                <th scope="col">Somatótipo</th>
+                                                <th scope="col">Altura</th>
+                                                <th scope="col">Idade</th>
+                                                <th scope="col">Kg</th>
+                                                <th scope="col">Sexo</th>
+                                                <th scope="col">Data</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><?php echo $dado['imc'] ?></td>
+                                                <td><?php echo $dado['somatotipo'] ?></td>
+                                                <td><?php echo $dado2['altura'] ?></td>
+                                                <td><?php echo $idade ?></td>
+                                                <td><?php echo $dado2['peso'] ?></td>
+                                                <td><?php echo $dado2['sexo'] ?></td>
+                                                <td><?php echo $dado2['data_teste'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
+
+                        <?php
+                                }
+
+                        ?>
                         </div>
-
-                    <?php
-                    }
-
-                    ?>
                     </div>
-                </div>
+
+
+
+                <?php
+                } else {
+                ?> <div style="margin-top: inherit;">
+                        <form action="./teste_imc.php">
+
+                            <div class="vstack gap-2 col-md-5 mx-auto">
+                                <h2 class="text-center">Nenhum teste Realizado ainda!</h2>
+                                <button type="submit" class="btn btn-outline-secondary">Realizar teste</button>
+                            </div>
+                        </form>
+                    </div>
+
+                <?php
+                }
+                ?>
+
+
+
 
 
             </div>
