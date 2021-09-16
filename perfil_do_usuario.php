@@ -102,13 +102,7 @@ if (!isset($_SESSION['email'])) {
                 <?php
                 }
                 ?>
-
-
-
-
-
             </div>
-
         </div>
 
         <div id="div_dados">
@@ -151,9 +145,7 @@ if (!isset($_SESSION['email'])) {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                         </form>
                     <?php
                     }
