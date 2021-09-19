@@ -1,3 +1,5 @@
+/* Index */
+
 #logo {
     width: 230px;
     padding: 10px;
@@ -11,6 +13,7 @@
     margin-top: 10px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 40px;
     width: 96%;
 }
 
@@ -32,3 +35,6 @@
 .card-body {
     height: 15rem;
 }
+
+
+/* PG Cadastros */
