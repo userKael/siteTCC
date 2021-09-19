@@ -1,2 +1,2 @@
 # siteTCC
-TCC - Site desenvolvido para conclusão de curso ETEC. Será desenvolvido um site para conhecimento corporal através do IMC e Biotipo
+TCC - Site desenvolvido para conclusão de curso ETEC. Será desenvolvido um site para conhecimento corporal através do IMC e Somatotipo
