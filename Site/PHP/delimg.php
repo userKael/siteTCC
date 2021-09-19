@@ -22,7 +22,7 @@ $destino = '../imagensUser/' . $arquivoAtual;
         if ($comando->rowCount() > 0) {
 
             echo 'Imagem excluida com sucesso!';
-            unlink('C:/xampp/htdocs/siteTCC/imagensUser/' . $imagem);
+            unlink('C:/xampp/htdocs/siteTCC/Site/imagensUser/' . $imagem);
 
         } else {
 
