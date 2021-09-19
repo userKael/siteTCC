@@ -280,6 +280,7 @@
             Semana 17/09->22/09 v06
         </h3>
         <h6>
+            Incio do sistema web; <br> Deletar cadastros do sistema web feito; <br> tabela 'text_result' criada para armazenar os textos dos resultados; <br> Sistema de resultados buscando no banco de dados realizada;
            
         </h6>
 
