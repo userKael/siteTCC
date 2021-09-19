@@ -17,7 +17,7 @@ class cla_imc
 
             }elseif($imc>= 23.1 && $imc <= 27.7){
 
-                $retorno = "Está com sobrepeso.";
+                $retorno = "Está acima do peso ideal.";
 
             }elseif($imc>27.8){
 
@@ -37,7 +37,7 @@ class cla_imc
 
             }elseif($imc >= 22 && $imc <= 25.9){
 
-                $retorno = "Está com sobrepeso.";
+                $retorno = "Está acima do peso ideal.";
 
             }elseif($imc>25.9){
 
@@ -67,7 +67,7 @@ class cla_imc
 
             }elseif($imc >= 24.3 && $imc <= 28.7){
 
-                $retorno = "Está com sobrepeso.";
+                $retorno = "Está acima do peso ideal.";
 
             }elseif($imc>28.8){
 
@@ -87,7 +87,7 @@ class cla_imc
 
             }elseif($imc >= 23.8 && $imc <= 27.7){
 
-                $retorno = "Está com sobrepeso.";
+                $retorno = "Está acima do peso ideal.";
 
             }elseif($imc>27.8){
 
@@ -108,7 +108,7 @@ class cla_imc
 
             if($imc <= 18.5){
                 
-                $retorno = "Está abaixo do peso.";
+                $retorno = "Está abaixo do peso ideal.";
             }
             elseif($imc >= 18.6 && $imc<= 24.9){
                 
@@ -120,14 +120,14 @@ class cla_imc
     
             }elseif($imc >=30){
                
-                $retorno = "Está no estagio de obesidade.";
+                $retorno = "Está no estágio da obesidade.";
             }
 
        }
         elseif($rotexer == "inte"){
 
             if($imc < 18.5){
-                $retorno = "Está abaixo do peso.";
+                $retorno = "Está abaixo do peso ideal.";
             }
             elseif($imc >= 18.5 && $imc <= 24.9){
                 $retorno = "Está no peso ideal, continue praticando exercícios.";
@@ -153,7 +153,7 @@ class cla_imc
 
             if($imc <= 22){
                 
-                $retorno = "Está abaixo do peso.";
+                $retorno = "Está abaixo do peso ideal.";
             }
             elseif($imc >22 && $imc< 27){
                 
@@ -170,7 +170,7 @@ class cla_imc
 
             if($imc <= 22){
                 
-                $retorno = "Está abaixo do peso.";
+                $retorno = "Está abaixo do peso ideal.";
             }
             elseif($imc >22 && $imc< 27){
                 

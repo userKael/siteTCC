@@ -4,7 +4,12 @@
 <html lang="pt-br">
 
 <head>
-    <?php include './PHP/head.php' ?>
+    <?php 
+    include './PHP/head.php'; 
+    include_once './PHP/ClassUsuario.php';
+    include_once './PHP/conexaobd.php';
+    $cad = new Usuario();
+    ?>
     <link rel="stylesheet" href="./CSS/result.css">
 </head>
 
@@ -66,7 +71,10 @@
 
             <div class="col" id="div-col-3">
                 <div class="border border-dark" id="relaciona-result">
-                    <h5 style="margin: 10px;">Relacionando resultados</h5>
+                    <h5 style="margin: 10px;">Relacionando resultados:</h5>
+                    <h6>
+                        <?php echo $cad->txt_result($_SESSION['imc'],$_SESSION['somatotipo']);?>
+                    </h6>
                 </div>
             </div>
 

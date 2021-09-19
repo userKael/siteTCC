@@ -77,6 +77,7 @@ class Usuario
 
     }
 
+
     public function idade($data_nascimento)
     {
         list($ano, $mes, $dia) = explode('-', $data_nascimento);
@@ -87,6 +88,99 @@ class Usuario
         $idade = floor((((($hoje - $nascimento) / 60) / 60) / 24) / 365.25);
         
         return $idade;
+    }
+
+    public function txt_result($imc,$somatotipo){
+
+        global $con;
+        $retorno = "";
+
+        if($imc == "Está abaixo do peso ideal." && $somatotipo =="Ectomorfo")
+        {
+
+            try {
+                $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 1");
+                $comando->execute();
+                $dado = $comando->fetch();
+    
+                $retorno = $dado['texto'];
+
+
+            } catch (PDOException $erro) {
+                $retorno = "Erro " . $erro->getMessage();
+                return $retorno;
+            }
+
+        }
+        elseif($imc == "Está no peso ideal." && $somatotipo =="Ectomorfo")
+        {
+            try {
+                $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 2");
+                $comando->execute();
+                $dado = $comando->fetch();
+    
+                $retorno = $dado['texto'];
+
+
+            } catch (PDOException $erro) {
+                $retorno = "Erro " . $erro->getMessage();
+                return $retorno;
+            }
+
+        }
+        elseif($imc == "Está acima do peso ideal." && $somatotipo =="Ectomorfo")
+        {
+            try {
+                $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 3");
+                $comando->execute();
+                $dado = $comando->fetch();
+    
+                $retorno = $dado['texto'];
+
+
+            } catch (PDOException $erro) {
+                $retorno = "Erro " . $erro->getMessage();
+                return $retorno;
+            }
+
+        }
+        elseif($imc == "Está no estágio da obesidade." && $somatotipo =="Ectomorfo")
+        {
+            try {
+                $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 4");
+                $comando->execute();
+                $dado = $comando->fetch();
+    
+                $retorno = $dado['texto'];
+
+
+            } catch (PDOException $erro) {
+                $retorno = "Erro " . $erro->getMessage();
+                return $retorno;
+            }
+
+        }
+        elseif($imc == "Está acima do peso ideal, porém pode ser por causa dos músculos." 
+        or $imc == "Está no estagio de obesidade, porém pode ser por causa dos músculos."
+        && $somatotipo =="Ectomorfo")
+        {
+            try {
+                $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 5");
+                $comando->execute();
+                $dado = $comando->fetch();
+    
+                $retorno = $dado['texto'];
+
+
+            } catch (PDOException $erro) {
+                $retorno = "Erro " . $erro->getMessage();
+                return $retorno;
+            }
+
+        }
+
+    return $retorno;
+
     }
 
 
