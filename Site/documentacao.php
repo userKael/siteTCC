@@ -276,6 +276,12 @@
         <h6>
             Inclusão nos campos com chave estrangeira 'on update cascade';<br> Crud de imagens agora feita com Jquery; <br> Dados do usuario agora podem ser alterados e excluidos;<br> Calculo do teste e tela de resultados, todos já funcionando;<br> Histórico de testes feito;
         </h6>
+        <h3>
+            Semana 17/09->22/09 v06
+        </h3>
+        <h6>
+           
+        </h6>
 
     </div>
     <footer id="rodape">
