@@ -21,7 +21,7 @@ if($arquivoAtual == ""){
         $dado = $comando->fetch();
         $imagem = $dado['imagem'];
     
-        unlink('C:/xampp/htdocs/siteTCC/imagensUser/' . $imagem);
+        unlink('C:/xampp/htdocs/siteTCC/Site/imagensUser/' . $imagem);
     
         $comando = $con->prepare("UPDATE img_perfil SET imagem=?  WHERE contato_cadastro = ?");
         $comando->bindParam(1, $arquivoAtual);
