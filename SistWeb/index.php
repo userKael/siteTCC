@@ -32,18 +32,24 @@
                     <div class="card-body">
                         <h5 class="card-title">Ver cadastros</h5>
                         <p class="card-text">-Ver clientes cadastrados <br> -Excluir cadastros <br> -Adicionar cadastros <br> -Ver resultados de testes</p>
-                        <a href="./cadastros.php" class="btn btn-primary">VER</a>
+                        <div class="text-center">
+                            <a href="./cadastros.php" class="btn btn-primary">VER</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
 
-                    <div class="card-body">
+                    <div class="card-body ">
                         <h5 class="card-title">Aterar textos do resultado</h5>
                         <p class="card-text">-Ver textos de resultados <br> - Alterar textos</p>
                         <br><br>
-                        <a href="#" class="btn btn-primary">VER</a>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">VER</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -53,7 +59,11 @@
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Sem ideia</a>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Sem ideia</a>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
