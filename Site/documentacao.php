@@ -186,55 +186,95 @@
     <div id="rascunhos">
         <div class="mb-3">
             <h1 class="text-center">Estrutura do banco</h1>
-            <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
-            create database guder_saude;
-            use guder_saude;
-            drop database guder_saude;
+            <form action="../BancoGuder_Saude/siteTCC - Guder_saude.sql">
+                <div class="vstack gap-2 col-md-5 mx-auto">
+                    <button type="submit" class="btn btn-outline-success">Baixar código</button>
+                </div>
+                <br>
+            </form>
 
-            create table cadastro(
-            email varchar(30) not null primary key,
-            senha varchar(15) not null,
-            nome varchar(40) not null
-            );
+            <div class="vstack gap-2 col-md-5 mx-auto">
+                <button type="submit" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver código</button>
 
-            create table teste(
-            id int not null primary key auto_increment,
-            peso decimal(4,1) not null,		
-            altura decimal(3,2) not null,		
-            data_nascimento date not null, 		
-            sexo enum ('Feminino', 'Masculino') not null, 		
-            data_teste	date not null, 			
-            contato_cadastro varchar(30) not null,	
-            foreign key (contato_cadastro) references cadastro(email) 
-            on update cascade 
-            on delete cascade
-            );
-
-            create table result_teste(
-            id int not null primary key auto_increment,
-            imc	varchar (100) not null,	
-            somatotipo enum('Endomorfo', 'Mesomorfo', 'Ectomorfo') not null,
-            contato_cadastro varchar(30) not null,	
-            foreign key (contato_cadastro) references cadastro(email) 
-            on update cascade
-            on delete cascade
-            );
-        
-
-            create table img_perfil(
-            id int not null primary key auto_increment,
-            imagem varchar(40) not null,
-            contato_cadastro varchar(30) not null unique,	
-            foreign key (contato_cadastro) references cadastro(email) 
-            on update cascade
-            on delete cascade
-            );
+            </div>
 
 
-                
-            </textarea>
+
         </div>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <textarea name="" id="" cols="20" rows="66">
+                        create database guder_saude;
+                        use guder_saude;
+                        drop database guder_saude;
+
+                        create table cadastro(
+                        email varchar(30) not null primary key,
+                        senha varchar(15) not null,
+                        nome varchar(40) not null
+                        );
+
+                        create table teste(
+                        id int not null primary key auto_increment,
+                        peso decimal(4,1) not null,
+                        altura decimal(3,2) not null,
+                        data_nascimento date not null,
+                        sexo enum ('Feminino', 'Masculino') not null,
+                        data_teste date not null,
+                        contato_cadastro varchar(30) not null,
+                        foreign key (contato_cadastro) references cadastro(email)
+                        on update cascade
+                        on delete cascade
+                        );
+
+                        create table result_teste(
+                        id int not null primary key auto_increment,
+                        imc varchar (100) not null,
+                        somatotipo enum('Endomorfo', 'Mesomorfo', 'Ectomorfo') not null,
+                        contato_cadastro varchar(30) not null,
+                        foreign key (contato_cadastro) references cadastro(email)
+                        on update cascade
+                        on delete cascade
+                        );
+
+                        create table img_perfil(
+                        id int not null primary key auto_increment,
+                        imagem varchar(40) not null,
+                        contato_cadastro varchar(30) not null unique,
+                        foreign key (contato_cadastro) references cadastro(email)
+                        on update cascade
+                        on delete cascade
+                        );
+
+                        create table text_result(
+                        id int primary key,
+                        texto text not null
+                        );
+
+                        insert into text_result values ('1','ectomorfo - IMC baixo');
+                        insert into text_result values ('2','ectomorfo - IMC normal');
+                        insert into text_result values ('3','ectomorfo - IMC sobrepeso');
+                        insert into text_result values ('4','ectomorfo - IMC obesidade');
+                        insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos');
+
+                        insert into text_result values ('6','mesomorfo - IMC baixo');
+                        insert into text_result values ('7','mesomorfo - IMC normal');
+                        insert into text_result values ('8','mesomorfo - IMC sobrepeso');
+                        insert into text_result values ('9','mesomorfo - IMC obesidade');
+                        insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos');
+
+                        insert into text_result values ('11','endomorfo - IMC baixo');
+                        insert into text_result values ('12','endomorfo - IMC normal');
+                        insert into text_result values ('13','endomorfo - IMC sobrepeso');
+                        insert into text_result values ('14','endomorfo - IMC obesidade');
+                        insert into text_result values ('15','endomorfo - IMC sobrepeso musculos');                         
+
+                        </textarea>
+
+            </div>
+        </div>
+
+    </div>
     </div>
 
     <div id="titulo" style="margin-top: 30px;">
@@ -281,7 +321,7 @@
         </h3>
         <h6>
             Incio do sistema web; <br> Deletar cadastros do sistema web feito; <br> tabela 'text_result' criada para armazenar os textos dos resultados; <br> Sistema de resultados buscando no banco de dados realizada;
-           
+
         </h6>
 
     </div>
