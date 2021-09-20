@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style1.css">
     <title></title>
 </head>
 
@@ -44,10 +44,10 @@
 
                     <div class="card-body ">
                         <h5 class="card-title">Aterar textos do resultado</h5>
-                        <p class="card-text">-Ver textos de resultados <br> - Alterar textos</p>
-                        <br><br>
+                        <p class="card-text">-Ver textos de resultados <br> - Alterar textos <br> - Alterar recomendações</p>
+                        <br>
                         <div class="text-center">
-                            <a href="#" class="btn btn-primary">VER</a>
+                            <a href="./textos.php" class="btn btn-primary">VER</a>
                         </div>
 
                     </div>

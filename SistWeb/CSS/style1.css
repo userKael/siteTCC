@@ -27,7 +27,7 @@
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: 5px;
     width: 90px;
     margin-bottom: 20px;
 }
@@ -38,3 +38,10 @@
 
 
 /* PG Cadastros */
+
+
+/* PG Textos */
+
+#div-cads textarea {
+    padding: 10px;
+}
