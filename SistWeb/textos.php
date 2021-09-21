@@ -18,7 +18,6 @@ include './PHP/conexaobd.php';
 try {
     $comando = $con->prepare("SELECT * FROM text_result");
     $comando->execute();
-
     $linhas = $comando->rowCount();
 } catch (PDOException $erro) {
     $retorno = "Erro " . $erro->getMessage();
@@ -53,12 +52,15 @@ try {
 
             <div class="container" id="div-cads">
                 <div class="row">
+                    <div class="alert alert-success" role="alert">
+                    <h4 class="text-center">ID: <?php echo $dado['id'] ?> </h4>
+                    </div>   
                     <div class="col">
-                        <div class="shadow p-3 mb-5 bg-light rounded" style="width: 50pc;margin-left: 12%;">
-                            <h4 class="text-center">ID: <?php echo $dado['id'] ?> </h4>
+                        <div class="shadow p-3 mb-5 bg-light rounded" style="width: 40pc;">
+                        <h4 class="text-center"> Relacionamento</h4>
                             <div class="text-center">
                                 <input type="hidden" name="id" value=" <?php echo $dado['id'] ?>">
-                                <textarea name="texto" cols="90" rows="10">
+                                <textarea name="texto" cols="80" rows="10">
 <?php echo $dado['texto'] ?>  
                         </textarea>
                             </div>
@@ -68,9 +70,28 @@ try {
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="shadow p-3 mb-5 bg-light rounded" style="width: 28pc;">
+                        <h4 class="text-center"> Recomendações</h4>
+                            <div class="text-center">
+                                <input type="hidden" name="id" value=" <?php echo $dado['id'] ?>">
+                                <textarea name="recomenda" cols="54" rows="10">
+<?php echo $dado['recomenda'] ?>  
+                        </textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success" onclick="altera_txt()">Alterar</button>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </form>
+
+
+
 
 
     <?php

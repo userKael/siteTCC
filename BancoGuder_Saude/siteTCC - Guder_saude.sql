@@ -42,30 +42,32 @@ on delete cascade
 
 create table text_result(
 id int primary key,
-texto text not null
+texto text not null,
+recomenda text not null
 );
 
-insert into text_result values ('1','ectomorfo - IMC baixo');
-insert into text_result values ('2','ectomorfo - IMC normal');
-insert into text_result values ('3','ectomorfo - IMC sobrepeso');
-insert into text_result values ('4','ectomorfo - IMC obesidade');
-insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos');
+insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
+insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');
+insert into text_result values ('3','ectomorfo - IMC sobrepeso','ectomorfo - IMC sobrepeso r');
+insert into text_result values ('4','ectomorfo - IMC obesidade','ectomorfo - IMC obesidade r');
+insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos','ectomorfo - IMC sobrepeso musculos r');
 
-insert into text_result values ('6','mesomorfo - IMC baixo');
-insert into text_result values ('7','mesomorfo - IMC normal');
-insert into text_result values ('8','mesomorfo - IMC sobrepeso');
-insert into text_result values ('9','mesomorfo - IMC obesidade');
-insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos');
+insert into text_result values ('6','mesomorfo - IMC baixo','mesomorfo - IMC baixo r');
+insert into text_result values ('7','mesomorfo - IMC normal','mesomorfo - IMC normal r');
+insert into text_result values ('8','mesomorfo - IMC sobrepeso','mesomorfo - IMC sobrepeso r');
+insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesidade r');
+insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos','mesomorfo - IMC sobrepeso musculos r');
 
-insert into text_result values ('11','endomorfo - IMC baixo');
-insert into text_result values ('12','endomorfo - IMC normal');
-insert into text_result values ('13','endomorfo - IMC sobrepeso');
-insert into text_result values ('14','endomorfo - IMC obesidade');
-insert into text_result values ('15','endomorfo - IMC sobrepeso musculos');
+insert into text_result values ('11','endomorfo - IMC baixo','endomorfo - IMC baixo r');
+insert into text_result values ('12','endomorfo - IMC normal','endomorfo - IMC normal r');
+insert into text_result values ('13','endomorfo - IMC sobrepeso','endomorfo - IMC sobrepeso r');
+insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IMC obesidade r');
+insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
 
 
 
 /* testes */
+select * from text_result;
 
 update text_result set texto = "endomorfo - IMC obesidade" where id = 14; 
 
