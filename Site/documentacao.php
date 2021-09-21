@@ -251,23 +251,24 @@
                         texto text not null
                         );
 
-                        insert into text_result values ('1','ectomorfo - IMC baixo');
-                        insert into text_result values ('2','ectomorfo - IMC normal');
-                        insert into text_result values ('3','ectomorfo - IMC sobrepeso');
-                        insert into text_result values ('4','ectomorfo - IMC obesidade');
-                        insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos');
+                        insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
+                        insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');
+                        insert into text_result values ('3','ectomorfo - IMC sobrepeso','ectomorfo - IMC sobrepeso r');
+                        insert into text_result values ('4','ectomorfo - IMC obesidade','ectomorfo - IMC obesidade r');
+                        insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos','ectomorfo - IMC sobrepeso musculos r');
 
-                        insert into text_result values ('6','mesomorfo - IMC baixo');
-                        insert into text_result values ('7','mesomorfo - IMC normal');
-                        insert into text_result values ('8','mesomorfo - IMC sobrepeso');
-                        insert into text_result values ('9','mesomorfo - IMC obesidade');
-                        insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos');
+                        insert into text_result values ('6','mesomorfo - IMC baixo','mesomorfo - IMC baixo r');
+                        insert into text_result values ('7','mesomorfo - IMC normal','mesomorfo - IMC normal r');
+                        insert into text_result values ('8','mesomorfo - IMC sobrepeso','mesomorfo - IMC sobrepeso r');
+                        insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesidade r');
+                        insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos','mesomorfo - IMC sobrepeso musculos r');
 
-                        insert into text_result values ('11','endomorfo - IMC baixo');
-                        insert into text_result values ('12','endomorfo - IMC normal');
-                        insert into text_result values ('13','endomorfo - IMC sobrepeso');
-                        insert into text_result values ('14','endomorfo - IMC obesidade');
-                        insert into text_result values ('15','endomorfo - IMC sobrepeso musculos');                         
+                        insert into text_result values ('11','endomorfo - IMC baixo','endomorfo - IMC baixo r');
+                        insert into text_result values ('12','endomorfo - IMC normal','endomorfo - IMC normal r');
+                        insert into text_result values ('13','endomorfo - IMC sobrepeso','endomorfo - IMC sobrepeso r');
+                        insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IMC obesidade r');
+                        insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
+                                                
 
                         </textarea>
 
@@ -320,7 +321,7 @@
             Semana 17/09->22/09 v06
         </h3>
         <h6>
-            Incio do sistema web; <br> Deletar cadastros do sistema web feito; <br> tabela 'text_result' criada para armazenar os textos dos resultados; <br> Sistema de resultados buscando no banco de dados realizada;
+            Incio do sistema web; <br> Deletar cadastros do sistema web feito; <br> tabela 'text_result' criada para armazenar os textos dos resultados; <br> Sistema de resultados buscando no banco de dados realizada; <br> Crud de Alteração e consulta dos textos de resultados realizado;<br>
 
         </h6>
 
