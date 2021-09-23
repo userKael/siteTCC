@@ -38,12 +38,134 @@ try {
                     <span class="navbar-brand mb-0 h1">TEXTOS</span>
                 </div>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Texto" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar ID" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
     </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">IMC</th>
+                            <th scope="col">Somatotipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Baixo</td>
+                            <td>Ectomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Normal</td>
+                            <td>Ectomorfo</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sobrepeso</td>
+                            <td>Ectomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Obesidade</td>
+                            <td>Ectomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Sobrepeso-Músculos</td>
+                            <td>Ectomorfo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">IMC</th>
+                            <th scope="col">Somatotipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Baixo</td>
+                            <td>Mesomorfo </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Normal</td>
+                            <td>Mesomorfo</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Sobrepeso</td>
+                            <td>Mesomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Obesidade</td>
+                            <td>Mesomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Sobrepeso-Músculos</td>
+                            <td>Mesomorfo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">IMC</th>
+                            <th scope="col">Somatotipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Baixo</td>
+                            <td>Endomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Normal</td>
+                            <td>Endomorfo</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Sobrepeso</td>
+                            <td>Endomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Obesidade</td>
+                            <td>Endomorfo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Sobrepeso-Músculos</td>
+                            <td>Endomorfo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <?php
     while ($dado = $comando->fetch(PDO::FETCH_ASSOC)) {
@@ -53,11 +175,11 @@ try {
             <div class="container" id="div-cads">
                 <div class="row">
                     <div class="alert alert-success" role="alert">
-                    <h4 class="text-center">ID: <?php echo $dado['id'] ?> </h4>
-                    </div>   
+                        <h4 class="text-center">ID: <?php echo $dado['id'] ?> </h4>
+                    </div>
                     <div class="col">
                         <div class="shadow p-3 mb-5 bg-light rounded" style="width: 40pc;">
-                        <h4 class="text-center"> Relacionamento</h4>
+                            <h4 class="text-center"> Relacionamento</h4>
                             <div class="text-center">
                                 <input type="hidden" name="id" value=" <?php echo $dado['id'] ?>">
                                 <textarea name="texto" cols="80" rows="10">
@@ -72,7 +194,7 @@ try {
                     </div>
                     <div class="col">
                         <div class="shadow p-3 mb-5 bg-light rounded" style="width: 28pc;">
-                        <h4 class="text-center"> Recomendações</h4>
+                            <h4 class="text-center"> Recomendações</h4>
                             <div class="text-center">
                                 <input type="hidden" name="id" value=" <?php echo $dado['id'] ?>">
                                 <textarea name="recomenda" cols="54" rows="10">
