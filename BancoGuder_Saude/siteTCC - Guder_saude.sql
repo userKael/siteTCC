@@ -69,6 +69,8 @@ insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endom
 /* testes */
 select * from text_result;
 
+
+
 update text_result set texto = "endomorfo - IMC obesidade" where id = 14; 
 
 insert into cadastro values ('kael@kael','123','kael');

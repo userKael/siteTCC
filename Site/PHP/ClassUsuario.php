@@ -95,6 +95,7 @@ class Usuario
 
         global $con;
         $retorno = "";
+        $dado = "";
 
         if ($somatotipo == "Ectomorfo") 
         {
@@ -104,25 +105,24 @@ class Usuario
 
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 1");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 1");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
                 } 
                 catch (PDOException $erro) 
                 {
                     $retorno = "Erro " . $erro->getMessage();
                     return $retorno;
                 }
-            } elseif ($imc == "Está no peso ideal.") {
+            } elseif ($imc == "Está no peso ideal." or $imc=="Está no peso ideal, continue praticando exercícios.") {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 2");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 2");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+        
                 } 
                 catch (PDOException $erro) 
                 {
@@ -134,11 +134,11 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 3");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 3");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+                  
                 } 
                 catch (PDOException $erro) 
                 {
@@ -150,11 +150,11 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 4");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 4");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+                   
                 } 
                 catch (PDOException $erro)
                 {
@@ -169,11 +169,11 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 5");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 5");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+               
                 } 
                 catch (PDOException $erro) 
                 {
@@ -191,25 +191,23 @@ class Usuario
 
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 6");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 6");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
                 } 
                 catch (PDOException $erro) 
                 {
                     $retorno = "Erro " . $erro->getMessage();
                     return $retorno;
                 }
-            } elseif ($imc == "Está no peso ideal.") {
+            } elseif ($imc == "Está no peso ideal." or $imc=="Está no peso ideal, continue praticando exercícios." ) {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 7");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 7");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
                 } 
                 catch (PDOException $erro) 
                 {
@@ -221,11 +219,11 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 8");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 8");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+                  
                 } 
                 catch (PDOException $erro) 
                 {
@@ -237,11 +235,11 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 9");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 9");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+
                 } 
                 catch (PDOException $erro)
                 {
@@ -256,11 +254,10 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 10");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 10");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
                 } 
                 catch (PDOException $erro) 
                 {
@@ -277,25 +274,25 @@ class Usuario
 
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 11");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 11");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+
                 } 
                 catch (PDOException $erro) 
                 {
                     $retorno = "Erro " . $erro->getMessage();
                     return $retorno;
                 }
-            } elseif ($imc == "Está no peso ideal.") {
+            } elseif ($imc == "Está no peso ideal." or $imc=="Está no peso ideal, continue praticando exercícios.") {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 12");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 12");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+    
                 } 
                 catch (PDOException $erro) 
                 {
@@ -307,11 +304,11 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 13");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 13");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
+            
                 } 
                 catch (PDOException $erro) 
                 {
@@ -323,11 +320,10 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 14");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 14");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
                 } 
                 catch (PDOException $erro)
                 {
@@ -342,11 +338,10 @@ class Usuario
             {
                 try 
                 {
-                    $comando = $con->prepare("SELECT texto FROM text_result WHERE id = 15");
+                    $comando = $con->prepare("SELECT * FROM text_result WHERE id = 15");
                     $comando->execute();
                     $dado = $comando->fetch();
 
-                    $retorno = $dado['texto'];
                 } 
                 catch (PDOException $erro) 
                 {
@@ -359,6 +354,9 @@ class Usuario
 
 
 
-        return $retorno;
+        return $dado;
     }
+
+
+    
 }

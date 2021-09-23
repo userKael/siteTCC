@@ -4,8 +4,8 @@
 <html lang="pt-br">
 
 <head>
-    <?php 
-    include './PHP/head.php'; 
+    <?php
+    include './PHP/head.php';
     include_once './PHP/ClassUsuario.php';
     include_once './PHP/conexaobd.php';
     $cad = new Usuario();
@@ -39,8 +39,8 @@
         <div class="row row-cols-2 border border-primary" id="div-result">
 
             <div class="col" id="div-col-1">
-                <h3 class="H3-col-1">IMC: <strong > <?php echo $_SESSION['imc_bd'] ?></strong></h3>
-                <h3 class="H3-col-1">Somatotipo: <strong > <?php echo $_SESSION['somatotipo'] ?></strong></h3>
+                <h3 class="H3-col-1">IMC: <strong> <?php echo $_SESSION['imc_bd'] ?></strong></h3>
+                <h3 class="H3-col-1">Somatotipo: <strong> <?php echo $_SESSION['somatotipo'] ?></strong></h3>
                 <hr style=" margin-top: 25px; margin-bottom: 30px;">
             </div>
 
@@ -73,7 +73,10 @@
                 <div class="border border-dark" id="relaciona-result">
                     <h5 style="margin: 10px;">Relacionando resultados:</h5>
                     <h6>
-                        <?php echo $cad->txt_result($_SESSION['imc'],$_SESSION['somatotipo']);?>
+                        <?php $dado = $cad->txt_result($_SESSION['imc'], $_SESSION['somatotipo']);
+                        echo $dado['texto']
+
+                        ?>
                     </h6>
                 </div>
             </div>
@@ -81,6 +84,12 @@
             <div class="col" id="div-col-4">
                 <div class="border border-dark" id="recomenda-result">
                     <h4 style="margin: 10px;">Recomendações</h4>
+                    <span>
+                        <?php $dado = $cad->txt_result($_SESSION['imc'], $_SESSION['somatotipo']);
+                        echo $dado['recomenda']
+
+                        ?>
+                    </span>
                 </div>
             </div>
 

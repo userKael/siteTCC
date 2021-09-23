@@ -73,7 +73,7 @@ function consulta_txt() {
             data: dados,
 
             beforeSend: function() {
-
+                $("#resposta-busca").html('<div class="spinner-border" role="status"></div>');
             }
 
         })
