@@ -71,7 +71,7 @@
 
             <div class="col" id="div-col-3">
                 <div class="border border-dark" id="relaciona-result">
-                    <h5 style="margin: 10px;">Relacionando resultados:</h5>
+                    <h5>Relacionando resultados:</h5>
                     <h6>
                         <?php $dado = $cad->txt_result($_SESSION['imc'], $_SESSION['somatotipo']);
                         echo $dado['texto']
@@ -83,13 +83,13 @@
 
             <div class="col" id="div-col-4">
                 <div class="border border-dark" id="recomenda-result">
-                    <h4 style="margin: 10px;">Recomendações</h4>
-                    <span>
+                    <h5>Recomendações:</h5>
+                    <h6>
                         <?php $dado = $cad->txt_result($_SESSION['imc'], $_SESSION['somatotipo']);
                         echo $dado['recomenda']
 
                         ?>
-                    </span>
+                    </h6>
                 </div>
             </div>
 

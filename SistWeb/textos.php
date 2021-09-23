@@ -25,8 +25,6 @@ try {
 }
 
 ?>
-
-
 <body id="corpo">
     <header role="navigation" class="fixed" id="cabecalho">
         <nav class="navbar navbar-light bg-light navbar-expand shadow" id="navbar">
@@ -176,11 +174,9 @@ try {
     <?php
     while ($dado = $comando->fetch(PDO::FETCH_ASSOC)) {
     ?>
-        <form action="" method="post" id="form-txt" class="form-txts">
+        <form action="./PHP/altera_txt.php" method="post" id="form-txt" class="form-txts">
 
             <div class="container" id="div-cads<?php echo $dado['id'] ?>">
-
-
                 <div class="row">
                     <div class="alert alert-success" role="alert">
                         <h4 class="text-center">ID: <?php echo $dado['id'] ?> </h4>
@@ -195,7 +191,7 @@ try {
                         </textarea>
                             </div>
                             <div class="text-center">
-                                <button type="button" class="btn btn-success" onclick="altera_txt()">Alterar</button>
+                                <button type="submit" class="btn btn-success" onclick="altera_txt()" >Alterar</button>
 
                             </div>
                         </div>
@@ -210,7 +206,7 @@ try {
                         </textarea>
                             </div>
                             <div class="text-center">
-                                <button type="button" class="btn btn-success" onclick="altera_txt()">Alterar</button>
+                                <button type="submit" class="btn btn-success" onclick="altera_txt()">Alterar</button>
 
                             </div>
                         </div>
@@ -219,15 +215,9 @@ try {
             </div>
         </form>
 
-
-
-
-
     <?php
     }
     ?>
-
-
 
 </body>
 
