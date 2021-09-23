@@ -34,12 +34,18 @@ try {
                 <a class="navbar-brand" href="#">
                     <img src="./IMGs/logo.png" alt="logo" id="logo">
                 </a>
-                <div class="text-center">
+                <div class="text-center" id="div-nav-titulo">
                     <span class="navbar-brand mb-0 h1">TEXTOS</span>
                 </div>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar ID" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item text-center">
+                            <p class="nav-link active" aria-current="page" href="#" id="resposta-busca"></p>
+                        </li>
+
+                    </ul>
+                <form class="d-flex" method="POST" id="form-busca" action="">
+                    <input class="form-control me-2" type="search" placeholder="Buscar ID" aria-label="Search" name="id">
+                    <button class="btn btn-outline-success" type="button" onclick="consulta_txt()">Buscar</button>
                 </form>
             </div>
         </nav>
@@ -170,9 +176,11 @@ try {
     <?php
     while ($dado = $comando->fetch(PDO::FETCH_ASSOC)) {
     ?>
-        <form action="" method="post" id="form-txt">
+        <form action="" method="post" id="form-txt" class="form-txts">
 
-            <div class="container" id="div-cads">
+            <div class="container" id="div-cads<?php echo $dado['id'] ?>">
+
+
                 <div class="row">
                     <div class="alert alert-success" role="alert">
                         <h4 class="text-center">ID: <?php echo $dado['id'] ?> </h4>
@@ -207,7 +215,6 @@ try {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </form>

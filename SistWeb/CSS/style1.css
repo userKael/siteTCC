@@ -45,3 +45,13 @@
 #div-cads textarea {
     padding: 10px;
 }
+
+#resposta-busca {
+    margin: auto;
+    margin-right: 10px;
+    color: red;
+}
+
+#div-nav-titulo {
+    padding-left: 16pc;
+}
