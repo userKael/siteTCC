@@ -30,7 +30,7 @@ try {
     <header role="navigation" class="fixed" id="cabecalho">
         <nav class="navbar navbar-light bg-light navbar-expand shadow" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.php">
                     <img src="./IMGs/logo.png" alt="logo" id="logo">
                 </a>
                 <div class="text-center">
