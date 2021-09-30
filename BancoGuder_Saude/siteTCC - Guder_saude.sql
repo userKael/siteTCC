@@ -65,11 +65,29 @@ insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IM
 insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
 
 
+DELIMITER $$
+	CREATE PROCEDURE contar_testes(OUT quant INT)
+    BEGIN 
+		SELECT count(*) into quant
+        FROM result_teste;
+    END
+$$ DELIMITER ;
+
+	
+
+    
+
+
+
+
+
+
+
+
+
 
 /* testes */
 select * from text_result;
-
-
 
 update text_result set texto = "endomorfo - IMC obesidade" where id = 14; 
 

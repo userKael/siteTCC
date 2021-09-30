@@ -27,7 +27,8 @@ if (!isset($_SESSION['email'])) {
                 <h5>Histórico</h5>
                 <hr>
 
-                <?php if ($testes > 0) {
+                <?php 
+                if ($quant['quant'] > 0) {
 
                 ?>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -35,7 +36,7 @@ if (!isset($_SESSION['email'])) {
                             <h2 class="accordion-header" id="flush-headingOne">
                                 <?php
 
-                                for ($i = 0; $i < $testes; $i++) {
+                                for ($i = 0; $i < $quant['quant']; $i++) {
                                     $dado2 = $teste->fetch(PDO::FETCH_ASSOC);
                                     $dado = $result->fetch(PDO::FETCH_ASSOC);
                                     $idade = $cad->idade($dado2['data_nascimento']);
