@@ -78,12 +78,9 @@ $$ DELIMITER ;*/
     
 
 
-
-
-
-
-
 /* testes */
+
+
 select * from text_result;
 
 update text_result set texto = "endomorfo - IMC obesidade" where id = 14; 

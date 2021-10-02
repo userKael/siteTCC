@@ -238,46 +238,30 @@ function isJson(str) {
 function new_cad(quant) {
 
     var tabela = '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
-    tabela += '';
+    tabela += ' <div class="col" style="width: 27pc; margin-left:19pc;">';
+    tabela += ' <form method="POST" action="" id="novo-cad">';
+    tabela += '  <div class="mb-3">';
+    tabela += ' <label for="exampleInputEmail1" class="form-label">Nome</label>';
+    tabela += ' <input type="text" class="form-control" name="nome">';
+    tabela += '   </div>';
+    tabela += '<div class="mb-3">';
+    tabela += ' <label for="exampleInputPassword1" class="form-label">Email</label>';
+    tabela += ' <input type="email" class="form-control" name="email">';
+    tabela += '</div>';
+    tabela += '<div class="mb-3 ">';
+    tabela += ' <label for="exampleInputPassword1" class="form-label">Senha</label>';
+    tabela += ' <input type="password" class="form-control" name="senha">';
+    tabela += '  </div>';
+    tabela += ' <button type="button" class="btn btn btn-success" onclick="cadastrar()">Cadastrar</button>';
+    tabela += ' </form>';
+    tabela += ' </div>';
+
 
     var i;
     for (i = 2; i <= quant; i++) {
         $("#divs-cads" + i + "").hide();
     }
     $("#divs-cads1").html(tabela);
-    $("#resposta-busca").html('<div class="alert alert-success" role="alert">Cadastro Encontrado</div>')
-
 
     return false;
 
