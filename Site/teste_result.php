@@ -9,8 +9,18 @@
     include_once './PHP/ClassUsuario.php';
     include_once './PHP/conexaobd.php';
     $cad = new Usuario();
+
+    if (!isset($_SESSION['imc_bd']) && !isset($_SESSION['somatotipo'])) {
+
+        header("location: index.php");
+    } else if (!isset($_SESSION['somatotipo'])) {
+
+        header("location: test_imc.php");
+    } else {
+
+
     ?>
-    <link rel="stylesheet" href="./CSS/result.css">
+        <link rel="stylesheet" href="./CSS/result.css">
 </head>
 
 <body id="corpo">
@@ -103,3 +113,8 @@
 </body>
 
 </html>
+<?php
+    }
+    unset($_SESSION['somatotipo']);
+    unset($_SESSION['imc']);
+    unset($_SESSION['imc_bd']);
