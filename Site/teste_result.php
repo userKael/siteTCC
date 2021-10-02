@@ -10,13 +10,20 @@
     include_once './PHP/conexaobd.php';
     $cad = new Usuario();
 
-    if (!isset($_SESSION['imc_bd']) && !isset($_SESSION['somatotipo'])) {
+    if (!isset($_SESSION['email'])) {
 
         header("location: index.php");
+
+    } else if (!isset($_SESSION['imc_bd'])) {
+
+        header("location: teste_imc.php");
+
     } else if (!isset($_SESSION['somatotipo'])) {
 
-        header("location: test_imc.php");
+        header("location: teste_biotipo.php");
+
     } else {
+
 
 
     ?>
