@@ -80,6 +80,12 @@ if (!isset($_SESSION['email'])) {
                                 <button type="submit" class="btn btn-outline-success">Realizar novo teste</button>
                             </div>
                         </form>
+                        <form action="./PHP/imprimir.php">
+                            <div class="vstack gap-2 col-md-5 mx-auto">
+                                <p></p>
+                                <button type="submit" class="btn btn-outline-success">Imprimir</button>
+                            </div>
+                        </form>
                     </div>
                 <?php
                 } else {
