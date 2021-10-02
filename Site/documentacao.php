@@ -203,7 +203,7 @@
         </div>
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
-                <textarea name="" id="" cols="25" rows="66">
+                <textarea name="" id="" cols="20" rows="66">
                         create database guder_saude;
                         use guder_saude;
                         drop database guder_saude;
@@ -251,23 +251,25 @@
                         texto text not null
                         );
 
-insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
-insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');
-insert into text_result values ('3','ectomorfo - IMC sobrepeso','ectomorfo - IMC sobrepeso r');
-insert into text_result values ('4','ectomorfo - IMC obesidade','ectomorfo - IMC obesidade r');
-insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos','ectomorfo - IMC sobrepeso musculos r');
+                        insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
+                        insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');
+                        insert into text_result values ('3','ectomorfo - IMC sobrepeso','ectomorfo - IMC sobrepeso r');
+                        insert into text_result values ('4','ectomorfo - IMC obesidade','ectomorfo - IMC obesidade r');
+                        insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos','ectomorfo - IMC sobrepeso musculos r');
 
-insert into text_result values ('6','mesomorfo - IMC baixo','mesomorfo - IMC baixo r');
-insert into text_result values ('7','mesomorfo - IMC normal','mesomorfo - IMC normal r');
-insert into text_result values ('8','mesomorfo - IMC sobrepeso','mesomorfo - IMC sobrepeso r');
-insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesidade r');
-insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos','mesomorfo - IMC sobrepeso musculos r');
+                        insert into text_result values ('6','mesomorfo - IMC baixo','mesomorfo - IMC baixo r');
+                        insert into text_result values ('7','mesomorfo - IMC normal','mesomorfo - IMC normal r');
+                        insert into text_result values ('8','mesomorfo - IMC sobrepeso','mesomorfo - IMC sobrepeso r');
+                        insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesidade r');
+                        insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos','mesomorfo - IMC sobrepeso musculos r');
 
-insert into text_result values ('11','endomorfo - IMC baixo','endomorfo - IMC baixo r');
-insert into text_result values ('12','endomorfo - IMC normal','endomorfo - IMC normal r');
-insert into text_result values ('13','endomorfo - IMC sobrepeso','endomorfo - IMC sobrepeso r');
-insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IMC obesidade r');
-insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
+                        insert into text_result values ('11','endomorfo - IMC baixo','endomorfo - IMC baixo r');
+                        insert into text_result values ('12','endomorfo - IMC normal','endomorfo - IMC normal r');
+                        insert into text_result values ('13','endomorfo - IMC sobrepeso','endomorfo - IMC sobrepeso r');
+                        insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IMC obesidade r');
+                        insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
+                                                
+
                         </textarea>
 
             </div>
@@ -321,12 +323,6 @@ insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endom
         <h6>
             Incio do sistema web; <br> Deletar cadastros do sistema web feito; <br> tabela 'text_result' criada para armazenar os textos dos resultados; <br> Sistema de resultados buscando no banco de dados realizada; <br> Crud de Alteração e consulta dos textos de resultados realizado;<br> Consulta e alteração de textos específicos agora é possível 
 
-        </h6>
-        <h3>
-            Semana 23/09->29/09 v07
-        </h3>
-        <h6>
-          
         </h6>
 
     </div>
