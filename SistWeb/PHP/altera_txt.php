@@ -20,7 +20,7 @@ if (
 
         if ($comando4->rowCount() > 0) {
             
-            $retorno = "Cadastro alterado com Sucesso!";
+            $retorno = "Texto alterado com Sucesso!";
 
         }else{
             $retorno = "Erro ao alterar cadastro !";
