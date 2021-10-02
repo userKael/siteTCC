@@ -144,6 +144,86 @@ function consulta_txt() {
     return false;
 }
 
+function consulta_cad(quant) {
+
+    var dados = $('#form-cad-busca').serialize();
+    $.ajax({
+            method: 'POST',
+            url: './PHP/consulta_cad.php',
+            data: dados,
+
+            beforeSend: function() {
+                $("#resposta-busca").html('<div class="spinner-border" role="status"></div>');
+            }
+
+        })
+        .done(function(msg) {
+            var ret;
+            var cad;
+            ret = isJson(msg)
+
+            if (ret == true) {
+                cad = JSON.parse(msg)
+                var tabela = '';
+                tabela += '<div class="shadow p-3 mb-5 bg-light rounded" style="width: 22pc;">';
+                tabela += '<h4 class="text-center">' + cad[0].email + '</h4>';
+                tabela += '<div class="text-center">';
+                tabela += '<form action="" method="post" id="form-cads">';
+                tabela += '<table class="table">';
+                tabela += '<tbody>';
+                tabela += '<tr>';
+                tabela += ' <th scope="row">Nome</th>';
+                tabela += '<td><input type="text" value="' + cad[0].nome + '" name="nome" disabled></td>';
+                tabela += '</tr>';
+                tabela += '<tr>';
+                tabela += '<th scope="row">Email</th>';
+                tabela += ' <td><input type="text" value="' + cad[0].email + '" name="email" disabled></td>';
+                tabela += ' <input type="hidden" name="email" value="' + cad[0].email + '">';
+                tabela += '</tr>';
+                tabela += ' <tr>';
+                tabela += ' <th scope="row">Senha</th>';
+                tabela += ' <td><input type="password" value="' + cad[0].senha + '" name="senha" disabled></td>';
+                tabela += '</tr>';
+                tabela += ' </tbody>';
+                tabela += ' </table>';
+                tabela += ' </div>';
+                tabela += '<div class="text-center">';
+                tabela += ' <button type="button" class="btn btn-outline-danger" onclick="apaga_dados()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">';
+                tabela += '<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />';
+                tabela += '<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />';
+                tabela += '</svg>';
+                tabela += '</button>';
+                tabela += ' <button type="button" class="btn btn-success">Ver perfil</button>';
+                tabela += '</form>';
+                tabela += '</div>';
+                tabela += '</div>';
+
+                var i;
+                for (i = 2; i <= quant; i++) {
+                    $("#divs-cads" + i + "").hide();
+                }
+                $("#divs-cads1").html(tabela);
+                $("#resposta-busca").html('<div class="alert alert-success" role="alert">Cadastro Encontrado</div>')
+
+
+            } else {
+
+                $("#resposta-busca").html(msg);
+
+            }
+
+
+
+        })
+
+    .fail(function() {
+
+        alert('OPS, algo deu de errado');
+
+
+    })
+    return false;
+}
 
 function isJson(str) {
     try {
@@ -153,4 +233,52 @@ function isJson(str) {
     }
 
     return true;
+}
+
+function new_cad(quant) {
+
+    var tabela = '';
+    tabela += '<div class="shadow p-3 mb-5 bg-light rounded" style="width: 22pc;">';
+    tabela += '<h4 class="text-center">' + cad[0].email + '</h4>';
+    tabela += '<div class="text-center">';
+    tabela += '<form action="" method="post" id="form-cads">';
+    tabela += '<table class="table">';
+    tabela += '<tbody>';
+    tabela += '<tr>';
+    tabela += ' <th scope="row">Nome</th>';
+    tabela += '<td><input type="text" value="' + cad[0].nome + '" name="nome" disabled></td>';
+    tabela += '</tr>';
+    tabela += '<tr>';
+    tabela += '<th scope="row">Email</th>';
+    tabela += ' <td><input type="text" value="' + cad[0].email + '" name="email" disabled></td>';
+    tabela += ' <input type="hidden" name="email" value="' + cad[0].email + '">';
+    tabela += '</tr>';
+    tabela += ' <tr>';
+    tabela += ' <th scope="row">Senha</th>';
+    tabela += ' <td><input type="password" value="' + cad[0].senha + '" name="senha" disabled></td>';
+    tabela += '</tr>';
+    tabela += ' </tbody>';
+    tabela += ' </table>';
+    tabela += ' </div>';
+    tabela += '<div class="text-center">';
+    tabela += ' <button type="button" class="btn btn-outline-danger" onclick="apaga_dados()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">';
+    tabela += '<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />';
+    tabela += '<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />';
+    tabela += '</svg>';
+    tabela += '</button>';
+    tabela += ' <button type="button" class="btn btn-success">Ver perfil</button>';
+    tabela += '</form>';
+    tabela += '</div>';
+    tabela += '</div>';
+
+    var i;
+    for (i = 2; i <= quant; i++) {
+        $("#divs-cads" + i + "").hide();
+    }
+    $("#divs-cads1").html(tabela);
+    $("#resposta-busca").html('<div class="alert alert-success" role="alert">Cadastro Encontrado</div>')
+
+
+    return false;
+
 }
