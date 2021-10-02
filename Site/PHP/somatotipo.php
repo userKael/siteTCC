@@ -23,7 +23,6 @@ if (
 
     if ($result >= 5 && $result <= 7) 
     {
-
         $_SESSION['somatotipo'] =  "Ectomorfo";
 
         if ($cad->bd_result('Ectomorfo', $email, $_SESSION['imc_bd']) == true) 

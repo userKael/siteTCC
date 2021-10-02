@@ -22,27 +22,21 @@
                         <tbody>
                             <tr>
                                 <th scope="row">Kael Alves de Sousa</th>
-
                             </tr>
                             <tr>
                                 <th scope="row">Nykollas Eduardo Lira Miguel</th>
-
                             </tr>
                             <tr>
                                 <th scope="row">Eduardo Souza</th>
-
                             </tr>
                             <tr>
                                 <th scope="col">Adryel Porto Zamin</th>
-
                             </tr>
                             <tr>
                                 <th scope="row">Luigi Cauã Dias Pereira</th>
-
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
                 <div class="col">
                     <div id="titulo" style="margin-top: 20px;">
@@ -51,7 +45,6 @@
                     <h6 style="text-align: justify;">
                         Construção de um site para <br> conhecimento do corpo através do<br> biotipo e IMC.
                     </h6>
-
                 </div>
                 <div class="col">
                     <div id="titulo" style="margin-top: 20px;">
@@ -62,7 +55,6 @@
                         sobre seu próprio corpo, seus resultados serão armazenados em seu perfil, para aos que quiserem, observarem sua evolução.
 
                     </h6>
-
                 </div>
             </div>
         </div>
@@ -83,70 +75,60 @@
                     <img src="./IMGs/login2.png" class="d-block w-100" alt="LOGIN ">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">2- LOGIN </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/login.png" class="d-block w-100" alt="LOGIN ">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">3- LOGIN2 </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Cadastro.png" class="d-block w-100" alt="CADASTRO">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">4- CADASTRO </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Dicas_exercicio.png" class="d-block w-100" alt="DICAS DE EXERCÍCIO">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">5- DICAS DE EXERCÍCIO </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Cada_biotipo.png" class="d-block w-100" alt="SOBRE CADA BIOTIPO">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">6- SOBRE CADA BIOTIPO </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Perfil_usuario.png" class="d-block w-100" alt=".PERFIL DO USUARIO.">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">7- PERFIL DO USUARIO </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Sobre_nos.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">8- SOBRE NÓS </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/teste_biotipo.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">9- Teste-Somatotipo </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/Teste_imc.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">10- Teste-IMC </h5>
-
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img src="./IMGs/teste_resultado.png" class="d-block w-100" alt="SOBRE NÓS.">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="color: black;">12- Resultado-Teste</h5>
-
                     </div>
                 </div>
             </div>
@@ -171,7 +153,6 @@
                 <div class="carousel-item active">
                     <img src="./IMGs/dicionario_dados.png" class="d-block w-100" alt="...">
                 </div>
-
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -192,14 +173,9 @@
                 </div>
                 <br>
             </form>
-
             <div class="vstack gap-2 col-md-5 mx-auto">
                 <button type="submit" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver código</button>
-
             </div>
-
-
-
         </div>
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
@@ -271,17 +247,13 @@
                                                 
 
                         </textarea>
-
             </div>
         </div>
-
     </div>
     </div>
-
     <div id="titulo" style="margin-top: 30px;">
         <h1 class="text-center">Sprints:</h1>
     </div>
-
     <div id="sprints">
         <h3>
             Semana 11/08->18/08 v01
@@ -324,7 +296,6 @@
             Incio do sistema web; <br> Deletar cadastros do sistema web feito; <br> tabela 'text_result' criada para armazenar os textos dos resultados; <br> Sistema de resultados buscando no banco de dados realizada; <br> Crud de Alteração e consulta dos textos de resultados realizado;<br> Consulta e alteração de textos específicos agora é possível 
 
         </h6>
-
     </div>
     <footer id="rodape">
         <nav class="navbar navbar-light bg-light">
@@ -334,7 +305,6 @@
             </div>
         </nav>
     </footer>
-
 </body>
 
 </html>

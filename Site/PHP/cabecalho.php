@@ -27,10 +27,7 @@
                                         </svg></button>
                                 </form>
                             </div>
-
-
                         </li>
-
                     <?php
                     } else {
                     ?>
@@ -58,7 +55,6 @@
                     <?php
                     }
                     ?>
-
                 </ul>
             </div>
             <li class="nav-item dropdown" id="drop-down-responsive">
@@ -85,10 +81,7 @@
                                     </svg></button>
                             </form>
                         </div>
-
-
                     </li>
-
                 <?php
                         } else {
                 ?>

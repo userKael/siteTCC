@@ -16,7 +16,6 @@ if(isset($_POST["email"]) && !empty($_POST["email"])
     }else{
        $retorno = "Email ou senha incorretos!";
     }
-
 }else{
     $retorno = "Digite todos os campos!";
 }

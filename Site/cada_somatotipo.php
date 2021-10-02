@@ -11,15 +11,12 @@
 <body id="corpo">
     <?php include './PHP/cabecalho.php' ?>
     <div>
-
         <div class="titulo">
             <h4>O que são os biotipos?</h4>
         </div>
-
         <div class="subtitulo">
             <p>Biotipos são nada mais nada menos do que a forma física quem um corpo humano tem, que é determinado por alguns fatores que variam de pessoa para pessoa.</p>
         </div>
-
     </div>
     <div class="content">
         <div class="card">

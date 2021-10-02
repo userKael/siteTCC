@@ -23,9 +23,6 @@
         header("location: teste_biotipo.php");
 
     } else {
-
-
-
     ?>
         <link rel="stylesheet" href="./CSS/result.css">
 </head>
@@ -74,7 +71,6 @@
 
                     ?>
                         <img src="./IMGs/mesomorfo.jpg" id="img-bio">
-
                     <?php
                     } else {
                     ?>
@@ -109,13 +105,10 @@
                     </h6>
                 </div>
             </div>
-
         </div>
-
         <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="btn-volt-pg">
             <a href="./index.php"> <button class="btn btn-primary" type="button">Voltar para Home</button></a>
         </div>
-
     </div>
 </body>
 

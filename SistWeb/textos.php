@@ -39,7 +39,6 @@ try {
                         <li class="nav-item text-center">
                             <p class="nav-link active" aria-current="page" href="#" id="resposta-busca"></p>
                         </li>
-
                     </ul>
                 <form class="d-flex" method="POST" id="form-busca" action="">
                     <input class="form-control me-2" type="search" placeholder="Buscar ID" aria-label="Search" name="id">
@@ -175,7 +174,6 @@ try {
     while ($dado = $comando->fetch(PDO::FETCH_ASSOC)) {
     ?>
         <form action="./PHP/altera_txt.php" method="post" id="form-txt" class="form-txts">
-
             <div class="container" id="div-cads<?php echo $dado['id'] ?>">
                 <div class="row">
                     <div class="alert alert-success" role="alert">

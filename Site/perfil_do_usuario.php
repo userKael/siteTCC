@@ -19,15 +19,12 @@ if (!isset($_SESSION['email'])) {
     </head>
 
     <body id="corpo">
-
         <?php include './PHP/cabecalho.php'; ?>
         <div id="div_historico">
-
             <div class="shadow p-3 mb-5 bg-light rounded border border-1 border-primary" id="historico_usuario">
                 <h5>Histórico</h5>
                 <hr>
-
-                <?php 
+                <?php
                 if ($results > 0) {
 
                 ?>
@@ -35,7 +32,6 @@ if (!isset($_SESSION['email'])) {
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
                                 <?php
-
                                 for ($i = 0; $i < $results; $i++) {
                                     $dado2 = $teste->fetch(PDO::FETCH_ASSOC);
                                     $dado = $result->fetch(PDO::FETCH_ASSOC);
@@ -74,10 +70,8 @@ if (!isset($_SESSION['email'])) {
                                     </table>
                                 </div>
                             </div>
-
                         <?php
                                 }
-
                         ?>
                         </div>
                         <form action="./teste_imc.php">
@@ -91,23 +85,19 @@ if (!isset($_SESSION['email'])) {
                 } else {
                 ?> <div style="margin-top: inherit;">
                         <form action="./teste_imc.php">
-
                             <div class="vstack gap-2 col-md-5 mx-auto">
                                 <h2 class="text-center">Nenhum teste Realizado ainda!</h2>
                                 <button type="submit" class="btn btn-outline-secondary">Realizar teste</button>
                             </div>
                         </form>
                     </div>
-
                 <?php
                 }
                 ?>
             </div>
         </div>
-
         <div id="div_dados">
             <div class="shadow p-3 mb-5 bg-light rounded border border-1 border-success" id="dados_usuario">
-
                 <?php
                 if ($comando->rowCount() > 0) {
                     while ($linha = $comando->fetch(PDO::FETCH_OBJ)) {
@@ -115,9 +105,7 @@ if (!isset($_SESSION['email'])) {
                 ?>
                         <form action="" method="post" enctype="multipart/form-data" id="up_perfil_img">
                             <div class="mb-3">
-
                                 <input class="form-control form-control-sm" id="formFileSm" type="file" name="arquivo" accept="image/*">
-
                                 <button type="button" class="badge rounded-pill bg-success" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="alter_foto()">Alterar Foto</button>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -131,7 +119,6 @@ if (!isset($_SESSION['email'])) {
                                         </div>
                                     </div>
                                 </div>
-
                                 <button type="button" class="badge rounded-pill bg-success" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal1" onclick="del_foto(),time(7000)">Excluir Foto</button>
                                 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -156,7 +143,6 @@ if (!isset($_SESSION['email'])) {
                         <div class="mb-3">
                             <input class="form-control form-control-sm" id="formFileSm" type="file" name="arquivo" accept="image/*">
                             <button type="button" class="badge rounded-pill bg-success" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="up_foto(),time(7000)">Enviar Foto</button>
-
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
@@ -169,16 +155,13 @@ if (!isset($_SESSION['email'])) {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </form>
                 <?php
                 }
                 ?>
-
                 <hr>
                 <h5>Meus dados</h5>
-
                 <form action="" method="post" id="form-altera">
                     <div class="dados">
                         <div class="form-floating mb-3">
@@ -194,11 +177,9 @@ if (!isset($_SESSION['email'])) {
                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="<?php echo $_SESSION['senha'] ?>" name="senha">
                             <label for="floatingPassword">Senha</label>
                         </div>
-
                     </div>
                     <div class="dados">
                         <button type="button" class="btn btn-outline-success bt-crud" id="bt-alterar" data-bs-toggle="modal" data-bs-target="#exampleModal8" onclick="altera_dados()">ALTERAR</button>
-
                         <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -211,13 +192,10 @@ if (!isset($_SESSION['email'])) {
                                 </div>
                             </div>
                         </div>
-
-
                         <button type="button" class="btn btn-outline-danger bt-crud" data-bs-toggle="modal" data-bs-target="#exampleModal9"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                 <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
                             </svg></button>
-
                         <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -227,14 +205,11 @@ if (!isset($_SESSION['email'])) {
                                     </div>
                                     <div class="modal-body text-center alert alert-danger" id="resposta-altera" style="margin-bottom: 0px">
                                         DELETAR PERFIL E HISTÓRICO DE TESTES?
-
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
                                         <form action="" method="post" id="form-deleta">
-
                                             <button type="button" class="btn btn-primary" onclick="apaga_dados()">Sim</button>
-
                                         </form>
                                     </div>
                                 </div>

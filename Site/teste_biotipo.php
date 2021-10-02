@@ -10,13 +10,11 @@ if (!isset($_SESSION['email'])) {
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
-
     <head>
         <?php include './PHP/head.php' ?>
         <title>GUDER SAÚDE - TESTE SOMATOTIPO</title>
 
     </head>
-
     <body id="corpo">
         <div class="shadow-none p-3 mb-5 bg-light rounded" id="progresso-div">
             <header id="progresso-header">
@@ -70,7 +68,6 @@ if (!isset($_SESSION['email'])) {
                                 </label>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card2','flexRadioDefault2')" id="div-card2">
@@ -79,11 +76,9 @@ if (!isset($_SESSION['email'])) {
                                 <p class="card-text text-center">meso 2.</p>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="3">
                                 <label class="form-check-label" for="flexRadioDefault1">
-
                                 </label>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card3','flexRadioDefault3')" id="div-card3">
@@ -93,12 +88,9 @@ if (!isset($_SESSION['email'])) {
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="4">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                 </label>
-
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
             <div id="div-perguntas">
@@ -106,7 +98,6 @@ if (!isset($_SESSION['email'])) {
                     <h4 class="text-center">
                         Questionario
                     </h4>
-
                     <ul class="q-items list-group mt-4 mb-4 ?>">
                         <li class="q-field list-group-item">
                             <strong>1. Sempre escuto as pessoas me dizerem:</strong>
@@ -153,7 +144,6 @@ if (!isset($_SESSION['email'])) {
                             <br>
                             <ul class='list-group mt-4 mb-4'>
 
-
                                 <li class="answer list-group-item list-group-item p-pointer" onclick="pergunta('li7','input7')" id="li7">
                                     <label class="p-pointer l"><input type="radio" name="pergunta3" value="3" class="p-pointer" id="input7"> Armazenar gordura </label>
                                 </li>
@@ -177,12 +167,10 @@ if (!isset($_SESSION['email'])) {
                         <h5 class="text-center " id="resposta-soma">
                           
                         </h5>
-
                     </div>
                 </div>
             </div>
         </form>
-
     </body>
 
     </html>

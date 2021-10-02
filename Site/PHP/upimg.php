@@ -3,7 +3,6 @@ session_start();
 include './conexaobd.php';
 
 $email = $_SESSION['email'];
-
 $arquivoAtual = $_FILES['arquivo']['name'];
 $arquivoTemp = $_FILES['arquivo']['tmp_name'];
 $destino = '../imagensUser/' . $arquivoAtual;
@@ -29,8 +28,7 @@ if($arquivoAtual == ""){
             echo "erro ao cadastrar imagem";
         }
     } catch (PDOException) {
-
-  
+        
         echo "erro ao cadastrar imagem";
     }
 

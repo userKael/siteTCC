@@ -12,9 +12,7 @@
 
     <?php include './PHP/cabecalho.php'; ?>
 
-
     <div id="titulo">
-        
         <h1 class="text-center">Você realmente se conhece?</h1>
         <div id="div-txt-intro">
             <div class="shadow p-3 mb-5 bg-light border-2 border border-success" style="border-radius: 1.5rem;">
@@ -35,7 +33,6 @@
         </div>
 
         <div class="text-center">
-
             <?php
             if (!isset($_SESSION['email'])) {
 
@@ -55,11 +52,9 @@
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-
                     <div class="logo-position">
                         <img src="./IMGs/logo.png" alt="logo" id="logo-login">
                     </div>
@@ -83,10 +78,8 @@
 
                                 </p>
                             </div>
-
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>

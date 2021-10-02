@@ -24,20 +24,15 @@
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="senha">
                         <label for="floatingPassword">Senha</label>
                     </div>
-
                     <p class="text-center" id="txt-cad">
                         Ei! É novo aqui? <a href="./cadastro.html"> Cadastre-se</a>
                     </p>
-
                     <div class="text-center" id="bt-position">
                         <button type="button" id="bt-entrar" class="btn btn-primary" onclick="login()">ENTRAR</button>
                         <p style="color: red; margin-top: 20px;" id="resposta-login" class="text-center">
-
                         </p>
                     </div>
-
                 </form>
-
             </div>
         </div>
     </div>
