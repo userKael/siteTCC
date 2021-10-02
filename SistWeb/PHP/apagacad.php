@@ -12,7 +12,7 @@ try {
    
     if ($comando1->rowCount() > 0) {
         $imagem = $dado['imagem'];
-        unlink('C:/xampp/htdocs/siteTCC/imagensUser/' . $imagem);
+        unlink('C:/xampp/htdocs/siteTCC/Site/imagensUser/' . $imagem);
     }
 
     $comando = $con->prepare("DELETE FROM cadastro WHERE email = ?");
