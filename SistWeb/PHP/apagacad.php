@@ -1,7 +1,7 @@
 <?php
 include_once './conexaobd.php';
 
-$email = addslashes(filter_input(INPUT_POST, 'email'));
+$email = addslashes(filter_input(INPUT_POST, 'email',FILTER_SANITIZE_EMAIL));
 
 try {
 

@@ -8,9 +8,9 @@ if (
     && isset($_POST["nome"])  && !empty($_POST["nome"])
 ) {
 
-    $emailn = addslashes(filter_input(INPUT_POST, 'email'));
+    $emailn = addslashes(filter_input(INPUT_POST, 'email',FILTER_SANITIZE_EMAIL));
     $senha = addslashes(filter_input(INPUT_POST, 'senha'));
-    $nome = addslashes(filter_input(INPUT_POST, 'nome'));
+    $nome = addslashes(filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING));
 
     $email = $_SESSION['email'];
 

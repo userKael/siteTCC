@@ -6,9 +6,9 @@ if (
     &&  isset($_POST["recomenda"]) && !empty($_POST["recomenda"]))
 ) {
 
-    $texto = addslashes(filter_input(INPUT_POST, 'texto'));
+    $texto = addslashes(filter_input(INPUT_POST, 'texto',FILTER_SANITIZE_STRING));
     $id = addslashes(filter_input(INPUT_POST, 'id'));
-    $recomenda = addslashes(filter_input(INPUT_POST, 'recomenda'));
+    $recomenda = addslashes(filter_input(INPUT_POST, 'recomenda',FILTER_SANITIZE_STRING));
 
     try {
 

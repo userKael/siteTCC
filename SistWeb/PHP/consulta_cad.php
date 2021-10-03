@@ -5,7 +5,7 @@ if (
     isset($_POST["email"]) && !empty($_POST["email"])
 ) {
 
-    $email = addslashes(filter_input(INPUT_POST, 'email'));
+    $email = addslashes(filter_input(INPUT_POST, 'email',FILTER_SANITIZE_EMAIL));
   
     try {
 

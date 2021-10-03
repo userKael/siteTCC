@@ -9,9 +9,9 @@ if (
     && isset($_POST["nome"])  && !empty($_POST["nome"])
 ) {
 
-    $email = addslashes(filter_input(INPUT_POST, 'email'));
+    $email = addslashes(filter_input(INPUT_POST, 'email',FILTER_SANITIZE_EMAIL));
     $senha = addslashes(filter_input(INPUT_POST, 'senha'));
-    $nome = addslashes(filter_input(INPUT_POST, 'nome'));
+    $nome = addslashes(filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING));
 
     $comando = $con->prepare("SELECT * FROM cadastro WHERE email= ?");
     $comando->bindParam(1, $email);
