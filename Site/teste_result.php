@@ -13,8 +13,8 @@
     if (!isset($_SESSION['email'])) {
 
         header("location: index.php");
-
-    } else if (!isset($_SESSION['imc_bd'])) {
+    }
+    else if (!isset($_SESSION['imc_bd'])) {
 
         header("location: teste_imc.php");
 
@@ -22,7 +22,8 @@
 
         header("location: teste_biotipo.php");
 
-    } else {
+    } 
+    else {
     ?>
         <link rel="stylesheet" href="./CSS/result.css">
 </head>
@@ -106,9 +107,13 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="btn-volt-pg">
-            <a href="./index.php"> <button class="btn btn-primary" type="button">Voltar para Home</button></a>
-        </div>
+        <form action="./perfil_do_usuario.php">
+            <div class="vstack gap-2 col-md-5 mx-auto mb-4">
+                <p></p>
+                <button type="submit" class="btn btn-success">MEU PERFIL</button>
+            </div>
+        </form>
+
     </div>
 </body>
 
