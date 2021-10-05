@@ -10,6 +10,7 @@
 
 <body id="corpo">
     <div id="principais">
+   
         <section>
             <?php include './PHP/cabecalho.php'; ?>
 
