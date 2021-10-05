@@ -65,8 +65,23 @@ section {
     scroll-snap-align: start;
 }
 
-#div-seta img {
-    margin-top: 7pc;
+#div-seta {
+    background-image: url(../IMGs/SetaParaBaixo.png);
+    transform: translateX(-20%);
+    animation-name: setabaixo;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes setabaixo {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 30px;
+    }
 }
 
 #bt-inicio {

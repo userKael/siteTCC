@@ -22,13 +22,11 @@
 
                     </div>
                     <div class="col-6 col-md-4" id="div-seta">
-                        <img src="./IMGs/SetaParaBaixo.png" alt="" width="250">
+                        <img src="./IMGs/SetaParaBaixo.png" alt="" width="250" id="img-seta">
 
                     </div>
                 </div>
         </section>
-
-
 
 
 
@@ -106,7 +104,6 @@
                 </nav>
             </footer>
     </div>
-
 
     </section>
     </div>
