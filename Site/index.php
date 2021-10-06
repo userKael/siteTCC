@@ -10,7 +10,7 @@
 
 <body id="corpo">
     <div id="principais">
-   
+
         <section>
             <?php include './PHP/cabecalho.php'; ?>
 
@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-md-8" id="titulo">
                         <h1 class="mt-4">
-                            VOCÊ REALMENTE <br> SE <br> CONHECE?
+                            VOCÊ <br> REALMENTE <br> SE <br> CONHECE?
                         </h1>
 
                     </div>
@@ -36,10 +36,66 @@
 
 
         <section>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="margin-right: 25px; margin-left: 25px; margin-top: 21px; margin-bottom: 20px;">
-                <div class="carousel-inner" style="border-radius: 41px;">
-                    <div class="carousel-item active">
-                        <img src="https://i0.wp.com/www.fosgrafe.com/wp-content/uploads/2016/02/fotografia-minimalista02.jpg?fit=1080%2C689&ssl=1" class="d-block w-100" alt="..." height="500">
+            <div>
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-4">
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        </div>
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
+                        <div class="col-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+                        
+                        </div>
                     </div>
                 </div>
             </div>
