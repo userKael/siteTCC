@@ -74,7 +74,7 @@
 
                     </div>
                     <div class="col-6">
-                        <img src="./IMGs/imagem_index.png" class="img-fluid" alt="..." width="420" id="imagem-index">
+                        <img src="./IMGs/imagem_index.png" class="img-fluid" alt="..." width="440" id="imagem-index">
 
                     </div>
                 </div>
