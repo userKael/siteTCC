@@ -36,6 +36,7 @@ if (!isset($_SESSION['email'])) {
                                     $dado2 = $teste->fetch(PDO::FETCH_ASSOC);
                                     $dado = $result->fetch(PDO::FETCH_ASSOC);
                                     $idade = $cad->idade($dado2['data_nascimento']);
+                                    $data = implode("/",array_reverse(explode("-",$dado2['data_teste'])));
 
                                 ?>
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne<?php echo $i + 1 ?>" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -64,7 +65,7 @@ if (!isset($_SESSION['email'])) {
                                                 <td><?php echo $idade ?></td>
                                                 <td><?php echo $dado2['peso'] ?></td>
                                                 <td><?php echo $dado2['sexo'] ?></td>
-                                                <td><?php echo $dado2['data_teste'] ?></td>
+                                                <td><?php echo $data ?></td>
                                             </tr>
                                         </tbody>
                                     </table>
