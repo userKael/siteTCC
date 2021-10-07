@@ -83,7 +83,7 @@ if (!isset($_SESSION['email'])) {
                         <form action="./PHP/imprimir.php">
                             <div class="vstack gap-2 col-md-5 mx-auto">
                                 <p></p>
-                                <button type="submit" class="btn btn-outline-success">Imprimir</button>
+                                <button type="submit" class="btn btn-outline-success">Imprimir Histórico</button>
                             </div>
                         </form>
                     </div>
