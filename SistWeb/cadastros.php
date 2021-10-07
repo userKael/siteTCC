@@ -65,7 +65,7 @@ try {
                     <div class="shadow p-3 mb-5 bg-light rounded" style="width: 22pc;">
                         <h4 class="text-center"><?php echo $dado['email'] ?></h4>
                         <div class="text-center">
-                        <form action="./PHP/apagacad.php" method="post" id="form-cads<?php echo $i?>">
+                        <form action="" method="post" id="form-cads<?php echo $i?>">
                             <table class="table">
                                 <tbody>
                                     <tr>     

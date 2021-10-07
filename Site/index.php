@@ -6,6 +6,7 @@
 <head>
     <?php include './PHP/head.php' ?>
     <title>GUDER SAUDE - TESTE</title>
+
 </head>
 
 <body id="corpo">
@@ -36,87 +37,54 @@
 
 
         <section>
-            <div>
-                <div class="container">
-                    <div class="row justify-content-start">
-                        <div class="col-4">
-                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
+            <div class="container" id="container-intro">
+                <div class="row">
+                    <div class="col-6" id="div-intro">
+                        <div class="" id="div-txt-intro">
+                            <div id="txt-conteudo">
+                                <h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nulla consequuntur, cupiditate et ipsum illo laudantium reiciendis corrupti doloribus aperiam doloremque repellat aspernatur enim fugiat neque quod odio molestiae dolore!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos totam. Vero, expedita quos quibusdam error recusandae molestiae ullam architecto aut, at aspernatur ad ducimus! Quo minima dolorem corporis quis?$_COOKIEr
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque sunt unde cumque consequuntur quos, ipsa ea atque recusandae nihil molestiae veniam expedita, quae maxime quod accusamus rem, corrupti sit totam.
+
+                                </h3>
+
+                            </div>
+
+
+                            <?php
+                            if (!isset($_SESSION['email'])) {
+
+                            ?>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" id="bt-inicio" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar teste</button>
+
+                            <?php
+                            } else {
+
+                            ?>
+                                <a href="./teste_imc.php"><button class="btn btn-primary" type="button" id="bt-inicio">Iniciar teste</button></a>
+
+                            <?php
+
+                            }
+                            ?>
+
+
                         </div>
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
+
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                    </div>
-                    <div class="row justify-content-end">
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                    </div>
-                    <div class="row justify-content-around">
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                    </div>
-                    <div class="row justify-content-evenly">
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
-                        <div class="col-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque laudantium illum sunt, quis deleniti nobis quae voluptatum ipsam, saepe sint, animi nesciunt totam. Consequuntur ipsam minima ipsum. Illum, labore dolorum!
-                        
-                        </div>
+                    <div class="col-6">
+                        <img src="./IMGs/imagem_index.png" class="img-fluid" alt="..." width="420" id="imagem-index">
+
                     </div>
                 </div>
+
             </div>
 
+
+
             <div class="text-center">
-                <?php
-                if (!isset($_SESSION['email'])) {
 
-                ?>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" id="bt-inicio" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar teste</button>
-
-                <?php
-                } else {
-
-                ?>
-                    <a href="./teste_imc.php"><button class="btn btn-primary" type="button" id="bt-inicio">Iniciar teste</button></a>
-
-                <?php
-
-                }
-                ?>
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
@@ -160,7 +128,7 @@
                     </div>
                 </nav>
             </footer>
-    </div>
+   
 
     </section>
     </div>
