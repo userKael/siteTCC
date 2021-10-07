@@ -68,7 +68,7 @@
                 <div class="carousel-item active">
                     <img src="./IMGs/index.png" class="d-block w-100" alt="INDEX">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: black;">1 - INDEX</h5>
+                        <h5 style="color: black;">1 - INDEX tela antiga :(</h5>
                     </div>
                 </div>
                 <div class="carousel-item ">
@@ -300,7 +300,7 @@
             Semana 23/09->7/10 v07
         </h3>
         <h6>
-           Alteração de textos de resultado no SistemaWeb finalizado; <br> Cadastro e exclusão de usuarios no SistWeb agora é possivel; <br> Busca de um cadastro especifico feita;
+           Alteração de textos de resultado no SistemaWeb finalizado; <br> Cadastro e exclusão de usuarios no SistWeb agora é possivel; <br> Busca de um cadastro especifico feita; <br> Tela index repaginada; <br> Opção de imprimir Histórico feita; 
         </h6>
     </div>
     <footer id="rodape">
