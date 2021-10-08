@@ -36,7 +36,7 @@ try{
 
     while($dado = $result->fetch(PDO::FETCH_OBJ)){
           $dado2 = $teste->fetch(PDO::FETCH_OBJ);
-
+          $data = implode("/",array_reverse(explode("-",$dado2->data_teste)));
 
         $tabela .= '<tr >';
         $tabela .= '<td style="border-bottom: solid;">'.$dado->imc.'</td>';
@@ -44,7 +44,7 @@ try{
         $tabela .= '<td style="border-bottom: solid;">'.$dado2->altura.'</td>';
         $tabela .= '<td style="border-bottom: solid;">'.$dado2->peso.'</td>';
         $tabela .= '<td style="border-bottom: solid;">'.$dado2->sexo.'</td>';
-        $tabela .= '<td style="border-bottom: solid;">'.$dado2->data_teste.'</td>';
+        $tabela .= '<td style="border-bottom: solid;">'.$data .'</td>';
         $tabela .= '</tr>';
     }
     $tabela .= '</tbody>';
