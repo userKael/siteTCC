@@ -37,16 +37,17 @@
                         <div class="" id="div-txt-intro">
                             <div id="txt-conteudo">
                                 <h2>
-                                    Texto Intodutivo
+                                    Então vamos aprender!
                                 </h2>
-                                <h3>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, cupiditate vero! Dolore, ut corrupti? Soluta, eaque! Neque at, voluptate illum ipsam fugit obcaecati fuga odit itaque velit in nisi saepe.
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero fugiat quidem temporibus dolor veniam nisi unde nostrum id ex. Magni amet repudiandae sequi rem. Quo quia voluptate totam suscipit corporis?
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quidem commodi tempora ab ratione impedit aspernatur libero ducimus alias. Reprehenderit debitis dolorem tempore consectetur quam nulla eveniet libero ut corporis?
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eveniet velit iure deleniti illum, consectetur qui aliquam maxime, dolorem dolorum perferendis! Cupiditate, sunt enim? Vel fugiat illo eius est necessitatibus!
-
-
-                                </h3>
+                                <h4>
+                                    <br>
+                                    Você conhece o termo somatotipo? <br><br>
+                                    &emsp; Muito confundido com o biotipo, possuem definições diferentes, enquanto o biotipo se refere ao estado natural (genótipo) e não pode ser alterado, o somatotipo diz respeito a classificação corporal na qual pode ser alterado com o passar do tempo.
+                                    <br><br>
+                                    &emsp; Sabendo disso, que tal descobrirmos qual é a sua classificação corporal, e como ela está relacionada com seu Índice de Massa Corporal (IMC).
+                                    <br><br>
+                                    &emsp; O que?! Você não sabe o que IMC? Clique aqui para descobrir como tudo isso está relacionado a sua saúde e bem-estar.
+                                </h4>
 
                             </div>
 
