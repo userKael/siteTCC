@@ -5,7 +5,7 @@
 
 
 # Site Para TCC
-## TCC - Site desenvolvido para conclusão de curso ETEC. Será desenvolvido um site para conhecimento corporal através do IMC e Somatotipo
+## TCC - Site desenvolvido para conclusão de curso ETEC. Será desenvolvido um site para conhecimento corporal através do IMC e Somatotipo, com um perfil interativo para acompanhar as evoluções do usuário.
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
@@ -17,7 +17,7 @@
 	🚧  Guder Saúde 🚀 Em construção...  🚧
 </h4>
 
-#
+
 
 ### Features
 
@@ -30,6 +30,8 @@
 - [x] Histórico de testes
 
 #
+<div id="tecnologias">
+</div>
 
 ### 🛠 Tecnologias
 
@@ -39,6 +41,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [jQuery](https://jquery.com)
 - [jQuery.Ajax](https://api.jquery.com/jquery.ajax/)
 - [Dompdf](https://github.com/dompdf/dompdf)
+- [GoogleCharts](https://developers.google.com/chart/interactive/docs)
 
 ### Autores
 ---
