@@ -15,6 +15,11 @@ try{
     $teste->bindParam(1, $email);
     $teste->execute();
 
+    $teste2 = $con->prepare("SELECT * FROM teste WHERE contato_cadastro = ?");
+    $teste2->bindParam(1, $email);
+    $teste2->execute();
+
+
 
 }
 catch(PDOException $erro){

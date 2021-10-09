@@ -274,3 +274,10 @@ input[type='file'] {
 .bt-crud {
     margin-top: 10%;
 }
+
+#div-graficos {
+    margin-left: 5pc;
+    width: 74pc;
+    margin-top: 3pc;
+    height: 16pc;
+}
