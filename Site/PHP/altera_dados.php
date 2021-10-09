@@ -13,11 +13,6 @@ if (
     $nome = addslashes(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
     $email = $_SESSION['email'];
 
-    $comando = $con->prepare("SELECT * FROM cadastro WHERE email= ?");
-    $comando->bindParam(1, $email);
-    $comando->execute();
-
-    if ($comando->rowCount() == 0) {
         try {
 
             $comando4 = $con->prepare("UPDATE cadastro SET email =?, senha =?, nome = ? WHERE email =?");
@@ -43,11 +38,6 @@ if (
         {
             $retorno = "Erro " . $erro->getMessage();
         }
-    } 
-    else 
-    {
-        $retorno = "Email Já Existente, Tente Outro.";
-    }
 } 
 else 
 {
