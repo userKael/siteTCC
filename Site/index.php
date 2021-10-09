@@ -46,12 +46,15 @@
                                     <br><br>
                                     &emsp; Sabendo disso, que tal descobrirmos qual é a sua classificação corporal, e como ela está relacionada com seu Índice de Massa Corporal (IMC).
                                     <br><br>
-                                    &emsp; O que?! Você não sabe o que IMC? Clique aqui para descobrir como tudo isso está relacionado a sua saúde e bem-estar.
+                                    &emsp; O que?! Você não sabe o que IMC? Clique em iniciar teste para descobrir como tudo isso está relacionado a sua saúde e bem-estar.
                                 </h4>
+
+                                <img src="./IMGs/seta2.png" alt="" width="50" id="seta2">
 
                             </div>
 
-                            <div class="text-center me-5">
+                            <div class="text-center me-5 mt-4" style="margin-top: -1.4rem!important;">
+
                                 <?php
                                 if (!isset($_SESSION['email'])) {
 
@@ -70,25 +73,15 @@
                                 ?>
 
                             </div>
-
-
-
                         </div>
-
                     </div>
                     <div class="col-6">
                         <img src="./IMGs/imagem_index.png" class="img-fluid" alt="..." width="440" id="imagem-index">
 
                     </div>
                 </div>
-
             </div>
-
-
-
             <div class="text-center">
-
-
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>

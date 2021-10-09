@@ -115,13 +115,29 @@ section {
     border-color: #094809;
 }
 
+#seta2 {
+    margin-top: 5pc;
+    animation: setalado 1s ease-in-out infinite alternate;
+}
+
+@keyframes setalado {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 6pc;
+    }
+}
+
 #bt-inicio {
     color: #fff;
     background-color: #06386beb;
     border-color: #06386beb;
     padding-left: 100px;
     padding-right: 100px;
-    border-radius: 15px!important
+    border-radius: 15px!important;
+    margin-top: -4.5rem!important;
+    margin-right: 7pc;
 }
 
 #bt-inicio:hover {
