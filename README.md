@@ -8,7 +8,7 @@
 ## TCC - Site desenvolvido para conclusão de curso ETEC. Será desenvolvido um site para conhecimento corporal através do IMC e Somatotipo, com um perfil interativo para acompanhar as evoluções do usuário.
 
 <p align="center">
- <a href="#objetivo">Objetivo</a> •
+ <a href="#sobre">Sobre</a> •
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autores</a>
 </p>
@@ -17,6 +17,12 @@
 	🚧  Guder Saúde 🚀 Em construção...  🚧
 </h4>
 
+<div id="sobre">
+</div>
+
+## 💻 Sobre o projeto
+
+Guder Saúde - é um site para o conhecimento corporal, ondem podem descobrir seu somatotipo e como pode se relacionar com seu Indíce de Massa Corporal (IMC), o usuário pode se cadastrar e acompanhar seus testes, com isso podendo ver suas evoluções ou regressões, e a partir disso se conscientizar sobre o prórpio corpo.
 
 
 ### Features
@@ -33,7 +39,7 @@
 <div id="tecnologias">
 </div>
 
-### 🛠 Tecnologias
+## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -45,6 +51,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Autores
 ---
+
+<div id="autor">
+</div>
 
 
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86424915?s=400&u=086c30b676e696f0235f5fc9736ba6aa4f688a7d&v=4" width="100px;" alt=""/>
