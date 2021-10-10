@@ -300,7 +300,7 @@
             Semana 23/09->7/10 v07
         </h3>
         <h6>
-           Alteração de textos de resultado no SistemaWeb finalizado; <br> Cadastro e exclusão de usuarios no SistWeb agora é possivel; <br> Busca de um cadastro especifico feita; <br> Tela index repaginada; <br> Opção de imprimir Histórico feita; 
+           Alteração de textos de resultado no SistemaWeb finalizado; <br> Cadastro e exclusão de usuarios no SistWeb agora é possivel; <br> Busca de um cadastro especifico feita; <br> Tela index repaginada; <br> Opção de imprimir Histórico feita; <br> Grafico com o peso do usuario ao passar dos testes; <br> Texto instrodutivo realizado
         </h6>
     </div>
     <footer id="rodape">
