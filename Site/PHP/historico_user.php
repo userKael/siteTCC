@@ -1,7 +1,7 @@
-<?php 
+<?php
 $email = $_SESSION['email'];
-try{
-    
+try {
+
     $comando = $con->prepare("SELECT * FROM img_perfil WHERE contato_cadastro = ?");
     $comando->bindParam(1, $email);
     $comando->execute();
@@ -19,11 +19,24 @@ try{
     $teste2->bindParam(1, $email);
     $teste2->execute();
 
+    $coluna1 = $con->prepare("SELECT somatotipo FROM result_teste WHERE contato_cadastro=? AND somatotipo = 'ectomorfo'");
+    $coluna1->bindParam(1, $email);
+    $coluna1->execute();
+    $linhacol1 = $coluna1->rowCount();
 
+    $coluna2 = $con->prepare("SELECT somatotipo FROM result_teste WHERE contato_cadastro=? AND somatotipo = 'mesomorfo'");
+    $coluna2->bindParam(1, $email);
+    $coluna2->execute();
+    $linhacol2 = $coluna2->rowCount();
 
-}
-catch(PDOException $erro){
+    $coluna3 = $con->prepare("SELECT somatotipo FROM result_teste WHERE contato_cadastro=? AND somatotipo = 'endomorfo'");
+    $coluna3->bindParam(1, $email);
+    $coluna3->execute();
+    $linhacol3 = $coluna3->rowCount();
+
+} 
+catch (PDOException $erro) 
+{
     $retorno = "Erro " . $erro->getMessage();
     echo "<script> alert($retorno)</script>";
 }
-
