@@ -13,17 +13,13 @@
     if (!isset($_SESSION['email'])) {
 
         header("location: index.php");
-    }
-    else if (!isset($_SESSION['imc_bd'])) {
+    } else if (!isset($_SESSION['imc_bd'])) {
 
         header("location: teste_imc.php");
-
     } else if (!isset($_SESSION['somatotipo'])) {
 
         header("location: teste_biotipo.php");
-
-    } 
-    else {
+    } else {
     ?>
         <link rel="stylesheet" href="./CSS/result.css">
 </head>
@@ -110,7 +106,18 @@
         <form action="./perfil_do_usuario.php">
             <div class="vstack gap-2 col-md-5 mx-auto mb-4">
                 <p></p>
-                <button type="submit" class="btn btn-success">MEU PERFIL</button>
+                <button type="button" class="btn btn-success"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">MEU PERFIL</button>
+
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        ...
+                    </div>
+                </div>
             </div>
         </form>
 
