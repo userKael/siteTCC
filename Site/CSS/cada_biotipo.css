@@ -1,16 +1,24 @@
 /* Aqui que vc vai fazer as parada certo veinhu */
 
+#row {
+    margin-top: 10px;
+}
+
 #teste1 {
     width: 40rem;
+    
 }
 
 #col1 {
     margin-right: 12pc;
     top: 25px;
+    margin-bottom: 25px;
+    
 }
 
 #teste2 {
     height: 15rem;
-    width: 14rem;
+    width: 10rem;
     margin: 0px;
 }
+
