@@ -202,10 +202,10 @@ function consulta_cad(quant) {
             if (ret == true) {
                 cad = JSON.parse(msg)
                 var tabela = '';
-                tabela += '<div class="shadow p-3 mb-5 bg-light rounded" style="width: 22pc;">';
+                tabela += '<form action="./perfil_user.php" method="post" id="form-cads">';
+                tabela += '<div class="shadow p-3 mb-5 bg-light rounded" style="width: 22pc; margin: auto;">';
                 tabela += '<h4 class="text-center">' + cad[0].email + '</h4>';
                 tabela += '<div class="text-center">';
-                tabela += '<form action="" method="post" id="form-cads">';
                 tabela += '<table class="table">';
                 tabela += '<tbody>';
                 tabela += '<tr>';
@@ -230,10 +230,11 @@ function consulta_cad(quant) {
                 tabela += '<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />';
                 tabela += '</svg>';
                 tabela += '</button>';
-                tabela += ' <button type="button" class="btn btn-success">Ver perfil</button>';
+                tabela += ' <button type="submit" class="btn btn-success">Ver perfil</button>';
+                tabela += '</div>';
+                tabela += '<button type="button" class="btn btn-success mt-4" style="float: left;" value="Refresh Page" onClick="window.location.reload()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z" /> </svg>Voltar</button>'
+                tabela += '</div>';
                 tabela += '</form>';
-                tabela += '</div>';
-                tabela += '</div>';
 
                 var i;
                 for (i = 2; i <= quant; i++) {
@@ -275,7 +276,7 @@ function isJson(str) {
 function new_cad(quant) {
 
     var tabela = '';
-    tabela += ' <div class="col" style="width: 27pc; margin-left:19pc;">';
+    tabela += ' <div class="col" style="width: 27pc; margin:auto;">';
     tabela += ' <form method="POST" action="" id="novo-cad">';
     tabela += '  <div class="mb-3">';
     tabela += ' <label for="exampleInputEmail1" class="form-label">Nome</label>';
@@ -291,7 +292,11 @@ function new_cad(quant) {
     tabela += '  </div>';
     tabela += ' <button type="button" class="btn btn btn-success" onclick="cadastrar()">Cadastrar</button>';
     tabela += ' </form>';
+    tabela += '<button type="button" class="btn btn-success mt-4" style="float: left;" value="Refresh Page" onClick="window.location.reload()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z" /> </svg>Voltar</button>'
     tabela += ' </div>';
+
+
+
 
 
     var i;
@@ -328,6 +333,38 @@ function cadastrar() {
                 $("#resposta-busca").html(msg)
 
             }
+
+        })
+
+    .fail(function() {
+
+        alert('OPS, algo deu de errado');
+
+
+    })
+    return false;
+}
+
+function altera_dados() {
+
+    var dados = $('#form-altera-pf').serialize();
+    $.ajax({
+            method: 'POST',
+            url: './PHP/altera_dados.php',
+            data: dados,
+
+            beforeSend: function() {
+
+                $("#bt-alterar-pf").html('<div class="spinner-border" role="status"></div>');
+
+            }
+
+        })
+        .done(function(msg) {
+
+            $("#bt-alterar-pf").html('ALTERAR');
+
+            alert(msg)
 
         })
 

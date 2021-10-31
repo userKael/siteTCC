@@ -59,3 +59,17 @@
 .add {
     padding-right: 5px;
 }
+
+
+/* Pagina de perfil */
+
+#div-princ {
+    width: 61rem;
+    height: 39rem;
+    margin: auto;
+}
+
+#bt-alterar-pf {
+    margin-top: 1.1rem;
+    float: left;
+}
