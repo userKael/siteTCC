@@ -5,8 +5,14 @@ drop database guder_saude;
 create table cadastro(
 email varchar(30) not null primary key,
 senha varchar(15) not null,
-nome varchar(40) not null
+nome varchar(40) not null,
+data_cadastro date,
+alteracao TIMESTAMP
 );
+select * from cadastro;
+alter table cadastro add data_cadastro date;
+alter table cadastro add alteracao TIMESTAMP;
+
 
 create table teste(
 id int not null primary key auto_increment,
@@ -55,7 +61,8 @@ insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos','ectomo
 insert into text_result values ('6','mesomorfo - IMC baixo','mesomorfo - IMC baixo r');
 insert into text_result values ('7','mesomorfo - IMC normal','mesomorfo - IMC normal r');
 insert into text_result values ('8','mesomorfo - IMC sobrepeso','mesomorfo - IMC sobrepeso r');
-insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesidade r');
+insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesid
+ade r');
 insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos','mesomorfo - IMC sobrepeso musculos r');
 
 insert into text_result values ('11','endomorfo - IMC baixo','endomorfo - IMC baixo r');
@@ -65,17 +72,13 @@ insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IM
 insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
 
 
-/*DELIMITER $$
-	CREATE PROCEDURE contar_testes(OUT quant INT)
-    BEGIN 
-		SELECT count(*) into quant
-        FROM result_teste;
-    END
-$$ DELIMITER ;*/
+select somatotipo from result_teste where contato_cadastro="kael@kael" and somatotipo = "mesomorfo";
 
+select * from cadastro 
+inner join img_perfil  on cadastro.email = img_perfil.contato_cadastro
+where cadastro.email= 'kael@kael';
 
-
-    
+delete from cadastro where senha = 123;
 
 
 /* testes */
@@ -83,11 +86,12 @@ $$ DELIMITER ;*/
 
 select * from text_result;
 
-update text_result set texto = "endomorfo - IMC obesidade" where id = 14; 
+
+select * from teste;
 
 insert into cadastro values ('kael@kael','123','kael');
 
-select * from cadastro 
+select * from cadastro
 inner join result_teste on result_teste.contato_cadastro =  cadastro.email
 inner join teste on teste.contato_cadastro = cadastro.email
 inner join img_perfil on img_perfil.contato_cadastro = cadastro.email;
