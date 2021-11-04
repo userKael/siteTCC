@@ -1,7 +1,7 @@
 <?php 
 $banco = 'guder_saude';
 $usuario = 'root';
-$senha = '';
+$senha = 'verttrigo';
 global $con;
 
 try{
