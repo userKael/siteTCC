@@ -13,7 +13,7 @@
                         <a class="nav-link" aria-current="page" href="./cada_somatotipo.php" id="color-b">CADA SOMATOTIPO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" id="color-c">DICAS SOBRE EXERCÍCIOS</a>
+                        <a class="nav-link" aria-current="page" href="./dicas_exercicios.php" id="color-c">DICAS SOBRE EXERCÍCIOS</a>
                     </li>
                     <?php
                     if (!isset($_SESSION['email'])) {
