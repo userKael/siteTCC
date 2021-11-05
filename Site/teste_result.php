@@ -106,18 +106,8 @@
         <form action="./perfil_do_usuario.php">
             <div class="vstack gap-2 col-md-5 mx-auto mb-4">
                 <p></p>
-                <button type="button" class="btn btn-success"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">MEU PERFIL</button>
+                <button type="submit" class="btn btn-success"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">MEU PERFIL</button>
 
-
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        ...
-                    </div>
-                </div>
             </div>
         </form>
 
