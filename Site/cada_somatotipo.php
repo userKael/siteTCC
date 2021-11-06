@@ -39,11 +39,10 @@
         <div class="row">
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
-                    <p>
+                    <h5>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam non aspernatur officiis tempore repellat harum voluptatum ipsam labore? Perspiciatis doloribus sapiente repudiandae, ut quas porro molestias saepe asperiores est! Lorem ipsum
                         dolor sit amet consectetur adipisicing elit. Aliquam, soluta sed? Ut sint sunt accusantium explicabo libero. Iusto optio ad necessitatibus perspiciatis debitis, praesentium consequuntur dolore sit maiores molestiae at. Lorem ipsum
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque aspernatur aliquid atque eius quae fugit debitis sit libero veniam, a obcaecati vero incidunt voluptatem quasi possimus, sint dolores recusandae.
-                    </p>
+                   </h5>
 
                 </div>
             </div>
