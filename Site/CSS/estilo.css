@@ -90,8 +90,8 @@ section {
 }
 
 #div-txt-intro {
-    width: 56pc;
-    height: 41.2rem;
+    width: 167%;
+    height: 100%;
     margin-left: -12px;
     background: rgb(39, 155, 10);
     background-size: 190%;
@@ -280,4 +280,43 @@ input[type='file'] {
     width: 74pc;
     margin-top: 3pc;
     height: 16pc;
+}
+
+
+/* sobre nos */
+
+.sobre {
+    background: #ffffff;
+    width: 65rem;
+    margin: auto;
+    height: 17rem;
+    margin-top: 20px;
+}
+
+#corpo-sobre {
+    background: linear-gradient(125deg, #06396b, rgb(39, 155, 10), #06396b, #06396b);
+    background-size: 300%;
+    animation: colors 15s ease infinite;
+    margin: 0px;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.redes {
+    text-decoration: none;
+}
+
+.linha-vertical {
+    height: 235px;
+    border-left: 2px solid;
 }

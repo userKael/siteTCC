@@ -1,4 +1,4 @@
-<?php session_start();
+ <?php session_start();
 
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
@@ -127,6 +127,32 @@ if (!isset($_SESSION['email'])) {
                             var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 
                             chart.draw(data, options);
+                        }
+                    </script>
+
+                    <script type="text/javascript">
+                        google.charts.load('current', {
+                            'packages': ['bar']
+                        });
+                        google.charts.setOnLoadCallback(drawChart);
+
+                        function drawChart() {
+                            var data = google.visualization.arrayToDataTable([
+                                ['Resultado ao longo dos testes', 'Ectomorfo', 'Mesomorfo', 'Endomorfo'],
+                                ['Somatotipo', <?php echo $linhacol1  ?>, <?php echo $linhacol2 ?>, <?php echo $linhacol3 ?>],
+
+                            ]);
+
+                            var options = {
+                                chart: {
+                                    title: '',
+                                    subtitle: '',
+                                }
+                            };
+
+                            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+                            chart.draw(data, google.charts.Bar.convertOptions(options));
                         }
                     </script>
                 <?php
@@ -273,12 +299,23 @@ if (!isset($_SESSION['email'])) {
             <div class="text-center">
                 <h1 style="color:#06386beb">
                     Seu Peso Ao Longo dos Testes
-                </h2>
+                </h1>
             </div>
 
             <div class="shadow p-3 mb-5 bg-light rounded" id="div-graficos">
                 <div id="chart_div"></div>
             </div>
+
+            <div class="text-center">
+                <h1 style="color:#06386beb">
+                    Somatotipos ao longo dos testes
+                </h1>
+            </div>
+
+            <div class="shadow p-3 mb-5 bg-light rounded" id="div-graficos" style="height: 23pc; text-align: -webkit-center;">
+                <div id="columnchart_material" style="width: 600px; height: 300px; margin-top: 20px;"></div>
+            </div>
+
 
         <?php
         }

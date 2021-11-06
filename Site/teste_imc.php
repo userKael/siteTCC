@@ -2,12 +2,11 @@
 
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
-    
 } else {
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
-       
+
 
     <head>
 
@@ -38,9 +37,9 @@ if (!isset($_SESSION['email'])) {
     </head>
 
     <body id="corpo">
-  
 
-  
+
+
         <div class="shadow-none p-3 mb-5 bg-light rounded" id="progresso-div">
             <header id="progresso-header">
                 <div class="position-relative m-4">
@@ -69,21 +68,22 @@ if (!isset($_SESSION['email'])) {
             </h1>
             <hr>
         </div>
-      
+
 
         <div class="container">
             <div class="row">
                 <div class="col " id="div-txt-imc">
-                    <h5>
-                        Texto Explicativo
-                    </h5>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem, ipsum dolor sit amet consectetur adipisicing
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, voluptates qui ipsa dolorum id mollitia nam vitae quas alias, consequuntur harum sapiente nostrum doloribus excepturi non ullam. Voluptatum, soluta. elit. Illo
-                        provident aut exercitationem voluptatibus ullam? Repudiandae amet
-                    </p>
+                    <h3 id="text-imc">
+                        Mas o que é IMC?
+                        </h5>
+                        <h5>
+                            O Índice de Massa Corporal (IMC), refere-se ao teste feito para identificar por meio de uma fórmula matemática se você está com o peso condizente coma sua altura, e também para certificar que você não está abaixo do peso, com sobrepeso ou até mesmo com índice de obesidade.
+                            <br>
+                            Por meio do teste a seguir você saberá como está a situação de sua saúde segundo a matemática, mas... a seguir faremos mais testes
 
-                    <hr>
+                        </h5>
+
+                        <hr>
                 </div>
             </div>
         </div>
@@ -145,6 +145,7 @@ if (!isset($_SESSION['email'])) {
             </div>
         </div>
     </body>
+
     </html>
 <?php
 }

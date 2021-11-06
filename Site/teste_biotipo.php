@@ -37,15 +37,12 @@ if (!isset($_SESSION['email'])) {
         <div class="container">
             <div class="row">
                 <div class="col " id="div-txt-ex">
-                    <h5>
+                    <h4>
                         Texto Explicativo
-                    </h5>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem, ipsum dolor sit amet consectetur adipisicing
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, voluptates qui ipsa dolorum id mollitia nam vitae quas alias, consequuntur harum sapiente nostrum doloribus excepturi non ullam. Voluptatum, soluta. elit. Illo
-                        provident aut exercitationem voluptatibus ullam? Repudiandae amet
-                    </p>
-
+                    </h4>
+                    <h5>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem, 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit a, poss
                     <hr>
                 </div>
                 <div class="col  ">
@@ -59,7 +56,7 @@ if (!isset($_SESSION['email'])) {
                 <div class="row row-cols-3" style="--bs-gutter-x: 7.5rem;">
                     <div class="col">
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card1','flexRadioDefault1')" id="div-card1">
-                            <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
+                            <img src="./IMGs/Pulso_ecto.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">ecto 1.</p>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="2">
@@ -71,7 +68,7 @@ if (!isset($_SESSION['email'])) {
                     </div>
                     <div class="col">
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card2','flexRadioDefault2')" id="div-card2">
-                            <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
+                            <img src="./IMGs/Pulso_meso.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">meso 2.</p>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="3">
@@ -82,7 +79,7 @@ if (!isset($_SESSION['email'])) {
                     </div>
                     <div class="col">
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card3','flexRadioDefault3')" id="div-card3">
-                            <img src="https://www.lance.com.br/files/article_main/uploads/2020/10/14/5f877029190dc.jpeg" class="card-img-top" alt="...">
+                            <img src="./IMGs/Pulso_endo.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">endo 3.</p>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="4">

@@ -18,7 +18,7 @@ if (
 
     if ($comando->rowCount() == 0) {
         try {
-            $comando = $con->prepare("INSERT INTO cadastro VALUES (?,?,?)");
+            $comando = $con->prepare("INSERT INTO cadastro VALUES (?,?,?,NOW(),NOW())");
             $comando->bindParam(1, $email);
             $comando->bindParam(2, $senha);
             $comando->bindParam(3, $nome);
