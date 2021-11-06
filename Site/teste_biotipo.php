@@ -37,15 +37,12 @@ if (!isset($_SESSION['email'])) {
         <div class="container">
             <div class="row">
                 <div class="col " id="div-txt-ex">
-                    <h5>
+                    <h4>
                         Texto Explicativo
-                    </h5>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem, ipsum dolor sit amet consectetur adipisicing
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, voluptates qui ipsa dolorum id mollitia nam vitae quas alias, consequuntur harum sapiente nostrum doloribus excepturi non ullam. Voluptatum, soluta. elit. Illo
-                        provident aut exercitationem voluptatibus ullam? Repudiandae amet
-                    </p>
-
+                    </h4>
+                    <h5>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem, 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit a, poss
                     <hr>
                 </div>
                 <div class="col  ">
