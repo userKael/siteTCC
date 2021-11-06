@@ -10,7 +10,7 @@
 
 <body id="corpo">
     <?php include './PHP/cabecalho.php' ?>
-    <div class="container" style="margin: 0;">
+    <div class="container" style="margin: 4;">
         <div class="row">
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
@@ -22,8 +22,8 @@
 
                 </div>
             </div>
-            <div class="col">
-                <div class="" id="teste2">
+            <div class="img">
+                <div class="" id="teste1">
                     <img src="./IMGs/ectomorfo.jpg" class="border border-success border-3" alt="" width="190px">
                 </div>
             </div>
@@ -37,8 +37,8 @@
 
                 </div>
             </div>
-            <div class="col">
-                <div class="" id="teste2">
+            <div class="img">
+                <div class="" id="teste1">
                     <img src="./IMGs/endomorfo.jpg" class="border border-success border-3" alt="" width="190px">
                 </div>
             </div>
@@ -52,8 +52,8 @@
 
                 </div>
             </div>
-            <div class="col">
-                <div class="" id="teste2">
+            <div class="img">
+                <div class="" id="teste1">
                     <img src="./IMGs/mesomorfo.jpg" class="border border-success border-3" alt="" width="190px">
                 </div>
             </div>
