@@ -298,7 +298,7 @@ if (!isset($_SESSION['email'])) {
         ?>
             <div class="text-center">
                 <h1 style="color:#06386beb">
-                    Seu Peso Ao Longo dos Testes
+                    Seu peso ao longo dos testes
                 </h1>
             </div>
 
