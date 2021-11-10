@@ -61,8 +61,7 @@ insert into text_result values ('5','ectomorfo - IMC sobrepeso musculos','ectomo
 insert into text_result values ('6','mesomorfo - IMC baixo','mesomorfo - IMC baixo r');
 insert into text_result values ('7','mesomorfo - IMC normal','mesomorfo - IMC normal r');
 insert into text_result values ('8','mesomorfo - IMC sobrepeso','mesomorfo - IMC sobrepeso r');
-insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesid
-ade r');
+insert into text_result values ('9','mesomorfo - IMC obesidade','mesomorfo - IMC obesidade r');
 insert into text_result values ('10','mesomorfo - IMC sobrepeso musculos','mesomorfo - IMC sobrepeso musculos r');
 
 insert into text_result values ('11','endomorfo - IMC baixo','endomorfo - IMC baixo r');
@@ -71,14 +70,6 @@ insert into text_result values ('13','endomorfo - IMC sobrepeso','endomorfo - IM
 insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IMC obesidade r');
 insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
 
-
-select somatotipo from result_teste where contato_cadastro="kael@kael" and somatotipo = "mesomorfo";
-
-select * from cadastro 
-inner join img_perfil  on cadastro.email = img_perfil.contato_cadastro
-where cadastro.email= 'kael@kael';
-
-delete from cadastro where senha = 123;
 
 
 /* testes */

@@ -130,7 +130,7 @@ if (!isset($_SESSION['email'])) {
                         <div class="div-btn">
                             <button type="button" class="btn-proximo" id="btn-prox" onclick="teste_imc()">Próximo</button>
 
-                            <p id="Resposta-imc">
+                            <p id="Resposta-imc" class="text-center">
 
                             </p>
                         </div>
