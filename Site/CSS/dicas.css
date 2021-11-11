@@ -1,3 +1,45 @@
-#container-div{
-    margin-top: 50px    ;
+#corpo-dicas {
+    background-color: rgba(220, 218, 218, 0.9);
+}
+
+#dicas-container {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#txt-exp-dicas {
+    margin-top: 100px;
+    margin-right: 95px;
+    margin-left: 95px;
+    margin-bottom: 40px;
+}
+
+.col-dicas {
+    padding-right: 50px;
+    padding-bottom: 7px;
+    padding-left: 50px;
+}
+
+.div-cima {
+    background-color: white;
+    border-style: solid;
+    border-color: #06386b;
+    border-radius: 10px;
+    color: #06386b;
+    height: 166px;
+}
+
+.div-baixo {
+    background-color: white;
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    color: green;
+    /* height: 76px; */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.row.row-cols-2.continue {
+    margin-top: 35px;
 }

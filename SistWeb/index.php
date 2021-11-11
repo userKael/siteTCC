@@ -19,7 +19,7 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Cadastros</h5>
-                        <p class="card-text">- Ver clientes cadastrados <br> - Excluir cadastros <br> - Adicionar cadastros <br> - Ver resultados de testes</p>
+                        <p class="card-text">- Ver clientes cadastrados <br> - Excluir cadastros <br> - Adicionar cadastros <br> - Ver quantidade de testes</p>
                         <div class="text-center">
                             <a href="./cadastros.php" class="btn btn-primary">VER</a>
                         </div>
