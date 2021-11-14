@@ -376,3 +376,63 @@ function altera_dados() {
     })
     return false;
 }
+
+function altera_explica() {
+
+    var dados = $('#form-text-explica').serialize();
+    $.ajax({
+            method: 'POST',
+            url: './PHP/altera_explica.php',
+            data: dados,
+
+            beforeSend: function() {
+
+
+            }
+
+        })
+        .done(function(msg) {
+
+
+            alert(msg)
+
+        })
+
+    .fail(function() {
+
+        alert('OPS, algo deu de errado');
+
+
+    })
+    return false;
+}
+
+function altera_txt_soma(id) {
+
+    var dados = $('#form-txt-somatotipo' + id).serialize();
+    $.ajax({
+            method: 'POST',
+            url: './PHP/altera_txt_somatotipos.php',
+            data: dados,
+
+            beforeSend: function() {
+
+
+            }
+
+        })
+        .done(function(msg) {
+
+
+            alert(msg)
+
+        })
+
+    .fail(function() {
+
+        alert('OPS, algo deu de errado');
+
+
+    })
+    return false;
+}

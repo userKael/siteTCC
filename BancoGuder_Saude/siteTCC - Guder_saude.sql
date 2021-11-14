@@ -52,6 +52,19 @@ texto text not null,
 recomenda text not null
 );
 
+create table text_somatotipo(
+id int primary key,
+txt_ex text not null,
+texto text not null,
+imagem varchar(40) not null
+);
+select * from text_somatotipo;
+SELECT * FROM text_somatotipo WHERE id = 1;
+drop table text_somatotipo;
+insert into text_somatotipo values ('1','explica','ectomorfo','');
+insert into text_somatotipo values ('2','','mesomorfo','');
+insert into text_somatotipo values ('3','','endomorfo','');
+
 insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
 insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');
 insert into text_result values ('3','ectomorfo - IMC sobrepeso','ectomorfo - IMC sobrepeso r');
@@ -70,8 +83,8 @@ insert into text_result values ('13','endomorfo - IMC sobrepeso','endomorfo - IM
 insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IMC obesidade r');
 insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
 
-
-
+select *
+from text_result;
 /* testes */
 
 

@@ -356,7 +356,27 @@ class Usuario
 
         return $dado;
     }
+    public function txt_somatotipo($id)
+    {
+        global $con;
+        $retorno = "";
+        try 
+        {
+            $comando = $con->prepare("SELECT * FROM text_somatotipo WHERE id = ?");
+            $comando->bindParam(1, $id);
+            $comando->execute();
+            $dado = $comando->fetch();
 
+        } 
+        catch (PDOException $erro) 
+        {
+            $retorno = "Erro " . $erro->getMessage();
+            return $retorno;
+        }
+
+        return $dado;
+        
+    }
 
     
 }
