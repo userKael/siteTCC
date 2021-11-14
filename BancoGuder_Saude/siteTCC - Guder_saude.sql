@@ -61,9 +61,10 @@ imagem varchar(40) not null
 select * from text_somatotipo;
 SELECT * FROM text_somatotipo WHERE id = 1;
 drop table text_somatotipo;
-insert into text_somatotipo values ('1','explica','ectomorfo','');
-insert into text_somatotipo values ('2','','mesomorfo','');
-insert into text_somatotipo values ('3','','endomorfo','');
+
+insert into text_somatotipo values ('1','explica','ectomorfo','ectomorfo.jpg');
+insert into text_somatotipo values ('2','','mesomorfo','mesomorfo.jpg');
+insert into text_somatotipo values ('3','','endomorfo','endomorfo.jpg');
 
 insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
 insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');

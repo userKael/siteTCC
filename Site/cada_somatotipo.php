@@ -40,41 +40,41 @@ $cad = new Usuario();
         <div class="row">
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
-                    <?php $dado = $cad->txt_somatotipo(1);
-                    echo $dado['texto']
+                    <?php $dado1 = $cad->txt_somatotipo(1);
+                    echo $dado1['texto']
                     ?>
                 </div>
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="./IMGs/ectomorfo.jpg" class="border border-success border-3" alt="" width="170px" height="120%">
+                    <img src="./IMGs/<?php echo $dado1['imagem']?>" class="border border-success border-3" alt="" width="170px" height="120%">
                 </div>
             </div>
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
-                    <?php $dado = $cad->txt_somatotipo(2);
-                    echo $dado['texto']
+                    <?php $dado2 = $cad->txt_somatotipo(2);
+                    echo $dado2['texto']
                     ?>
 
                 </div>
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="./IMGs/mesomorfo.jpg" class="border border-success border-3" alt="" width="170px" height="120%">
+                    <img src="./IMGs/<?php echo $dado2['imagem']?>" class="border border-success border-3" alt="" width="170px" height="120%">
 
                 </div>
             </div>
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
-                    <?php $dado = $cad->txt_somatotipo(3);
-                    echo $dado['texto']
+                    <?php $dado3 = $cad->txt_somatotipo(3);
+                    echo $dado3['texto']
                     ?>
 
                 </div>
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="./IMGs/endomorfo.jpg" class="border border-success border-3" alt="" width="170px" height="120%">
+                    <img src="./IMGs/<?php echo $dado3['imagem']?>" class="border border-success border-3" alt="" width="170px" height="120%">
 
                 </div>
             </div>

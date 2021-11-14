@@ -66,8 +66,8 @@ $cad = new Usuario();
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
                     <form action="" method="post" id="form-txt-somatotipo1">
                         <textarea name="texto" id="" cols="79" rows="8">
-<?php $dado = $cad->txt_somatotipo(1);
-echo $dado['texto']
+<?php $dado1 = $cad->txt_somatotipo(1);
+echo $dado1['texto']
 ?>
                     </textarea>
                         <input type="hidden" name="id" value="1">
@@ -81,7 +81,8 @@ echo $dado['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/ectomorfo.jpg" class="border border-success border-3" alt="" width="170px" height="120%">
+                    <img src="../Site/IMGs/<?php echo $dado1['imagem']?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
+                    <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
                 </div>
             </div>
 
@@ -89,8 +90,8 @@ echo $dado['texto']
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
                     <form action="" method="post" id="form-txt-somatotipo2">
                         <textarea name="texto" id="" cols="79" rows="8">
-<?php $dado = $cad->txt_somatotipo(2);
-echo $dado['texto']
+<?php $dado2 = $cad->txt_somatotipo(2);
+echo $dado2['texto']
 ?>
                     </textarea>
                         <input type="hidden" name="id" value="2">
@@ -106,7 +107,8 @@ echo $dado['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/mesomorfo.jpg" class="border border-success border-3" alt="" width="170px" height="120%">
+                    <img src="../Site/IMGs/<?php echo $dado2['imagem']?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
+                    <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal" >Alterar Foto</button>
 
                 </div>
             </div>
@@ -115,8 +117,8 @@ echo $dado['texto']
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
                     <form action="" method="post" id="form-txt-somatotipo3">
                         <textarea name="texto" id="" cols="79" rows="8">
-<?php $dado = $cad->txt_somatotipo(3);
-echo $dado['texto']
+<?php $dado3 = $cad->txt_somatotipo(3);
+echo $dado3['texto']
 ?>
                     </textarea>
                         <input type="hidden" name="id" value="3">
@@ -129,7 +131,8 @@ echo $dado['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/endomorfo.jpg" class="border border-success border-3" alt="" width="170px" height="120%">
+                    <img src="../Site/IMGs/<?php echo $dado3['imagem']?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
+                    <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
 
                 </div>
             </div>

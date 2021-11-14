@@ -73,3 +73,10 @@
     margin-top: 1.1rem;
     float: left;
 }
+
+
+/*Cada somatotipo*/
+
+.foto-soma {
+    cursor: pointer;
+}
