@@ -58,6 +58,18 @@ txt_ex text not null,
 texto text not null,
 imagem varchar(40) not null
 );
+
+create table text_exercicio(
+id int primary key,
+txt_ex text not null,
+texto text not null,
+imagem varchar(40) not null
+);
+drop table text_exercicio;
+select * from text_exercicio;
+
+insert into text_somatotipo values ('4','EXERCICIO SLA','','');
+
 select * from text_somatotipo;
 SELECT * FROM text_somatotipo WHERE id = 1;
 drop table text_somatotipo;

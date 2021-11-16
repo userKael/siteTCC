@@ -1,5 +1,9 @@
-<?php session_start() ?>
-
+<?php
+session_start();
+include_once './PHP/ClassUsuario.php';
+include_once './PHP/conexaobd.php';
+$cad = new Usuario();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,6 +27,9 @@
   <div class="container">
     <div class="row">
       <div class="col " id="div-txt-imc">
+        <?php $dado = $cad->txt_somatotipo(4);
+        echo $dado['txt_ex']
+        ?>
         <p>
           Vamos entender um pouco sobre alguns exercícios e suas vantagens para o nosso corpo?
         </p>

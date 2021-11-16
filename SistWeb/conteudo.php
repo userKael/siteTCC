@@ -38,7 +38,7 @@
                         <h5 class="card-title">Tela Dicas de exercícios</h5>
                         <br><br><br><br>
                         <div class="text-center">
-                            <a href="" class="btn btn-primary">VER</a>
+                            <a href="./dicas_exercicio.php" class="btn btn-primary">VER</a>
                         </div>
                     </div>
                 </div>
