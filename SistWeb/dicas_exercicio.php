@@ -43,29 +43,17 @@ $cad = new Usuario();
     <div class="container">
         <div class="row">
             <div class="col " id="div-txt-imc">
-                <form action="" method="post">
-                    <textarea name="" id="" cols="150" rows="10">
+                <form action="" method="post" id="form-text-explica">
+                    <textarea name="txt_explica" id="" cols="150" rows="10">
                 <?php $dado = $cad->txt_somatotipo(4);
                 echo $dado['txt_ex']
                 ?>
- <p>
-     Vamos entender um pouco sobre alguns exercícios e suas vantagens para o nosso corpo?
- </p>
- <p>
-     Primeiramente sabemos que a base da nossa saúde é manter a rotina de exercícios ativa, nosso corpo depende disso em algum mento.
- </p>
- <p>
-     Para a gente ter uma ideia de o quão é bom atividades físicas, além de prevenir doenças físicas como níveis de colesterol, diabetes hipertensão etc. Como também pode prevenir de doenças psicológicas igual a depressão e ansiedade.
- </p>
- <p>
-     Você pode conferir algumas delas aqui!
- </p>
 
                 </textarea>
+                    <input type="hidden" name="id" value="4">
                     <div class="text-center">
-                        <button type="submit" class="btn btn-success">Alterar</button>
+                        <button type="submit" class="btn btn-success" onclick="altera_explica()">Alterar</button>
                     </div>
-
                 </form>
                 <hr>
             </div>
@@ -77,13 +65,13 @@ $cad = new Usuario();
         <div class="row row-cols-2">
 
             <div class="col-dicas">
-                <img src="https://wl-incrivel.cf.tsp.li/resize/728x/jpg/6e2/741/85b19e548b84d269eab2163e2a.jpg" alt="" width="100%">
+                <img src="https://wl-incrivel.cf.tsp.li/resize/728x/jpg/6e2/741/85b19e548b84d269eab2163e2a.jpg" alt="" width="467px" height="280px">
             </div>
 
             <div class="col-dicas">
-                <div class="div-cima">
-                    imagem
-                </div>
+                
+                <img src="https://lh3.googleusercontent.com/proxy/e7u-FaWRSkJjuNHtvQ-maNiY69xXsn0yrfAEJxHBrISmlTYhQmnVg5BZC70CMbGaAtq_9PYZJAx8ciCTb_oNYnZBimrCQ-CJvyGO0sGZ72_cH-Eiva9BenGwZbkmMU3rWVEodEcMPy4jFF1hzG_g9G1sZuJd-WEVSZXgyb-WyfJJbHFqSm07KxjX9HSc3a0IcSMs0mXEamLDh_CS__rzheXa" alt="" width="467px" height="280px">
+               
             </div>
 
             <div class="col-dicas">
@@ -98,11 +86,9 @@ $cad = new Usuario();
                     Texto sobre o exercício
                 </div>
             </div>
+            
 
         </div>
-
-
-
 
 
 

@@ -30,20 +30,6 @@ $cad = new Usuario();
         <?php $dado = $cad->txt_somatotipo(4);
         echo $dado['txt_ex']
         ?>
-        <p>
-          Vamos entender um pouco sobre alguns exercícios e suas vantagens para o nosso corpo?
-        </p>
-        <p>
-          Primeiramente sabemos que a base da nossa saúde é manter a rotina de exercícios ativa, nosso corpo depende disso em algum mento.
-        </p>
-        <p>
-          Para a gente ter uma ideia de o quão é bom atividades físicas, além de prevenir doenças físicas como níveis de colesterol, diabetes hipertensão etc. Como também pode prevenir de doenças psicológicas igual a depressão e ansiedade.
-        </p>
-        <p>
-          Você pode conferir algumas delas aqui!
-        </p>
-
-
         <hr>
       </div>
     </div>
