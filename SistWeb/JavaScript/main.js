@@ -436,3 +436,48 @@ function altera_txt_soma(id) {
     })
     return false;
 }
+
+function file_img(id) {
+
+    let foto = document.getElementById('img' + id);
+    let arquivo = document.getElementById('input-img' + id);
+
+    foto.addEventListener('click', () => {
+        arquivo.click();
+    });
+
+    arquivo.addEventListener('change', () => {
+
+        let reader = new FileReader();
+
+        reader.onload = () => {
+            foto.src = reader.result;
+        }
+        reader.readAsDataURL(arquivo.files[0]);
+    })
+
+}
+
+function up_foto_soma(id) {
+
+    var formData = new FormData(document.getElementById("up_soma_img" + id));
+    $.ajax({
+        type: 'POST',
+        url: './PHP/altera_img.php',
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        beforeSend: function() {
+
+        },
+        success: function(msg) {
+
+            alert(msg);
+
+
+        }
+    });
+
+
+}

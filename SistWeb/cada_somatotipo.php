@@ -81,11 +81,11 @@ echo $dado1['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/<?php echo $dado1['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
-                    <form action="./PHP/altera_img.php" method="post" enctype="multipart/form-data" id="up_soma_img">
+                    <img src="../Site/IMGs/<?php echo $dado1['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%" onclick="file_img(1)" id="img1">
+                    <form action="" method="post" enctype="multipart/form-data" id="up_soma_img1">
                         <input type="hidden" name="id" value="1">
-                        <input type="file" name="arquivo" id="" accept="image/*">
-                        <button type="submit" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
+                        <input type="file" name="arquivo" accept="image/*" id="input-img1">
+                        <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="up_foto_soma(1)">Alterar Foto</button>
                     </form>
                 </div>
             </div>
@@ -111,11 +111,11 @@ echo $dado2['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/<?php echo $dado2['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
-                    <form action="./PHP/altera_img.php" method="post" enctype="multipart/form-data" id="up_soma_img">
+                    <img src="../Site/IMGs/<?php echo $dado2['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%" onclick="file_img(2)" id="img2">
+                    <form action="" method="post" enctype="multipart/form-data" id="up_soma_img2">
                         <input type="hidden" name="id" value="2">
-                        <input type="file" name="arquivo" id="" accept="image/*">
-                        <button type="submit" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
+                        <input type="file" name="arquivo" accept="image/*" id="input-img2">
+                        <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="up_foto_soma(2)">Alterar Foto</button>
                     </form>
 
                 </div>
@@ -139,11 +139,11 @@ echo $dado3['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/<?php echo $dado3['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
-                    <form action="./PHP/altera_img.php" method="post" enctype="multipart/form-data" id="up_soma_img">
+                    <img src="../Site/IMGs/<?php echo $dado3['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%" onclick="file_img(3)" id="img3">
+                    <form action="" method="post" enctype="multipart/form-data" id="up_soma_img3">
                         <input type="hidden" name="id" value="3">
-                        <input type="file" name="arquivo" id="" accept="image/*">
-                        <button type="submit" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
+                        <input type="file" name="arquivo" accept="image/*" id="input-img3">
+                        <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="up_foto_soma(3)">Alterar Foto</button>
                     </form>
                 </div>
             </div>
