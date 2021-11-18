@@ -81,8 +81,12 @@ echo $dado1['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/<?php echo $dado1['imagem']?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
-                    <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
+                    <img src="../Site/IMGs/<?php echo $dado1['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
+                    <form action="./PHP/altera_img.php" method="post" enctype="multipart/form-data" id="up_soma_img">
+                        <input type="hidden" name="id" value="1">
+                        <input type="file" name="arquivo" id="" accept="image/*">
+                        <button type="submit" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
+                    </form>
                 </div>
             </div>
 
@@ -107,8 +111,12 @@ echo $dado2['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/<?php echo $dado2['imagem']?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
-                    <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal" >Alterar Foto</button>
+                    <img src="../Site/IMGs/<?php echo $dado2['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
+                    <form action="./PHP/altera_img.php" method="post" enctype="multipart/form-data" id="up_soma_img">
+                        <input type="hidden" name="id" value="2">
+                        <input type="file" name="arquivo" id="" accept="image/*">
+                        <button type="submit" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
+                    </form>
 
                 </div>
             </div>
@@ -131,9 +139,12 @@ echo $dado3['texto']
             </div>
             <div class="col">
                 <div class="" id="teste2">
-                    <img src="../Site/IMGs/<?php echo $dado3['imagem']?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
-                    <button type="button" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
-
+                    <img src="../Site/IMGs/<?php echo $dado3['imagem'] ?>" class="border border-success border-3 foto-soma" alt="" width="170px" height="120%">
+                    <form action="./PHP/altera_img.php" method="post" enctype="multipart/form-data" id="up_soma_img">
+                        <input type="hidden" name="id" value="3">
+                        <input type="file" name="arquivo" id="" accept="image/*">
+                        <button type="submit" class="badge rounded-pill bg-success ms-5 mt-2" id="bt-foto" data-bs-toggle="modal" data-bs-target="#exampleModal">Alterar Foto</button>
+                    </form>
                 </div>
             </div>
         </div>
