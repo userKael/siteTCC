@@ -37,20 +37,12 @@ $cad = new Usuario();
 
 
   <div class="container" id="dicas-container">
+
     <div class="row row-cols-2">
 
       <div class="col-dicas">
-        <img src="https://wl-incrivel.cf.tsp.li/resize/728x/jpg/6e2/741/85b19e548b84d269eab2163e2a.jpg" alt="" width="100%">
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-cima">
-          imagem
-        </div>
-      </div>
-
-      <div class="col-dicas">
         <div class="div-baixo">
+        <img src="./IMGs/imagemteste1.jpg" alt="" width="445px" height="300px">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, eum quaerat ullam modi distinctio, totam facilis velit, ad quae magnam id quidem pariatur voluptates soluta? Quasi distinctio accusamus et nulla.
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, similique porro. Est dignissimos iure nulla, rerum, ipsum esse obcaecati nihil vitae necessitatibus laborum numquam sapiente asperiores iusto laboriosam nisi aliquam!
         </div>
@@ -58,6 +50,7 @@ $cad = new Usuario();
 
       <div class="col-dicas">
         <div class="div-baixo">
+        <img width="445px" height="300px" src="./IMGs/imagemteste2" alt="">
           Texto sobre o exercício
         </div>
       </div>
@@ -92,59 +85,8 @@ $cad = new Usuario();
 
     </div>
 
-    <div class="row row-cols-2 continue">
 
-      <div class="col-dicas">
-        <div class="div-cima">
-          imagem
-        </div>
-      </div>
 
-      <div class="col-dicas">
-        <div class="div-cima">
-          imagem
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-baixo">
-          Texto sobre o exercício
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-baixo">
-          Texto sobre o exercício
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-cols-2 continue">
-
-      <div class="col-dicas">
-        <div class="div-cima">
-          imagem
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-cima">
-          imagem
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-baixo">
-          Texto sobre o exercício
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-baixo">
-          Texto sobre o exercício
-        </div>
-      </div>
-    </div>
 
   </div>
 </body>

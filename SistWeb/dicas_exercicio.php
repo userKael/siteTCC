@@ -65,13 +65,13 @@ $cad = new Usuario();
         <div class="row row-cols-2">
 
             <div class="col-dicas">
-                <img src="https://wl-incrivel.cf.tsp.li/resize/728x/jpg/6e2/741/85b19e548b84d269eab2163e2a.jpg" alt="" width="467px" height="280px">
+                <img src="../Site/IMGs/imagemteste1.jpg" alt="" width="467px" height="280px">
             </div>
 
             <div class="col-dicas">
                 
-                <img src="https://lh3.googleusercontent.com/proxy/e7u-FaWRSkJjuNHtvQ-maNiY69xXsn0yrfAEJxHBrISmlTYhQmnVg5BZC70CMbGaAtq_9PYZJAx8ciCTb_oNYnZBimrCQ-CJvyGO0sGZ72_cH-Eiva9BenGwZbkmMU3rWVEodEcMPy4jFF1hzG_g9G1sZuJd-WEVSZXgyb-WyfJJbHFqSm07KxjX9HSc3a0IcSMs0mXEamLDh_CS__rzheXa" alt="" width="467px" height="280px">
-               
+                <!-- <img src="https://lh3.googleusercontent.com/proxy/e7u-FaWRSkJjuNHtvQ-maNiY69xXsn0yrfAEJxHBrISmlTYhQmnVg5BZC70CMbGaAtq_9PYZJAx8ciCTb_oNYnZBimrCQ-CJvyGO0sGZ72_cH-Eiva9BenGwZbkmMU3rWVEodEcMPy4jFF1hzG_g9G1sZuJd-WEVSZXgyb-WyfJJbHFqSm07KxjX9HSc3a0IcSMs0mXEamLDh_CS__rzheXa" alt="" width="467px" height="280px"> -->
+               <img src="../Site/IMGs/imagemteste2" alt="" srcset="">
             </div>
 
             <div class="col-dicas">
