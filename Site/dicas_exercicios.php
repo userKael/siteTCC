@@ -60,11 +60,6 @@ $cad = new Usuario();
     </div>
   </div>
 
-
-
-
-
-
   <div class="container" id="dicas-container">
 
     <div class="row row-cols-2">
@@ -89,10 +84,6 @@ $cad = new Usuario();
     </div>
   </div>
 
-
-
-
-
   <div class="container" id="dicas-container">
 
     <div class="row row-cols-2">
@@ -116,11 +107,6 @@ $cad = new Usuario();
       </div>
     </div>
   </div>
-
-
-
-
-
 
 </body>
 
