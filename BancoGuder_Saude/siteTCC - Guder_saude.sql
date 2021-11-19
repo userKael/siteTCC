@@ -9,10 +9,6 @@ nome varchar(40) not null,
 data_cadastro date,
 alteracao TIMESTAMP
 );
-select * from cadastro;
-alter table cadastro add data_cadastro date;
-alter table cadastro add alteracao TIMESTAMP;
-
 
 create table teste(
 id int not null primary key auto_increment,
@@ -37,6 +33,7 @@ on update cascade
 on delete cascade
 );
 
+
 create table img_perfil(
 id int not null primary key auto_increment,
 imagem varchar(40) not null,
@@ -51,34 +48,6 @@ id int primary key,
 texto text not null,
 recomenda text not null
 );
-
-create table text_somatotipo(
-id int primary key,
-txt_ex text not null,
-texto text not null,
-imagem varchar(40) not null
-);
-
-create table text_exercicio(
-id int primary key,
-texto text not null,
-imagem varchar(40) not null
-);
-drop table text_exercicio;
-select * from text_exercicio;
-insert into text_exercicio values ('1','TESTE','imagemteste1.jpg');
-insert into text_exercicio values ('2','TESTE2','imagemteste2');
-insert into text_exercicio values ('3','TESTE3','imagemteste3.jpg');
-insert into text_exercicio values ('4','TESTE4','imagemteste4.jpg');
-insert into text_exercicio values ('5','TESTE5','imagemteste5.jpg');
-insert into text_exercicio values ('6','TESTE6','imagemteste6.jpg');
-
-
-
-insert into text_somatotipo values ('1','explica','ectomorfo','ectomorfo.jpg');
-insert into text_somatotipo values ('2','','mesomorfo','mesomorfo.jpg');
-insert into text_somatotipo values ('3','','endomorfo','endomorfo.jpg');
-insert into text_somatotipo values ('4','EXERCICIO SLA','','');
 
 insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
 insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');
@@ -97,6 +66,35 @@ insert into text_result values ('12','endomorfo - IMC normal','endomorfo - IMC n
 insert into text_result values ('13','endomorfo - IMC sobrepeso','endomorfo - IMC sobrepeso r');
 insert into text_result values ('14','endomorfo - IMC obesidade','endomorfo - IMC obesidade r');
 insert into text_result values ('15','endomorfo - IMC sobrepeso musculos','endomorfo - IMC sobrepeso musculos r');
+
+
+create table text_somatotipo(
+id int primary key,
+txt_ex text not null,
+texto text not null,
+imagem varchar(40) not null
+);
+
+insert into text_somatotipo values ('1','explica','ectomorfo','ectomorfo.jpg');
+insert into text_somatotipo values ('2','','mesomorfo','mesomorfo.jpg');
+insert into text_somatotipo values ('3','','endomorfo','endomorfo.jpg');
+insert into text_somatotipo values ('4','EXERCICIO SLA','','');
+
+create table text_exercicio(
+id int primary key,
+texto text not null,
+imagem varchar(40) not null
+);
+
+insert into text_exercicio values ('1','TESTE','imagemteste1.jpg');
+insert into text_exercicio values ('2','TESTE2','imagemteste2');
+insert into text_exercicio values ('3','TESTE3','imagemteste3.jpg');
+insert into text_exercicio values ('4','TESTE4','imagemteste4.jpg');
+insert into text_exercicio values ('5','TESTE5','imagemteste5.jpg');
+insert into text_exercicio values ('6','TESTE6','imagemteste6.jpg');
+
+
+
 
 select *
 from text_result;
