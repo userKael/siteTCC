@@ -41,54 +41,87 @@ $cad = new Usuario();
     <div class="row row-cols-2">
 
       <div class="col-dicas">
-        <div class="div-baixo">
-        <img src="./IMGs/imagemteste1.jpg" alt="" width="445px" height="300px">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, eum quaerat ullam modi distinctio, totam facilis velit, ad quae magnam id quidem pariatur voluptates soluta? Quasi distinctio accusamus et nulla.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, similique porro. Est dignissimos iure nulla, rerum, ipsum esse obcaecati nihil vitae necessitatibus laborum numquam sapiente asperiores iusto laboriosam nisi aliquam!
+        <div class="shadow p-3 mb-5 bg-light rounded">
+          <?php $dado1 = $cad->txt_exercicio(1); ?>
+          <img src="./IMGs/<?php echo $dado1['imagem'] ?>" alt="" width="437px" height="287px">
+          <br>
+          <?php echo $dado1['texto'] ?>
         </div>
       </div>
 
       <div class="col-dicas">
-        <div class="div-baixo">
-        <img width="445px" height="300px" src="./IMGs/imagemteste2" alt="">
-          Texto sobre o exercício
+        <div class="shadow p-3 mb-5 bg-light rounded">
+          <?php $dado2 = $cad->txt_exercicio(2); ?>
+          <img src="./IMGs/<?php echo $dado2['imagem'] ?>" alt="" width="437px" height="287px">
+          <br>
+          <?php echo $dado2['texto'] ?>
         </div>
       </div>
-
     </div>
-
-    <div class="row row-cols-2 continue">
-
-      <div class="col-dicas">
-        <div class="div-cima">
-          imagem
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-cima">
-          imagem
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-baixo">
-          Texto sobre o exercício
-        </div>
-      </div>
-
-      <div class="col-dicas">
-        <div class="div-baixo">
-          Texto sobre o exercício
-        </div>
-      </div>
-
-    </div>
-
-
-
-
   </div>
+
+
+
+
+
+
+  <div class="container" id="dicas-container">
+
+    <div class="row row-cols-2">
+
+      <div class="col-dicas">
+        <div class="shadow p-3 mb-5 bg-light rounded">
+          <?php $dado3 = $cad->txt_exercicio(3); ?>
+          <img src="./IMGs/<?php echo $dado3['imagem'] ?>" alt="" width="445px" height="300px">
+          <br>
+          <?php echo $dado3['texto'] ?>
+        </div>
+      </div>
+
+      <div class="col-dicas">
+        <div class="shadow p-3 mb-5 bg-light rounded">
+          <?php $dado4 = $cad->txt_exercicio(4); ?>
+          <img src="./IMGs/<?php echo $dado4['imagem'] ?>" alt="" width="445px" height="300px">
+          <br>
+          <?php echo $dado4['texto'] ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container" id="dicas-container">
+
+    <div class="row row-cols-2">
+
+      <div class="col-dicas">
+        <div class="shadow p-3 mb-5 bg-light rounded">
+          <?php $dado5 = $cad->txt_exercicio(5); ?>
+          <img src="./IMGs/<?php echo $dado5['imagem'] ?>" alt="" width="445px" height="300px">
+          <br>
+          <?php echo $dado5['texto'] ?>
+        </div>
+      </div>
+
+      <div class="col-dicas">
+        <div class="shadow p-3 mb-5 bg-light rounded">
+          <?php $dado6 = $cad->txt_exercicio(6); ?>
+          <img src="./IMGs/<?php echo $dado6['imagem'] ?>" alt="" width="445px" height="300px">
+          <br>
+          <?php echo $dado6['texto'] ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
 </body>
 
 </html>

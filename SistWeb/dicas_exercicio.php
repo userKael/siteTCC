@@ -65,33 +65,105 @@ $cad = new Usuario();
         <div class="row row-cols-2">
 
             <div class="col-dicas">
-                <img src="../Site/IMGs/imagemteste1.jpg" alt="" width="467px" height="280px">
-            </div>
-
-            <div class="col-dicas">
-                
-                <!-- <img src="https://lh3.googleusercontent.com/proxy/e7u-FaWRSkJjuNHtvQ-maNiY69xXsn0yrfAEJxHBrISmlTYhQmnVg5BZC70CMbGaAtq_9PYZJAx8ciCTb_oNYnZBimrCQ-CJvyGO0sGZ72_cH-Eiva9BenGwZbkmMU3rWVEodEcMPy4jFF1hzG_g9G1sZuJd-WEVSZXgyb-WyfJJbHFqSm07KxjX9HSc3a0IcSMs0mXEamLDh_CS__rzheXa" alt="" width="467px" height="280px"> -->
-               <img src="../Site/IMGs/imagemteste2" alt="" srcset="">
-            </div>
-
-            <div class="col-dicas">
                 <div class="div-baixo">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, eum quaerat ullam modi distinctio, totam facilis velit, ad quae magnam id quidem pariatur voluptates soluta? Quasi distinctio accusamus et nulla.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, similique porro. Est dignissimos iure nulla, rerum, ipsum esse obcaecati nihil vitae necessitatibus laborum numquam sapiente asperiores iusto laboriosam nisi aliquam!
+                    <?php $dado1 = $cad->txt_exercicio(1); ?>
+                    <img src="../Site/IMGs/<?php echo $dado1['imagem'] ?>" alt="" width="445px" height="300px">
+                    <br><br>
+                    <textarea name="" id="" cols="60" rows="10">
+<?php echo $dado1['texto'] ?>
+                    </textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="">Alterar</button>
+                    </div>
                 </div>
             </div>
 
             <div class="col-dicas">
                 <div class="div-baixo">
-                    Texto sobre o exercício
+                    <?php $dado2 = $cad->txt_exercicio(2); ?>
+                    <img src="../Site/IMGs/<?php echo $dado2['imagem'] ?>" alt="" width="445px" height="300px">
+                    <br><br>
+                    <textarea name="" id="" cols="60" rows="10">
+<?php echo $dado2['texto'] ?>
+                    </textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="">Alterar</button>
+                    </div>
                 </div>
             </div>
-            
-
         </div>
+    </div>
 
 
 
+
+
+    <div class="container" id="dicas-container">
+        <div class="row row-cols-2">
+
+            <div class="col-dicas">
+                <div class="div-baixo">
+                    <?php $dado3 = $cad->txt_exercicio(3); ?>
+                    <img src="../Site/IMGs/<?php echo $dado3['imagem'] ?>" alt="" width="445px" height="300px">
+                    <br><br>
+                    <textarea name="" id="" cols="60" rows="10">
+<?php echo $dado3['texto'] ?>
+                    </textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="">Alterar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-dicas">
+                <div class="div-baixo">
+                    <?php $dado4 = $cad->txt_exercicio(4); ?>
+                    <img src="../Site/IMGs/<?php echo $dado4['imagem'] ?>" alt="" width="445px" height="300px">
+                    <br><br>
+                    <textarea name="" id="" cols="60" rows="10">
+<?php echo $dado4['texto'] ?>
+                    </textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="">Alterar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="dicas-container">
+        <div class="row row-cols-2">
+
+            <div class="col-dicas">
+                <div class="div-baixo">
+                    <?php $dado5 = $cad->txt_exercicio(5); ?>
+                    <img src="../Site/IMGs/<?php echo $dado5['imagem'] ?>" alt="" width="445px" height="300px">
+                    <br><br>
+                    <textarea name="" id="" cols="60" rows="10">
+<?php echo $dado5['texto'] ?>
+                    </textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="">Alterar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-dicas">
+                <div class="div-baixo">
+                    <?php $dado6 = $cad->txt_exercicio(6); ?>
+                    <img src="../Site/IMGs/<?php echo $dado6['imagem'] ?>" alt="" width="445px" height="300px">
+                    <br><br>
+                    <textarea name="" id="" cols="60" rows="10">
+<?php echo $dado6['texto'] ?>
+                    </textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="">Alterar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

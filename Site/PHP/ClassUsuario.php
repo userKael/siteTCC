@@ -377,6 +377,27 @@ class Usuario
         return $dado;
         
     }
+    public function txt_exercicio($id)
+    {
+        global $con;
+        $retorno = "";
+        try 
+        {
+            $comando = $con->prepare("SELECT * FROM text_exercicio WHERE id = ?");
+            $comando->bindParam(1, $id);
+            $comando->execute();
+            $dado = $comando->fetch();
+
+        } 
+        catch (PDOException $erro) 
+        {
+            $retorno = "Erro " . $erro->getMessage();
+            return $retorno;
+        }
+
+        return $dado;
+        
+    }
 
     
 }

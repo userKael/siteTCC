@@ -61,22 +61,24 @@ imagem varchar(40) not null
 
 create table text_exercicio(
 id int primary key,
-txt_ex text not null,
 texto text not null,
 imagem varchar(40) not null
 );
 drop table text_exercicio;
 select * from text_exercicio;
+insert into text_exercicio values ('1','TESTE','imagemteste1.jpg');
+insert into text_exercicio values ('2','TESTE2','imagemteste2');
+insert into text_exercicio values ('3','TESTE3','imagemteste3.jpg');
+insert into text_exercicio values ('4','TESTE4','imagemteste4.jpg');
+insert into text_exercicio values ('5','TESTE5','imagemteste5.jpg');
+insert into text_exercicio values ('6','TESTE6','imagemteste6.jpg');
 
-insert into text_somatotipo values ('4','EXERCICIO SLA','','');
 
-select * from text_somatotipo;
-SELECT * FROM text_somatotipo WHERE id = 1;
-drop table text_somatotipo;
 
 insert into text_somatotipo values ('1','explica','ectomorfo','ectomorfo.jpg');
 insert into text_somatotipo values ('2','','mesomorfo','mesomorfo.jpg');
 insert into text_somatotipo values ('3','','endomorfo','endomorfo.jpg');
+insert into text_somatotipo values ('4','EXERCICIO SLA','','');
 
 insert into text_result values ('1','ectomorfo - IMC baixo','ectomorfo - IMC baixo r');
 insert into text_result values ('2','ectomorfo - IMC normal','ectomorfo - IMC normal r');
