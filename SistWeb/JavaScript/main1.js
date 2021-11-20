@@ -481,3 +481,57 @@ function up_foto_soma(id) {
 
 
 }
+
+function up_foto_exer(id) {
+
+    var formData = new FormData(document.getElementById("up_soma_img" + id));
+    $.ajax({
+        type: 'POST',
+        url: './PHP/altera_exer.php',
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        beforeSend: function() {
+
+        },
+        success: function(msg) {
+
+            alert(msg);
+
+
+        }
+    });
+
+
+}
+
+function altera_txt_exerc(id) {
+
+    var dados = $('#form-txt-exerc' + id).serialize();
+    $.ajax({
+            method: 'POST',
+            url: './PHP/altera_txt_exerc.php',
+            data: dados,
+
+            beforeSend: function() {
+
+
+            }
+
+        })
+        .done(function(msg) {
+
+
+            alert(msg)
+
+        })
+
+    .fail(function() {
+
+        alert('OPS, algo deu de errado');
+
+
+    })
+    return false;
+}
