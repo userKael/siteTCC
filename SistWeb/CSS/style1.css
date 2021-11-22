@@ -84,3 +84,13 @@
 input[type='file'] {
     display: none;
 }
+
+.div-baixo img {
+    cursor: pointer;
+    border: solid;
+}
+
+.div-baixo img:hover {
+    background-color: #ffff;
+    transform: scale(1.1);
+}

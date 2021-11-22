@@ -12,11 +12,7 @@ $cad = new Usuario();
     <?php include './PHP/head.php'; ?>
 
     <link rel="stylesheet" href="../site/CSS/dicas.css">
-    <style>
-        img {
-            cursor: pointer;
-        }
-    </style>
+  
     <title>Document</title>
 </head>
 
