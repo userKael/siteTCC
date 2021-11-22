@@ -1,8 +1,13 @@
 <?php session_start();
 
+
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
 } else {
+
+    include_once './PHP/ClassUsuario.php';
+    include_once './PHP/conexaobd.php';
+    $cad = new Usuario();
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -73,7 +78,11 @@ if (!isset($_SESSION['email'])) {
         <div class="container">
             <div class="row">
                 <div class="col " id="div-txt-imc">
+                    <?php $dado = $cad->txt_somatotipo(5);
+                    echo $dado['txt_ex']
+                    ?>
                     <h3 id="text-imc">
+
                         Mas o que é IMC?
                         </h5>
                         <h5>

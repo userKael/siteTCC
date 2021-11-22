@@ -79,6 +79,8 @@ insert into text_somatotipo values ('1','explica','ectomorfo','ectomorfo.jpg');
 insert into text_somatotipo values ('2','','mesomorfo','mesomorfo.jpg');
 insert into text_somatotipo values ('3','','endomorfo','endomorfo.jpg');
 insert into text_somatotipo values ('4','EXERCICIO SLA','','');
+insert into text_somatotipo values ('5','imc sla','','');
+insert into text_somatotipo values ('6','somatotipo sla','','');
 
 create table text_exercicio(
 id int primary key,

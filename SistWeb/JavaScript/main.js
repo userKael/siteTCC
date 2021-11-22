@@ -387,7 +387,6 @@ function altera_explica() {
 
             beforeSend: function() {
 
-
             }
 
         })
@@ -524,6 +523,35 @@ function altera_txt_exerc(id) {
 
 
             alert(msg)
+
+        })
+
+    .fail(function() {
+
+        alert('OPS, algo deu de errado');
+
+
+    })
+    return false;
+}
+
+function altera_explica2(id) {
+
+    var dados = $('#form-text-explica'+id).serialize();
+    $.ajax({
+            method: 'POST',
+            url: './PHP/altera_explica.php',
+            data: dados,
+
+            beforeSend: function() {
+
+            }
+
+        })
+        .done(function(msg) {
+
+
+            alert(msg);
 
         })
 

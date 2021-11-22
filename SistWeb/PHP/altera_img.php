@@ -34,7 +34,7 @@ if($arquivoAtual == ""){
     
             echo "Erro ao alterar imagem";
         }
-    } catch (PDOException) {
+    } catch (PDOException $e) {
     
         echo "Erro ao alterar imagem";
     }

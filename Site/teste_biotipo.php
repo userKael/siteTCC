@@ -3,18 +3,23 @@ session_start();
 
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
-
-} else if (!isset($_SESSION['imc_bd'])){
+} else if (!isset($_SESSION['imc_bd'])) {
     header("location: teste_imc.php");
-}else{
+} else {
+
+    include_once './PHP/ClassUsuario.php';
+    include_once './PHP/conexaobd.php';
+    $cad = new Usuario();
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
+
     <head>
         <?php include './PHP/head.php' ?>
         <title>GUDER SAÚDE - TESTE SOMATOTIPO</title>
 
     </head>
+
     <body id="corpo">
         <div class="shadow-none p-3 mb-5 bg-light rounded" id="progresso-div">
             <header id="progresso-header">
@@ -37,13 +42,17 @@ if (!isset($_SESSION['email'])) {
         <div class="container">
             <div class="row">
                 <div class="col " id="div-txt-ex">
+                    <?php $dado = $cad->txt_somatotipo(6);
+                    echo $dado['txt_ex']
+                    ?>
                     <h4>
                         Texto Explicativo
                     </h4>
                     <h5>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem, 
+
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem,
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit a, poss
-                    <hr>
+                        <hr>
                 </div>
                 <div class="col  ">
                     <img src="https://pratofitness.blog/wp-content/uploads/2019/03/teste-do-pulso-1200x580.png?189db0&189db0" alt="" style="width: inherit;">
@@ -155,14 +164,14 @@ if (!isset($_SESSION['email'])) {
                             </ul>
                         </li>
                     </ul>
-          
+
                     <div class="div-btn">
                         <button type="button" class="btn-proximo" id="btn-prox" onclick="teste_somatotipo()">Finalizar</button>
 
                     </div>
                     <div style="padding-top: 10px; color: red">
                         <h5 class="text-center " id="resposta-soma">
-                          
+
                         </h5>
                     </div>
                 </div>

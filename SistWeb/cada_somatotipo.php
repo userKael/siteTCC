@@ -44,7 +44,7 @@ $cad = new Usuario();
     <div class="container">
         <div class="row">
             <div class="col " id="div-txt-imc">
-                <form action="" method="post" id="form-text-explica">
+                <form action="" method="post" id="form-text-explica ">
                     <textarea name="txt_explica" id="" cols="150" rows="10">
  <?php $dado = $cad->txt_somatotipo(1);
     echo $dado['txt_ex']
