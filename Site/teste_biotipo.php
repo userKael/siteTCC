@@ -41,18 +41,11 @@ if (!isset($_SESSION['email'])) {
         </div>
         <div class="container">
             <div class="row">
-                <div class="col " id="div-txt-ex">
+                <div class="col " id="div-txt-imc">
                     <?php $dado = $cad->txt_somatotipo(6);
                     echo $dado['txt_ex']
                     ?>
-                    <h4>
-                        Texto Explicativo
-                    </h4>
-                    <h5>
 
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem,
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit a, poss
-                        <hr>
                 </div>
                 <div class="col  ">
                     <img src="https://pratofitness.blog/wp-content/uploads/2019/03/teste-do-pulso-1200x580.png?189db0&189db0" alt="" style="width: inherit;">
@@ -67,7 +60,7 @@ if (!isset($_SESSION['email'])) {
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card1','flexRadioDefault1')" id="div-card1">
                             <img src="./IMGs/Pulso_ecto.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">ecto 1.</p>
+                                <p class="card-text text-center">Polegar sobre o dedo <br>médio </p>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="2">
                                 <label class="form-check-label" for="flexRadioDefault1">
 
@@ -79,7 +72,7 @@ if (!isset($_SESSION['email'])) {
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card2','flexRadioDefault2')" id="div-card2">
                             <img src="./IMGs/Pulso_meso.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">meso 2.</p>
+                                <p class="card-text text-center">Polegar encosta no dedo médio</p>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="3">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                 </label>
@@ -90,7 +83,7 @@ if (!isset($_SESSION['email'])) {
                         <div class="card" style="width: 18rem;" onclick="pergunta('div-card3','flexRadioDefault3')" id="div-card3">
                             <img src="./IMGs/Pulso_endo.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center">endo 3.</p>
+                                <p class="card-text text-center">Polegar não encosta no dedo médio</p>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="4">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                 </label>
