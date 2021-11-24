@@ -1,3 +1,9 @@
+<?php
+include_once '../Site/PHP/ClassUsuario.php';
+include_once './PHP/conexaobd.php';
+$cad = new Usuario();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <?php include './PHP/head.php' ?>
@@ -32,28 +38,24 @@
     <div class="container">
         <div class="row">
             <div class="col " id="div-txt-imc">
-                <textarea name="" id="" cols="160" rows="10">
-                <h3>
-                    Mas o que é IMC?
-                </h3>
-                <h5>
-                    O Índice de Massa Corporal (IMC), refere-se ao teste feito para identificar por meio de uma fórmula matemática se você está com o peso condizente coma sua altura, e também para certificar que você não está abaixo do peso, com sobrepeso ou até mesmo com índice de obesidade.
-                    <br>
-                    Por meio do teste a seguir você saberá como está a situação de sua saúde segundo a matemática, mas... a seguir faremos mais testes
-
-                </h5>
-
-
+                <form action="" method="post" id="form-text-explica5">
+                    <input type="hidden" name="id" value="5">
+                    <textarea name="txt_explica" id="" cols="160" rows="10">
+                <?php $dado = $cad->txt_somatotipo(5);
+                echo $dado['txt_ex']
+                ?>
                 </textarea>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-success" onclick="altera_explica()">Alterar</button>
-                </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="altera_explica2(5)">Alterar</button>
+                    </div>
+                </form>
                 <hr class="mb-5">
 
             </div>
         </div>
     </div>
-  
+
     <div class="titulo-somatotipo mt-5">
         <h1 style="color:#06396b ;">
             Teste de Somatotipo
@@ -63,19 +65,19 @@
     <div class="container">
         <div class="row">
             <div class="col " id="div-txt-ex">
-                <textarea name="" id="" cols="70" rows="10">
 
-                <h3>
-                    Texto Explicativo
-                </h3>
-                <h5>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus quis non! Fuga enim iure ipsam magni voluptas quibusdam similique doloribus deserunt ab. Ex iusto a, illum eligendi neque fuga! Lorem,
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit a, poss
-                </h5>
+                <form action="" method="post" id="form-text-explica6">
+                    <input type="hidden" name="id" value="6">
+                    <textarea name="txt_explica" id="" cols="70" rows="10">
+                <?php $dado1 = $cad->txt_somatotipo(6);
+                echo $dado1['txt_ex']
+                ?>
+
                 </textarea>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-success" onclick="altera_explica()">Alterar</button>
-                </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" onclick="altera_explica2(6)">Alterar</button>
+                    </div>
+                </form>
                 <hr>
 
             </div>

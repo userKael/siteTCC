@@ -1,6 +1,7 @@
 <?php
-session_start();
+
 include './conexaobd.php';
+
 $id = $_POST['id'];
 $arquivoAtual = $_FILES['arquivo']['name'];
 $arquivoTemp = $_FILES['arquivo']['tmp_name'];
@@ -13,7 +14,7 @@ if($arquivoAtual == ""){
 }else{
 
     try {
-        $comando = $con->prepare("SELECT imagem FROM text_somatotipo WHERE id = ?");
+        $comando = $con->prepare("SELECT imagem FROM text_exercicio WHERE id = ?");
         $comando->bindParam(1, $id);
         $comando->execute();
         $dado = $comando->fetch();
@@ -21,7 +22,7 @@ if($arquivoAtual == ""){
     
         unlink('C:/xampp/htdocs/siteTCC/Site/IMGs/' . $imagem);
     
-        $comando = $con->prepare("UPDATE text_somatotipo SET imagem=?  WHERE id = ?");
+        $comando = $con->prepare("UPDATE text_exercicio SET imagem=?  WHERE id = ?");
         $comando->bindParam(1, $arquivoAtual);
         $comando->bindParam(2, $id);
         $comando->execute();
@@ -38,6 +39,8 @@ if($arquivoAtual == ""){
     
         echo "Erro ao alterar imagem";
     }
+
+
     
 }
 

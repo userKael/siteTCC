@@ -1,8 +1,13 @@
 <?php session_start();
 
+
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
 } else {
+
+    include_once './PHP/ClassUsuario.php';
+    include_once './PHP/conexaobd.php';
+    $cad = new Usuario();
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -73,15 +78,10 @@ if (!isset($_SESSION['email'])) {
         <div class="container">
             <div class="row">
                 <div class="col " id="div-txt-imc">
-                    <h3 id="text-imc">
-                        Mas o que é IMC?
-                        </h5>
-                        <h5>
-                            O Índice de Massa Corporal (IMC), refere-se ao teste feito para identificar por meio de uma fórmula matemática se você está com o peso condizente coma sua altura, e também para certificar que você não está abaixo do peso, com sobrepeso ou até mesmo com índice de obesidade.
-                            <br>
-                            Por meio do teste a seguir você saberá como está a situação de sua saúde segundo a matemática, mas... a seguir faremos mais testes
-
-                        </h5>
+                    <?php $dado = $cad->txt_somatotipo(5);
+                    echo $dado['txt_ex']
+                    ?>
+               
 
                         <hr>
                 </div>
