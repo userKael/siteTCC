@@ -95,6 +95,9 @@ section {
     margin-left: -12px;
     background: rgb(39, 155, 10);
     background-size: 190%;
+    border-radius: 0px 180px 180px 0;
+    border-right: solid;
+    border-color: rgb(49, 115, 10);
 }
 
 #txt-conteudo {
@@ -109,10 +112,7 @@ section {
 }
 
 #imagem-index {
-    margin-left: 13pc;
-    border-radius: 7pc;
-    border-left: solid;
-    border-color: #094809;
+    margin-left: 18pc;
 }
 
 #seta2 {

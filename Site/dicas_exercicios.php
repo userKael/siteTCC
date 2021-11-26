@@ -43,7 +43,7 @@ $cad = new Usuario();
       <div class="col-dicas">
         <div class="shadow p-3 mb-5 bg-light rounded">
           <?php $dado1 = $cad->txt_exercicio(1); ?>
-          <img src="./IMGs/<?php echo $dado1['imagem'] ?>" alt="" width="437px" height="287px">
+          <img src="./IMGs/<?php echo $dado1['imagem'] ?>" alt="" width="437px" height="287px" class="img">
           <br>
           <?php echo $dado1['texto'] ?>
         </div>
@@ -52,7 +52,7 @@ $cad = new Usuario();
       <div class="col-dicas">
         <div class="shadow p-3 mb-5 bg-light rounded">
           <?php $dado2 = $cad->txt_exercicio(2); ?>
-          <img src="./IMGs/<?php echo $dado2['imagem'] ?>" alt="" width="437px" height="287px">
+          <img src="./IMGs/<?php echo $dado2['imagem'] ?>" alt="" width="437px" height="287px" class="img">
           <br>
           <?php echo $dado2['texto'] ?>
         </div>
@@ -67,7 +67,7 @@ $cad = new Usuario();
       <div class="col-dicas">
         <div class="shadow p-3 mb-5 bg-light rounded">
           <?php $dado3 = $cad->txt_exercicio(3); ?>
-          <img src="./IMGs/<?php echo $dado3['imagem'] ?>" alt="" width="445px" height="300px">
+          <img src="./IMGs/<?php echo $dado3['imagem'] ?>" alt="" width="445px" height="300px" class="img">
           <br>
           <?php echo $dado3['texto'] ?>
         </div>
@@ -76,7 +76,7 @@ $cad = new Usuario();
       <div class="col-dicas">
         <div class="shadow p-3 mb-5 bg-light rounded">
           <?php $dado4 = $cad->txt_exercicio(4); ?>
-          <img src="./IMGs/<?php echo $dado4['imagem'] ?>" alt="" width="445px" height="300px">
+          <img src="./IMGs/<?php echo $dado4['imagem'] ?>" alt="" width="445px" height="300px" class="img">
           <br>
           <?php echo $dado4['texto'] ?>
         </div>
@@ -91,7 +91,7 @@ $cad = new Usuario();
       <div class="col-dicas">
         <div class="shadow p-3 mb-5 bg-light rounded">
           <?php $dado5 = $cad->txt_exercicio(5); ?>
-          <img src="./IMGs/<?php echo $dado5['imagem'] ?>" alt="" width="445px" height="300px">
+          <img src="./IMGs/<?php echo $dado5['imagem'] ?>" alt="" width="445px" height="300px" class="img">
           <br>
           <?php echo $dado5['texto'] ?>
         </div>
@@ -100,7 +100,7 @@ $cad = new Usuario();
       <div class="col-dicas">
         <div class="shadow p-3 mb-5 bg-light rounded">
           <?php $dado6 = $cad->txt_exercicio(6); ?>
-          <img src="./IMGs/<?php echo $dado6['imagem'] ?>" alt="" width="445px" height="300px">
+          <img src="./IMGs/<?php echo $dado6['imagem'] ?>" alt="" width="445px" height="300px" class="img">
           <br>
           <?php echo $dado6['texto'] ?>
         </div>

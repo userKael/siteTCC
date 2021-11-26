@@ -1,5 +1,4 @@
-/* Aqui que vc vai fazer as parada certo veinhu */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 #row {
     margin-top: 10px;
 }
@@ -7,6 +6,7 @@
 #teste1 {
     width: 40rem;
     height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 #col1 {
