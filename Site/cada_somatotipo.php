@@ -11,7 +11,7 @@ $cad = new Usuario();
 
 <head>
     <?php include './PHP/head.php' ?>
-    <link rel="stylesheet" href="./CSS/cada_biotipo1.css">
+    <link rel="stylesheet" href="./CSS/cada_biotipo.css">
     <title>GUDER SAUDE - TESTE</title>
 </head>
 
