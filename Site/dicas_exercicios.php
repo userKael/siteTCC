@@ -18,7 +18,7 @@ $cad = new Usuario();
   <?php include './PHP/cabecalho.php' ?>
   <div class="titulo-somatotipo mt-4">
     <h1 style="color:#06396b;">
-      Exercício para cada somatotipo
+      Dicas de exercícios 
     </h1>
     <hr>
   </div>
