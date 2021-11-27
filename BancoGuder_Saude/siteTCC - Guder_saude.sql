@@ -1,6 +1,5 @@
 create database guder_saude;
 use guder_saude;
-drop database guder_saude;
 
 create table cadastro(
 email varchar(30) not null primary key,
@@ -32,7 +31,6 @@ foreign key (contato_cadastro) references cadastro(email)
 on update cascade
 on delete cascade
 );
-
 
 create table img_perfil(
 id int not null primary key auto_increment,
@@ -94,29 +92,3 @@ insert into text_exercicio values ('3','TESTE3','imagemteste3.jpg');
 insert into text_exercicio values ('4','TESTE4','imagemteste4.jpg');
 insert into text_exercicio values ('5','TESTE5','imagemteste5.jpg');
 insert into text_exercicio values ('6','TESTE6','imagemteste6.jpg');
-
-
-
-
-select *
-from text_result;
-/* testes */
-
-
-select * from text_result;
-
-
-select * from teste;
-
-insert into cadastro values ('kael@kael','123','kael');
-
-select * from cadastro
-inner join result_teste on result_teste.contato_cadastro =  cadastro.email
-inner join teste on teste.contato_cadastro = cadastro.email
-inner join img_perfil on img_perfil.contato_cadastro = cadastro.email;
-
-select * from result_teste
-inner join teste on teste.contato_cadastro = "kael@kael";
-
-Select TIMESTAMPDIFF(YEAR, "",NOW());
-SELECT TIMESTAMPDIFF(YEAR, teste.data_nascimento, curdate()) FROM teste where contato_cadastro = "kael@kael" order by id desc;
