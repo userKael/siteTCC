@@ -11,7 +11,6 @@ class gudersaude extends StatefulWidget {
 
 class _gudersaudeState extends State<gudersaude> {
   get child => null;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,15 +18,15 @@ class _gudersaudeState extends State<gudersaude> {
       home: Scaffold(
         drawer: gudersaude(),
         appBar: AppBar(
-          title: Text("Guder Saude"),
           actions: [
             CircleAvatar(
-              child: Image.asset(''),
+              child: Image.asset('assets/imagem/logo.png'),
               radius: 25,
             ),
           ],
         ),
         body: Container(
+          //
           color: Colors.lightBlue.shade100,
           width: double.maxFinite,
           height: 900,
@@ -43,19 +42,15 @@ class _gudersaudeState extends State<gudersaude> {
                 color: Colors.transparent,
               ),
               Container(
-                width: double.maxFinite,
-                height: 150,
-              ),
-               Container(
                 width: double.infinity,
                 height: 50,
                 child: Column(
                   children: [
                     Container(
-                      child: Text("Nome",
+                      child: Text("Nome:",
                           style: TextStyle(
                             color: Colors.lightBlue,
-                            fontSize: 25,
+                            fontSize: 20,
                           )),
                       width: 200,
                       height: 50,
@@ -65,15 +60,19 @@ class _gudersaudeState extends State<gudersaude> {
                 ),
               ),
               Container(
+                width: double.maxFinite,
+                height: 20,
+              ),
+              Container(
                 width: double.infinity,
                 height: 50,
                 child: Column(
                   children: [
                     Container(
-                      child: Text("Email",
+                      child: Text("Email:",
                           style: TextStyle(
                             color: Colors.lightBlue,
-                            fontSize: 25,
+                            fontSize: 20,
                           )),
                       width: 200,
                       height: 50,
@@ -92,10 +91,10 @@ class _gudersaudeState extends State<gudersaude> {
                 child: Column(
                   children: [
                     Container(
-                      child: Text("Senha",
+                      child: Text("Senha:",
                           style: TextStyle(
                             color: Colors.lightBlue,
-                            fontSize: 25,
+                            fontSize: 20,
                           )),
                       width: 200,
                       height: 50,
