@@ -39,8 +39,8 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
       body: Container(
         padding: EdgeInsets.only(
           top: 60,
-          left: 40,
-          right: 40,
+          left: 80,
+          right: 80,
         ),
         color: Colors.white,
         child: ListView(
@@ -80,17 +80,6 @@ class MinhaPaginaEstado extends State<MinhaPagina> {
                 ),
               ),
               style: TextStyle(fontSize: 20),
-            ),
-            Container(
-              height: 40,
-              alignment: Alignment.centerRight,
-              child: FlatButton(
-                child: Text(
-                  "Recuperar Senha",
-                  textAlign: TextAlign.right,
-                ),
-                onPressed: () {},
-              ),
             ),
             SizedBox(
               height: 40,
