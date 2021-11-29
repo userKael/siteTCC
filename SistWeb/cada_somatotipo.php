@@ -65,7 +65,7 @@ $cad = new Usuario();
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
                     <form action="" method="post" id="form-txt-somatotipo1">
-                        <textarea name="texto" id="" cols="79" rows="8">
+                        <textarea name="texto" id="" cols="73" rows="8">
 <?php $dado1 = $cad->txt_somatotipo(1);
 echo $dado1['texto']
 ?>
@@ -93,7 +93,7 @@ echo $dado1['texto']
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
                     <form action="" method="post" id="form-txt-somatotipo2">
-                        <textarea name="texto" id="" cols="79" rows="8">
+                        <textarea name="texto" id="" cols="73" rows="8">
 <?php $dado2 = $cad->txt_somatotipo(2);
 echo $dado2['texto']
 ?>
@@ -124,7 +124,7 @@ echo $dado2['texto']
             <div class="col" id="col1">
                 <div class="shadow p-3 mb-5 bg-light rounded border border-primary border border-3" id="teste1">
                     <form action="" method="post" id="form-txt-somatotipo3">
-                        <textarea name="texto" id="" cols="79" rows="8">
+                        <textarea name="texto" id="" cols="73" rows="8">
 <?php $dado3 = $cad->txt_somatotipo(3);
 echo $dado3['texto']
 ?>
